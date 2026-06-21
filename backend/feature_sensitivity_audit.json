@@ -1,0 +1,79 @@
+{
+  "matrix": {
+    "case_1": {
+      "score": 0,
+      "verdict": "SAFE",
+      "score_breakdown": {}
+    },
+    "case_2": {
+      "score": 20,
+      "verdict": "SAFE",
+      "score_breakdown": {
+        "SYSTEM_ALERT_WINDOW": 20
+      }
+    },
+    "case_3": {
+      "score": 25,
+      "verdict": "SAFE",
+      "score_breakdown": {
+        "ACCESSIBILITY": 25
+      }
+    },
+    "case_4": {
+      "score": 20,
+      "verdict": "SAFE",
+      "score_breakdown": {
+        "READ_SMS": 20
+      }
+    },
+    "case_5": {
+      "score": 8,
+      "verdict": "SAFE",
+      "score_breakdown": {
+        "RuntimeExec": 8
+      }
+    },
+    "case_6": {
+      "score": 15,
+      "verdict": "SAFE",
+      "score_breakdown": {
+        "DexClassLoader": 15
+      }
+    },
+    "case_7": {
+      "score": 10,
+      "verdict": "SAFE",
+      "score_breakdown": {
+        "UnknownCertificate": 10
+      }
+    },
+    "case_8": {
+      "score": 20,
+      "verdict": "SAFE",
+      "score_breakdown": {
+        "PackageImpersonation": 20
+      }
+    },
+    "case_9": {
+      "score": 30,
+      "verdict": "SAFE",
+      "score_breakdown": {
+        "PackageImpersonation": 20,
+        "UnknownCertificate": 10
+      }
+    },
+    "case_10": {
+      "score": 100,
+      "verdict": "MALICIOUS",
+      "score_breakdown": {
+        "PackageImpersonation": 20,
+        "UnknownCertificate": 10,
+        "ACCESSIBILITY": 25,
+        "READ_SMS": 20,
+        "SYSTEM_ALERT_WINDOW": 20,
+        "DexClassLoader": 15,
+        "RuntimeExec": 8
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-06-19T14:24:16.226402Z",
+  "engine_version": "3.2.0",
+  "fingerprints": {
+    "official": "86f71bae47be40288086f28795563ba741a101ad98387cc934e1b68bfee539fa",
+    "plus": "2820ff29ced94f75f091458d778abc63c999b21ffe9daae4ba38ef2ed10affce",
+    "clone": "a36a2de2c6fd4ea62d16bca34bc1793625be70506ad11dfb2c74117c606e2e86"
+  },
+  "official": {
+    "permission_score": 0,
+    "dex_score": 0,
+    "certificate_score": 0,
+    "clone_score": 0,
+    "final_score": 0,
+    "verdict": "SAFE",
+    "severity": "Low",
+    "confidence": 50,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": "SecureBank Official",
+      "brand_similarity": 100,
+      "package_similarity": 100,
+      "certificate_match": true,
+      "clone_risk": "LOW"
+    },
+    "cert_findings": {
+      "is_trusted": true,
+      "reputation_issue": null,
+      "status": "TRUSTED"
+    },
+    "triggered_rules": []
+  },
+  "plus": {
+    "permission_score": 20,
+    "dex_score": 0,
+    "certificate_score": 10,
+    "clone_score": 20,
+    "final_score": 82,
+    "verdict": "MALICIOUS",
+    "severity": "Critical",
+    "confidence": 98,
+    "clone_findings": {
+      "is_clone": true,
+      "official_target": "SecureBank Official",
+      "brand_similarity": 71,
+      "package_similarity": 76,
+      "certificate_match": false,
+      "clone_risk": "HIGH"
+    },
+    "cert_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "triggered_rules": [
+      {
+        "permission": "PackageImpersonation",
+        "weight": 20,
+        "description": "Banking Clone: Impersonates SecureBank Official (brand: 71%, pkg: 76%, risk: HIGH)"
+      },
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=Android Debug, O=Android, C=US'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      }
+    ]
+  },
+  "clone": {
+    "permission_score": 0,
+    "dex_score": 0,
+    "certificate_score": 10,
+    "clone_score": 75,
+    "final_score": 85,
+    "verdict": "MALICIOUS",
+    "severity": "Critical",
+    "confidence": 98,
+    "clone_findings": {
+      "is_clone": true,
+      "official_target": "SecureBank Official",
+      "brand_similarity": 74,
+      "package_similarity": 100,
+      "certificate_match": false,
+      "clone_risk": "HIGH"
+    },
+    "cert_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "triggered_rules": [
+      {
+        "permission": "SamePkgForgery",
+        "weight": 75,
+        "description": "Same-Package Forgery: Exact package 'com.securebank.official' with mismatched certificate (risk: HIGH)"
+      },
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=Android Debug, O=Android, C=US'"
+      }
+    ]
+  },
+  "ordering_check": {
+    "official_score": 0,
+    "plus_score": 82,
+    "clone_score": 85,
+    "pass": true,
+    "expected": "official < plus < clone"
+  },
+  "verdict_check": {
+    "official_verdict": "SAFE",
+    "plus_verdict": "MALICIOUS",
+    "clone_verdict": "MALICIOUS",
+    "pass": true,
+    "expected": {
+      "official": "SAFE",
+      "plus": "SUSPICIOUS|MALICIOUS",
+      "clone": "MALICIOUS"
+    }
+  }
+}

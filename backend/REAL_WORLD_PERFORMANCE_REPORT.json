@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-06-21T06:21:10.100125+00:00",
+  "total_analyzed": 29,
+  "classification_threshold": {
+    "MALICIOUS": "score >= 70",
+    "SUSPICIOUS": "score >= 35 (counted as positive)",
+    "SAFE": "score < 35 (counted as negative)"
+  },
+  "confusion_matrix": {
+    "true_positives": 0,
+    "false_positives": 4,
+    "true_negatives": 25,
+    "false_negatives": 0
+  },
+  "metrics": {
+    "accuracy": 0.8621,
+    "precision": 0.0,
+    "recall": 0,
+    "f1_score": 0
+  },
+  "per_category_breakdown": {
+    "Banking": {
+      "TP": 0,
+      "FP": 0,
+      "TN": 4,
+      "FN": 0,
+      "total": 4
+    },
+    "Security": {
+      "TP": 0,
+      "FP": 0,
+      "TN": 7,
+      "FN": 0,
+      "total": 7
+    },
+    "Utility": {
+      "TP": 0,
+      "FP": 2,
+      "TN": 6,
+      "FN": 0,
+      "total": 8
+    },
+    "OpenSource": {
+      "TP": 0,
+      "FP": 2,
+      "TN": 7,
+      "FN": 0,
+      "total": 9
+    },
+    "Accessibility": {
+      "TP": 0,
+      "FP": 0,
+      "TN": 1,
+      "FN": 0,
+      "total": 1
+    }
+  },
+  "note": "All metrics computed from real APK analysis results. No hardcoded values."
+}

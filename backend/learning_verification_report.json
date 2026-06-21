@@ -1,0 +1,35 @@
+{
+  "learning_verification_report": {
+    "scanned_apk": "fake_axis_rewards.apk",
+    "package_name": "com.axis.mobile.rewards",
+    "base_score_before_learning": 30,
+    "score_after_learning": 66,
+    "verdict_shifted": true,
+    "lessons_retrieved": [
+      {
+        "similarity": 1.0,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "score_delta": 15.0,
+        "direction": "escalated",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate."
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "score_delta": 10.5,
+        "direction": "escalated",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate."
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "score_delta": 10.5,
+        "direction": "escalated",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate."
+      }
+    ]
+  }
+}

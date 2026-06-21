@@ -1,0 +1,917 @@
+{
+  "generated_at": "2026-06-18T03:29:15.051141+00:00",
+  "memory_lessons": 5,
+  "total_samples": 30,
+  "formula_change": {
+    "old": "sim = 0.50*j_perms + 0.30*j_dex + 0.20*clone_match  |  threshold=0.30  |  no permission gate",
+    "new": "sim = 0.70*j_perms + 0.30*j_dex                     |  gate: j_perms>=0.15  |  threshold=0.45"
+  },
+  "before": {
+    "total_lesson_retrievals": 86,
+    "analyses_with_retrieval": 29,
+    "analyses_no_retrieval": 1,
+    "average_similarity": 0.5096,
+    "average_score_delta_all": 21.87,
+    "analyses_verdict_changed": 16,
+    "verdict_change_directions": {
+      "SUSPICIOUS -> MALICIOUS": 6,
+      "SAFE -> SUSPICIOUS": 10
+    },
+    "verdict_changed_cases": [
+      {
+        "apk_name": "SecureBank_Plus.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 50,
+        "score_after": 72,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 22,
+        "lessons": 3,
+        "sims": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "apk_name": "fake_hdfc_rewards.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 30,
+        "score_after": 45,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 15,
+        "lessons": 2,
+        "sims": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "apk_name": "fake_sbi_login.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 30,
+        "score_after": 62,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 32,
+        "lessons": 3,
+        "sims": [
+          0.7,
+          0.7,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "banking_cred_stealer.apk",
+        "gt": "MALICIOUS",
+        "score_before": 55,
+        "score_after": 70,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 15,
+        "lessons": 3,
+        "sims": [
+          0.325,
+          0.325,
+          0.325
+        ]
+      },
+      {
+        "apk_name": "otp_stealer.apk",
+        "gt": "MALICIOUS",
+        "score_before": 30,
+        "score_after": 45,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 15,
+        "lessons": 3,
+        "sims": [
+          0.325,
+          0.325,
+          0.325
+        ]
+      },
+      {
+        "apk_name": "overlay_trojan.apk",
+        "gt": "MALICIOUS",
+        "score_before": 50,
+        "score_after": 74,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 24,
+        "lessons": 3,
+        "sims": [
+          0.533,
+          0.533,
+          0.533
+        ]
+      },
+      {
+        "apk_name": "remote_control.apk",
+        "gt": "MALICIOUS",
+        "score_before": 55,
+        "score_after": 79,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 24,
+        "lessons": 3,
+        "sims": [
+          0.533,
+          0.533,
+          0.533
+        ]
+      },
+      {
+        "apk_name": "fake_axis_rewards.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 30,
+        "score_after": 66,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 36,
+        "lessons": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "fake_gpay_bonus.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 10,
+        "score_after": 41,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 31,
+        "lessons": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.367
+        ]
+      },
+      {
+        "apk_name": "fake_paytm_offers.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 10,
+        "score_after": 41,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 31,
+        "lessons": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.367
+        ]
+      },
+      {
+        "apk_name": "fake_phonepe_scratch.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 30,
+        "score_after": 66,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 36,
+        "lessons": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "fake_yono_lite.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 30,
+        "score_after": 66,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 36,
+        "lessons": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "dropper_dynamic.apk",
+        "gt": "MALICIOUS",
+        "score_before": 10,
+        "score_after": 36,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 26,
+        "lessons": 3,
+        "sims": [
+          0.7,
+          0.7,
+          0.367
+        ]
+      },
+      {
+        "apk_name": "overlay_dropper.apk",
+        "gt": "MALICIOUS",
+        "score_before": 55,
+        "score_after": 79,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 24,
+        "lessons": 3,
+        "sims": [
+          0.533,
+          0.533,
+          0.533
+        ]
+      },
+      {
+        "apk_name": "overlay_spyware.apk",
+        "gt": "MALICIOUS",
+        "score_before": 50,
+        "score_after": 74,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 24,
+        "lessons": 3,
+        "sims": [
+          0.533,
+          0.533,
+          0.533
+        ]
+      },
+      {
+        "apk_name": "spy_trojan.apk",
+        "gt": "MALICIOUS",
+        "score_before": 30,
+        "score_after": 45,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 15,
+        "lessons": 3,
+        "sims": [
+          0.325,
+          0.325,
+          0.325
+        ]
+      }
+    ],
+    "lessons_per_analysis": {
+      "0 lessons": 1,
+      "2 lessons": 1,
+      "3 lessons": 28
+    },
+    "benign_analyses_influenced": 10,
+    "benign_verdict_flips": 0
+  },
+  "after": {
+    "total_lesson_retrievals": 35,
+    "analyses_with_retrieval": 13,
+    "analyses_no_retrieval": 17,
+    "average_similarity": 0.663,
+    "average_score_delta_all": 11.67,
+    "analyses_verdict_changed": 12,
+    "verdict_change_directions": {
+      "SUSPICIOUS -> MALICIOUS": 5,
+      "SAFE -> SUSPICIOUS": 7
+    },
+    "verdict_changed_cases": [
+      {
+        "apk_name": "SecureBank_Plus.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 50,
+        "score_after": 82,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 32,
+        "lessons": 3,
+        "sims": [
+          0.7,
+          0.7,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "fake_hdfc_rewards.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 30,
+        "score_after": 51,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 21,
+        "lessons": 2,
+        "sims": [
+          0.7,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "fake_sbi_login.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 30,
+        "score_after": 62,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 32,
+        "lessons": 3,
+        "sims": [
+          0.7,
+          0.7,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "overlay_trojan.apk",
+        "gt": "MALICIOUS",
+        "score_before": 50,
+        "score_after": 71,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 21,
+        "lessons": 3,
+        "sims": [
+          0.467,
+          0.467,
+          0.467
+        ]
+      },
+      {
+        "apk_name": "remote_control.apk",
+        "gt": "MALICIOUS",
+        "score_before": 55,
+        "score_after": 76,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 21,
+        "lessons": 3,
+        "sims": [
+          0.467,
+          0.467,
+          0.467
+        ]
+      },
+      {
+        "apk_name": "fake_axis_rewards.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 30,
+        "score_after": 66,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 36,
+        "lessons": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "fake_gpay_bonus.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 10,
+        "score_after": 36,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 26,
+        "lessons": 2,
+        "sims": [
+          1.0,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "fake_paytm_offers.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 10,
+        "score_after": 36,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 26,
+        "lessons": 2,
+        "sims": [
+          1.0,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "fake_phonepe_scratch.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 30,
+        "score_after": 66,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 36,
+        "lessons": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "fake_yono_lite.apk",
+        "gt": "SUSPICIOUS",
+        "score_before": 30,
+        "score_after": 66,
+        "verdict_before": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 36,
+        "lessons": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.7
+        ]
+      },
+      {
+        "apk_name": "overlay_dropper.apk",
+        "gt": "MALICIOUS",
+        "score_before": 55,
+        "score_after": 76,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 21,
+        "lessons": 3,
+        "sims": [
+          0.467,
+          0.467,
+          0.467
+        ]
+      },
+      {
+        "apk_name": "overlay_spyware.apk",
+        "gt": "MALICIOUS",
+        "score_before": 50,
+        "score_after": 71,
+        "verdict_before": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 21,
+        "lessons": 3,
+        "sims": [
+          0.467,
+          0.467,
+          0.467
+        ]
+      }
+    ],
+    "lessons_per_analysis": {
+      "0 lessons": 17,
+      "2 lessons": 4,
+      "3 lessons": 9
+    },
+    "benign_analyses_influenced": 0,
+    "benign_verdict_flips": 0
+  },
+  "benign_verification": {
+    "result": "PASS",
+    "expected": "Zero benign apps receive score delta from memory retrieval",
+    "per_app": [
+      {
+        "apk_name": "SecureBank_Official.apk",
+        "gt": "BENIGN",
+        "score_base": 0,
+        "score_after": 0,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "bhim_upi_official.apk",
+        "gt": "BENIGN",
+        "score_base": 0,
+        "score_after": 0,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "hdfc_bank_official.apk",
+        "gt": "BENIGN",
+        "score_base": 0,
+        "score_after": 0,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "icici_imobile_official.apk",
+        "gt": "BENIGN",
+        "score_base": 0,
+        "score_after": 0,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "sbi_yono_official.apk",
+        "gt": "BENIGN",
+        "score_base": 0,
+        "score_after": 0,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "airtel_thanks_official.apk",
+        "gt": "BENIGN",
+        "score_base": 10,
+        "score_after": 10,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "gpay_india_official.apk",
+        "gt": "BENIGN",
+        "score_base": 10,
+        "score_after": 10,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "mobikwik_official.apk",
+        "gt": "BENIGN",
+        "score_base": 10,
+        "score_after": 10,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "paytm_wallet_official.apk",
+        "gt": "BENIGN",
+        "score_base": 10,
+        "score_after": 10,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "phonepe_official.apk",
+        "gt": "BENIGN",
+        "score_base": 10,
+        "score_after": 10,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      }
+    ]
+  },
+  "threat_escalation_verification": {
+    "per_app": [
+      {
+        "apk_name": "SecureBank_Clone.apk",
+        "gt": "SUSPICIOUS",
+        "score_base": 70,
+        "score_after": 70,
+        "verdict_base": "MALICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "SecureBank_Plus.apk",
+        "gt": "SUSPICIOUS",
+        "score_base": 50,
+        "score_after": 82,
+        "verdict_base": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 32,
+        "lessons_retrieved": 3,
+        "sims": [
+          0.7,
+          0.7,
+          0.7
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "fake_hdfc_rewards.apk",
+        "gt": "SUSPICIOUS",
+        "score_base": 30,
+        "score_after": 51,
+        "verdict_base": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 21,
+        "lessons_retrieved": 2,
+        "sims": [
+          0.7,
+          0.7
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "fake_icici_verify.apk",
+        "gt": "SUSPICIOUS",
+        "score_base": 10,
+        "score_after": 10,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "fake_sbi_login.apk",
+        "gt": "SUSPICIOUS",
+        "score_base": 30,
+        "score_after": 62,
+        "verdict_base": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 32,
+        "lessons_retrieved": 3,
+        "sims": [
+          0.7,
+          0.7,
+          0.7
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "accessibility_abuse.apk",
+        "gt": "MALICIOUS",
+        "score_base": 35,
+        "score_after": 35,
+        "verdict_base": "SUSPICIOUS",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "banking_cred_stealer.apk",
+        "gt": "MALICIOUS",
+        "score_base": 55,
+        "score_after": 55,
+        "verdict_base": "SUSPICIOUS",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "otp_stealer.apk",
+        "gt": "MALICIOUS",
+        "score_base": 30,
+        "score_after": 30,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "overlay_trojan.apk",
+        "gt": "MALICIOUS",
+        "score_base": 50,
+        "score_after": 71,
+        "verdict_base": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 21,
+        "lessons_retrieved": 3,
+        "sims": [
+          0.467,
+          0.467,
+          0.467
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "remote_control.apk",
+        "gt": "MALICIOUS",
+        "score_base": 55,
+        "score_after": 76,
+        "verdict_base": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 21,
+        "lessons_retrieved": 3,
+        "sims": [
+          0.467,
+          0.467,
+          0.467
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "fake_axis_rewards.apk",
+        "gt": "SUSPICIOUS",
+        "score_base": 30,
+        "score_after": 66,
+        "verdict_base": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 36,
+        "lessons_retrieved": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.7
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "fake_gpay_bonus.apk",
+        "gt": "SUSPICIOUS",
+        "score_base": 10,
+        "score_after": 36,
+        "verdict_base": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 26,
+        "lessons_retrieved": 2,
+        "sims": [
+          1.0,
+          0.7
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "fake_paytm_offers.apk",
+        "gt": "SUSPICIOUS",
+        "score_base": 10,
+        "score_after": 36,
+        "verdict_base": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 26,
+        "lessons_retrieved": 2,
+        "sims": [
+          1.0,
+          0.7
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "fake_phonepe_scratch.apk",
+        "gt": "SUSPICIOUS",
+        "score_base": 30,
+        "score_after": 66,
+        "verdict_base": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 36,
+        "lessons_retrieved": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.7
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "fake_yono_lite.apk",
+        "gt": "SUSPICIOUS",
+        "score_base": 30,
+        "score_after": 66,
+        "verdict_base": "SAFE",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 36,
+        "lessons_retrieved": 3,
+        "sims": [
+          1.0,
+          0.7,
+          0.7
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "dropper_dynamic.apk",
+        "gt": "MALICIOUS",
+        "score_base": 10,
+        "score_after": 31,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 21,
+        "lessons_retrieved": 2,
+        "sims": [
+          0.7,
+          0.7
+        ],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "overlay_dropper.apk",
+        "gt": "MALICIOUS",
+        "score_base": 55,
+        "score_after": 76,
+        "verdict_base": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 21,
+        "lessons_retrieved": 3,
+        "sims": [
+          0.467,
+          0.467,
+          0.467
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "overlay_spyware.apk",
+        "gt": "MALICIOUS",
+        "score_base": 50,
+        "score_after": 71,
+        "verdict_base": "SUSPICIOUS",
+        "verdict_after": "MALICIOUS",
+        "delta": 21,
+        "lessons_retrieved": 3,
+        "sims": [
+          0.467,
+          0.467,
+          0.467
+        ],
+        "verdict_changed": true
+      },
+      {
+        "apk_name": "rat_accessibility.apk",
+        "gt": "MALICIOUS",
+        "score_base": 35,
+        "score_after": 35,
+        "verdict_base": "SUSPICIOUS",
+        "verdict_after": "SUSPICIOUS",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      },
+      {
+        "apk_name": "spy_trojan.apk",
+        "gt": "MALICIOUS",
+        "score_base": 30,
+        "score_after": 30,
+        "verdict_base": "SAFE",
+        "verdict_after": "SAFE",
+        "delta": 0,
+        "lessons_retrieved": 0,
+        "sims": [],
+        "verdict_changed": false
+      }
+    ]
+  },
+  "formula_spot_check": {
+    "apk": "gpay_india_official.apk",
+    "permissions": [
+      "android.permission.INTERNET"
+    ],
+    "lesson_permissions_example": [
+      "android.permission.INTERNET",
+      "android.permission.SYSTEM_ALERT_WINDOW"
+    ],
+    "j_perms": 0.5,
+    "old": {
+      "formula": "0.50*j_perms+0.30*j_dex+0.20*clone_match",
+      "clone_match": 1.0,
+      "sim": 0.45,
+      "threshold": 0.3,
+      "retrieved": true
+    },
+    "new": {
+      "formula": "0.70*j_perms+0.30*j_dex",
+      "gate_j_perms_015": true,
+      "sim": 0.35,
+      "threshold": 0.45,
+      "retrieved": false
+    }
+  },
+  "summary": {
+    "retrieval_count_change": "29 -> 13",
+    "avg_sim_change": "0.5096 -> 0.663",
+    "avg_delta_change": "21.87 -> 11.67",
+    "verdict_changes_change": "16 -> 12",
+    "benign_influenced_change": "10 -> 0"
+  }
+}

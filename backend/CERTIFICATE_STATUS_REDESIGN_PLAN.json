@@ -1,0 +1,10 @@
+{
+  "issue": "SentinelAPK currently conflates UNKNOWN certificates (validly extracted but unlisted) with UNTRUSTED certificates (missing or malformed), penalizing both equally (often +10 or higher).",
+  "evidence": "Re-classifying validly extracted certificates as UNKNOWN (score 0) eliminates 6 out of 10 false positives.",
+  "proposed_solution": [
+    "1. Redefine 'certificate_status' enum to distinguish between TRUSTED, UNKNOWN, and UNTRUSTED.",
+    "2. TRUSTED: Exact match in trusted registry (0 penalty).",
+    "3. UNKNOWN: Successfully extracted, valid format, but not in registry (0 penalty, but flag for manual review if other heuristics trigger).",
+    "4. UNTRUSTED: Extraction failed, malformed signature, or explicitly blocklisted (+10 penalty)."
+  ]
+}

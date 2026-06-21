@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-06-21T06:21:10.102953+00:00",
+  "total_accessibility_apps_tested": 1,
+  "correctly_classified": 1,
+  "false_positives": 0,
+  "accessibility_fp_entries": [],
+  "all_results": [
+    {
+      "apk_name": "Rboard.apk",
+      "package_name": "de.dertyp7214.rboardthememanager",
+      "ground_truth": "BENIGN",
+      "verdict": "SAFE",
+      "risk_score": 30,
+      "has_accessibility_perm": false,
+      "accessibility_detected": true,
+      "certificate_status": "UNKNOWN",
+      "triggered_rules": [
+        {
+          "permission": "UnknownCertificate",
+          "weight": 0,
+          "description": "Unknown certificate: issuer 'CN=Hacker'"
+        },
+        {
+          "permission": "Reflection",
+          "weight": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        },
+        {
+          "permission": "DexClassLoader",
+          "weight": 15,
+          "description": "DEX: Dynamic class loading (DexClassLoader)"
+        },
+        {
+          "permission": "SuspiciousUrl",
+          "weight": 5,
+          "description": "DEX: Suspicious URL found: https://bin.utwitch.net\u00005https://github.com/GboardThemes/PackRepoBeta/raw/main\u00003https://github.com/GboardThemes/RepoTemplate#readme\u0000Bhttps://gitlab.com/dertyp7214/RboardMirror/-/raw/main/PackRepoBeta\u0000.https://play.google.com/store/apps/details?id=\u0000"
+        }
+      ],
+      "correctly_classified": true
+    }
+  ],
+  "verdict": "PASS \u2014 Accessibility permission alone does not automatically trigger malicious classification",
+  "note": "Apps tested: Accessibility category from downloaded APKs only"
+}

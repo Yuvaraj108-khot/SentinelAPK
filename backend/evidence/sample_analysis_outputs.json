@@ -1,0 +1,74 @@
+[
+  {
+    "apk_name": "airtel_thanks_official.apk",
+    "risk_score": 0,
+    "top_risk_factors": [
+      "Low privilege permissions"
+    ],
+    "dex_indicators": {},
+    "permission_findings": [
+      "android.permission.INTERNET"
+    ],
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null
+    },
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "explanation": "Analyzed airtel_thanks_official.apk with risk score of 0 resulting in verdict SAFE."
+  },
+  {
+    "apk_name": "gpay_india_official.apk",
+    "risk_score": 0,
+    "top_risk_factors": [
+      "Low privilege permissions"
+    ],
+    "dex_indicators": {},
+    "permission_findings": [
+      "android.permission.INTERNET"
+    ],
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null
+    },
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "explanation": "Analyzed gpay_india_official.apk with risk score of 0 resulting in verdict SAFE."
+  },
+  {
+    "apk_name": "mobikwik_official.apk",
+    "risk_score": 0,
+    "top_risk_factors": [
+      "Low privilege permissions"
+    ],
+    "dex_indicators": {},
+    "permission_findings": [
+      "android.permission.INTERNET"
+    ],
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null
+    },
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "explanation": "Analyzed mobikwik_official.apk with risk score of 0 resulting in verdict SAFE."
+  }
+]

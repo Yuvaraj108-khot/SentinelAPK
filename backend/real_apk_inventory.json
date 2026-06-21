@@ -1,0 +1,121 @@
+[
+  {
+    "apk_name": "WhatsApp.apk",
+    "package_name": "com.whatsapp",
+    "version": "2.24.10",
+    "source": "official_play_store",
+    "SHA256": "2a991d5442981bfdc5e77bce5fb72acb084171c9124ec034f99d00b405c09b94"
+  },
+  {
+    "apk_name": "Telegram.apk",
+    "package_name": "org.telegram.messenger",
+    "version": "10.11.1",
+    "source": "official_play_store",
+    "SHA256": "c0ead85dbf899157f6b997ba0c7e5273369d8ec35345ed14bed850b1facfc381"
+  },
+  {
+    "apk_name": "Signal.apk",
+    "package_name": "org.thoughtcrime.securesms",
+    "version": "7.5.0",
+    "source": "official_play_store",
+    "SHA256": "6c75af5b27ef881223d63981eb3179373fcf3d0e8de8fccaabc26f14e2eca238"
+  },
+  {
+    "apk_name": "Google_Maps.apk",
+    "package_name": "com.google.android.apps.maps",
+    "version": "11.120",
+    "source": "official_play_store",
+    "SHA256": "8694c358d4877538ecdba7cc078e5b977ab36057f3bcb409a82d4764a85e9862"
+  },
+  {
+    "apk_name": "Gmail.apk",
+    "package_name": "com.google.android.gm",
+    "version": "2024.04",
+    "source": "official_play_store",
+    "SHA256": "48035fc8ee239724c6abcb46cac0a845d4ed84857e451d1c931b871998253152"
+  },
+  {
+    "apk_name": "Google_Drive.apk",
+    "package_name": "com.google.android.apps.docs",
+    "version": "2.24.18",
+    "source": "official_play_store",
+    "SHA256": "a6b86b0e159e02036731462116d6f35e218dbbdddaaaaba6bf7712a48eac9bf9"
+  },
+  {
+    "apk_name": "PhonePe.apk",
+    "package_name": "com.phonepe.app",
+    "version": "4.1.50",
+    "source": "official_play_store",
+    "SHA256": "7f8042583f277c65bcf804dcfe60ec9b870742f683e7d1982a8828ff92f2e8ba"
+  },
+  {
+    "apk_name": "Paytm.apk",
+    "package_name": "net.one97.paytm",
+    "version": "10.45.0",
+    "source": "official_play_store",
+    "SHA256": "b0a7d7bf3f8b1ace26bb7aee599599dd526bd0ac77bbc67929cd559e56546066"
+  },
+  {
+    "apk_name": "BHIM.apk",
+    "package_name": "in.org.npci.upiapp",
+    "version": "3.0.1",
+    "source": "official_play_store",
+    "SHA256": "1c927bf86a056cdbdc8a631120eb208272f07004377428b720bb5a4596490a16"
+  },
+  {
+    "apk_name": "Amazon.apk",
+    "package_name": "com.amazon.mShop.android.shopping",
+    "version": "28.9.0",
+    "source": "official_play_store",
+    "SHA256": "72f4f24cf8c2023fc95435d7f10c630eb17799b679c4935ed8c8acc149869915"
+  },
+  {
+    "apk_name": "Bitdefender.apk",
+    "package_name": "com.bitdefender.security",
+    "version": "3.3.250",
+    "source": "official_play_store",
+    "SHA256": "6a893123a5ae7d3e59d3daa6728a730b1e7ba319e82ef545bcb159809be6e47f"
+  },
+  {
+    "apk_name": "Avast.apk",
+    "package_name": "com.avast.android.mobilesecurity",
+    "version": "24.8.0",
+    "source": "official_play_store",
+    "SHA256": "52f22688cd41dd1c080257b18e77186eea80850839cc61a975fa71a74a683499"
+  },
+  {
+    "apk_name": "Malwarebytes.apk",
+    "package_name": "org.malwarebytes.antimalware",
+    "version": "5.3.0",
+    "source": "official_play_store",
+    "SHA256": "0c6862a1920590e149f35a8abf50146acf1e53be42f16d7cdca911c3f583a384"
+  },
+  {
+    "apk_name": "SBI_YONO.apk",
+    "package_name": "com.sbi.lotusintouch",
+    "version": "2.3.84",
+    "source": "official_play_store",
+    "SHA256": "6bfa1d9e71f5e0b29e0d724cbfb05f3a3d70620bc6fcda72df424840ec21b877"
+  },
+  {
+    "apk_name": "HDFC_MobileBanking.apk",
+    "package_name": "com.hdfc.mobilebanking",
+    "version": "15.0.0",
+    "source": "official_play_store",
+    "SHA256": "4f65da61ed61d857899502a6dc60096f5a4fb6e7c69920687a00aad7fcfae13e"
+  },
+  {
+    "apk_name": "ICICI_iMobile.apk",
+    "package_name": "com.icici.imobile",
+    "version": "17.4",
+    "source": "official_play_store",
+    "SHA256": "379375fe8aa2b3bfbc3349062cd1e680e0ddc10b935e252d8e3ac881bc601b4a"
+  },
+  {
+    "apk_name": "Axis_MobileBanking.apk",
+    "package_name": "com.axis.mobile",
+    "version": "8.5.1",
+    "source": "official_play_store",
+    "SHA256": "f2d700c2fbeb357d255955d98045843730ef360f1ba2804ead45ad1696c37e1e"
+  }
+]

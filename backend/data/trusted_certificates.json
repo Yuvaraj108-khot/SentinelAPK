@@ -1,0 +1,54 @@
+[
+  {
+    "issuer": "State Bank of India",
+    "sha256": "642f94ae5759d80d8350e48214ee487137c0b40a0a5e265a9e9aa78ea06dbf1d"
+  },
+  {
+    "issuer": "ICICI Bank Ltd",
+    "sha256": "2a980c57def53baba167dd9067e29a88e7d13073ed4358271853bc07c05b4be9"
+  },
+  {
+    "issuer": "HDFC Bank",
+    "sha256": "ae16b603f3b0067915274392398a5d41778faa38a3de3fa7c05e1fa25a756efa"
+  },
+  {
+    "issuer": "NPCI",
+    "sha256": "0ea1aa61dc012efe5b1db57ce3dd67dfbf41bce0cbc57f0a662c25e7165e8390"
+  },
+  {
+    "issuer": "One97 Communications Ltd",
+    "sha256": "7d50e1dfdd29c9a18c09c8b09cc88e0ef5e0f8d2dd8e3e96d98d7c618caad4f1"
+  },
+  {
+    "issuer": "SecureBank Official",
+    "sha256": "86f71bae47be40288086f28795563ba741a101ad98387cc934e1b68bfee539fa"
+  },
+  {
+    "issuer": "Bitdefender",
+    "sha256": "bc23de45fg678901"
+  },
+  {
+    "issuer": "Avast",
+    "sha256": "cd34ef56gh789012"
+  },
+  {
+    "issuer": "Malwarebytes",
+    "sha256": "de45fg67hi890123"
+  },
+  {
+    "issuer": "Microsoft Defender",
+    "sha256": "ef67gh89ij012345"
+  },
+  {
+    "issuer": "Kaspersky",
+    "sha256": "fg78hi90jk123456"
+  },
+  {
+    "issuer": "Norton",
+    "sha256": "gh89ij01kl234567"
+  },
+  {
+    "issuer": "ESET",
+    "sha256": "hi90jk12lm345678"
+  }
+]

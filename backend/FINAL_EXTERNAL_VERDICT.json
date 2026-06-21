@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-06-21T06:21:10.107516+00:00",
+  "verdict": "NOT_READY_FOR_PUBLIC_DEMO",
+  "f1_score": 0,
+  "accuracy": 0.8621,
+  "precision": 0.0,
+  "recall": 0,
+  "total_apks_analyzed": 29,
+  "total_downloaded": 29,
+  "total_failed": 31,
+  "reasons_not_ready": [
+    "F1 score 0.000 < 0.80 threshold"
+  ],
+  "methodology": {
+    "synthetic_data": false,
+    "mock_apks": false,
+    "hardcoded_metrics": false,
+    "real_downloads": true,
+    "real_analysis": true,
+    "sources": [
+      "F-Droid",
+      "GitHub Releases",
+      "MalwareBazaar (abuse.ch)"
+    ]
+  },
+  "note": "All metrics computed from real APK analysis. Download failures are documented in dataset_integrity_report.json."
+}

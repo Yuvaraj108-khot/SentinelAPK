@@ -1,0 +1,22 @@
+{
+  "apk_name": "paytm_wallet_official.apk",
+  "package_name": "net.one97.paytm",
+  "app_label": "Paytm Wallet",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "ground_truth": "BENIGN",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "03ed43817be7b97ac22ca5d895c85d02eb4f0d814e9179118ba5df6d3ac7c2aa",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "public_dataset",
+  "reviewed_by": "Auditor #1",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

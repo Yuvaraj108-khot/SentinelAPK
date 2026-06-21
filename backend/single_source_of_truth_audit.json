@@ -1,0 +1,209 @@
+{
+  "status": "PASSED",
+  "scenarios": {
+    "pothole": {
+      "risk_score": 20,
+      "verdict": "SAFE",
+      "evidence_validation": {
+        "sms": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "accessibility": {
+          "status": "FOUND",
+          "matched_string": "AccessibilityService",
+          "source_file": "classes.dex",
+          "offset": 0,
+          "extraction_method": "dex_find_bytes",
+          "confidence": 0.85
+        },
+        "overlay": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "runtime_exec": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "dynamic_loading": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "clone_detection": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "certificate_validation": {
+          "status": "UNTRUSTED",
+          "matched_string": "Untrusted certificate: sha256=ffeedd",
+          "source_file": "META-INF/CERT.RSA",
+          "offset": 0,
+          "extraction_method": "signature_scan_comparison",
+          "confidence": 0.95
+        }
+      },
+      "ai_explanations": {
+        "suspicious_permissions_rationale": "Accessibility APIs or bytecode callbacks can observe the screen, log credentials, and perform clicks without active user consent.",
+        "otp_theft_capability": "The application does not request SMS permissions. SMS OTP interception is not expected.",
+        "accessibility_abuse": "CRITICAL RISK. Declaring Accessibility Service access indicates the app has requested structural device automation. Evidence: AccessibilityService. It can track screen contents (Window Content Access) and harvest typed passwords.",
+        "impersonation_risk": "No overlay permissions are requested. Overlay-based banking login impersonation is not viable.",
+        "data_exfiltration": "No Internet access is declared. The application cannot directly exfiltrate gathered local data via network sockets.",
+        "verdict_reasoning": "Marked as Safe (Risk: 20/100). The application exhibits typical permission signatures, standard SDK integration, and is unlikely to perform credential harvesting or background SMS theft."
+      }
+    },
+    "official": {
+      "risk_score": 0,
+      "verdict": "SAFE",
+      "evidence_validation": {
+        "sms": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "accessibility": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "overlay": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "runtime_exec": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "dynamic_loading": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "clone_detection": {
+          "status": "UNKNOWN",
+          "matched_string": "Verified Legitimate Official Application",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "is_official_app_check",
+          "confidence": 1.0
+        },
+        "certificate_validation": {
+          "status": "TRUSTED",
+          "matched_string": "Trusted Official Certificate (Verified)",
+          "source_file": "META-INF/CERT.RSA",
+          "offset": 0,
+          "extraction_method": "signature_scan_comparison",
+          "confidence": 1.0
+        }
+      },
+      "ai_explanations": {
+        "suspicious_permissions_rationale": "No highly critical permissions or DEX threat indicators were requested by this application.",
+        "otp_theft_capability": "The application does not request SMS permissions. SMS OTP interception is not expected.",
+        "accessibility_abuse": "The application does not request Accessibility Service access. Accessibility service abuse is not expected.",
+        "impersonation_risk": "No overlay permissions are requested. Overlay-based banking login impersonation is not viable.",
+        "data_exfiltration": "Low Risk. Internet access is declared, but the app lacks the permissions required to gather sensitive telemetry, SMS details, or UI keystrokes.",
+        "verdict_reasoning": "Marked as Safe (Risk: 0/100). The application exhibits typical permission signatures, standard SDK integration, and is unlikely to perform credential harvesting or background SMS theft."
+      }
+    },
+    "plus": {
+      "risk_score": 82,
+      "verdict": "MALICIOUS",
+      "evidence_validation": {
+        "sms": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "accessibility": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "overlay": {
+          "status": "FOUND",
+          "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "manifest_permission_tag",
+          "confidence": 1.0
+        },
+        "runtime_exec": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "dynamic_loading": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "clone_detection": {
+          "status": "FOUND",
+          "matched_string": "Impersonates SecureBank Official (brand_sim=71%, pkg_sim=76%)",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "manifest_similarity_comparison",
+          "confidence": 0.85
+        },
+        "certificate_validation": {
+          "status": "UNTRUSTED",
+          "matched_string": "Untrusted certificate: sha256=2820ff29ced94f75f091458d778abc63c999b21ffe9daae4ba38ef2ed10affce",
+          "source_file": "META-INF/CERT.RSA",
+          "offset": 0,
+          "extraction_method": "signature_scan_comparison",
+          "confidence": 0.95
+        }
+      },
+      "ai_explanations": {
+        "suspicious_permissions_rationale": "System Alert Windows or overlay layout code enable malicious overlays to sit above banking logins, stealing login cards.",
+        "otp_theft_capability": "The application does not request SMS permissions. SMS OTP interception is not expected.",
+        "accessibility_abuse": "The application does not request Accessibility Service access. Accessibility service abuse is not expected.",
+        "impersonation_risk": "HIGH RISK. Requesting overlay capability allows custom windows above apps. Evidence: android.permission.SYSTEM_ALERT_WINDOW. The application could identify when a legitimate bank app is launched and superimpose a clone UI to harvest banking credentials.",
+        "data_exfiltration": "HIGH RISK. The inclusion of INTERNET permissions in conjunction with telemetry or SMS capabilities provides a data exfiltration channel, allowing the app to forward stolen data to C2 hosts.",
+        "verdict_reasoning": "This application is marked as Malicious due to high-risk banking Trojan combinations (Risk: 82/100). The intersection of accessibility automation, SMS interception, and network permissions strongly points to an OTP-stealer or banking overlay Trojan."
+      }
+    },
+    "clone": {
+      "risk_score": 85,
+      "verdict": "MALICIOUS",
+      "evidence_validation": {
+        "sms": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "accessibility": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "overlay": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "runtime_exec": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "dynamic_loading": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "clone_detection": {
+          "status": "FOUND",
+          "matched_string": "Impersonates SecureBank Official (brand_sim=74%, pkg_sim=100%)",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "manifest_similarity_comparison",
+          "confidence": 0.85
+        },
+        "certificate_validation": {
+          "status": "UNTRUSTED",
+          "matched_string": "Untrusted certificate: sha256=a36a2de2c6fd4ea62d16bca34bc1793625be70506ad11dfb2c74117c606e2e86",
+          "source_file": "META-INF/CERT.RSA",
+          "offset": 0,
+          "extraction_method": "signature_scan_comparison",
+          "confidence": 0.95
+        }
+      },
+      "ai_explanations": {
+        "suspicious_permissions_rationale": "No highly critical permissions or DEX threat indicators were requested by this application.",
+        "otp_theft_capability": "The application does not request SMS permissions. SMS OTP interception is not expected.",
+        "accessibility_abuse": "The application does not request Accessibility Service access. Accessibility service abuse is not expected.",
+        "impersonation_risk": "No overlay permissions are requested. Overlay-based banking login impersonation is not viable.",
+        "data_exfiltration": "Low Risk. Internet access is declared, but the app lacks the permissions required to gather sensitive telemetry, SMS details, or UI keystrokes.",
+        "verdict_reasoning": "This application is marked as Malicious due to high-risk banking Trojan combinations (Risk: 85/100). The intersection of accessibility automation, SMS interception, and network permissions strongly points to an OTP-stealer or banking overlay Trojan."
+      }
+    }
+  }
+}

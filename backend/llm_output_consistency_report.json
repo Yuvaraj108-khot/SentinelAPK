@@ -1,0 +1,29 @@
+{
+  "status": "PASSED",
+  "scenarios": {
+    "securebank_official": {
+      "score_identical": true,
+      "verdict_identical": true,
+      "clone_findings_identical": true,
+      "mitre_identical": true,
+      "wording_changed": true,
+      "evidence_policy_respected": true
+    },
+    "securebank_plus": {
+      "score_identical": true,
+      "verdict_identical": true,
+      "clone_findings_identical": true,
+      "mitre_identical": true,
+      "wording_changed": true,
+      "evidence_policy_respected": true
+    },
+    "securebank_clone": {
+      "score_identical": true,
+      "verdict_identical": true,
+      "clone_findings_identical": true,
+      "mitre_identical": true,
+      "wording_changed": true,
+      "evidence_policy_respected": true
+    }
+  }
+}

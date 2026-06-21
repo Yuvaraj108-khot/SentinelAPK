@@ -1,0 +1,166 @@
+{
+  "run_id": "run_2026_06_17_ee487f",
+  "timestamp": "2026-06-17T03:25:00.265616",
+  "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+  "engine_version": "2.0.0",
+  "rules_version": "2.0.0",
+  "classification_mode": "binary",
+  "positive_classes": [
+    "MALICIOUS",
+    "SUSPICIOUS"
+  ],
+  "dataset_composition": {
+    "total": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15
+  },
+  "predictions": [
+    {
+      "apk_name": "bhim_upi_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "TN"
+    },
+    {
+      "apk_name": "hdfc_bank_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "TN"
+    },
+    {
+      "apk_name": "icici_imobile_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "TN"
+    },
+    {
+      "apk_name": "paytm_wallet_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "TN"
+    },
+    {
+      "apk_name": "sbi_yono_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "TN"
+    },
+    {
+      "apk_name": "fake_hdfc_rewards.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "FN"
+    },
+    {
+      "apk_name": "fake_icici_verify.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "FN"
+    },
+    {
+      "apk_name": "fake_kyc_update.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "FN"
+    },
+    {
+      "apk_name": "fake_sbi_login.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "FN"
+    },
+    {
+      "apk_name": "fake_upi_cashback.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "FN"
+    },
+    {
+      "apk_name": "accessibility_abuse.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "FN"
+    },
+    {
+      "apk_name": "banking_cred_stealer.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 80,
+      "risk_score": 85,
+      "evaluation_mode": "METADATA",
+      "classification": "TP"
+    },
+    {
+      "apk_name": "otp_stealer.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 80,
+      "risk_score": 50,
+      "evaluation_mode": "METADATA",
+      "classification": "TP"
+    },
+    {
+      "apk_name": "overlay_trojan.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 80,
+      "risk_score": 50,
+      "evaluation_mode": "METADATA",
+      "classification": "TP"
+    },
+    {
+      "apk_name": "remote_control.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "FN"
+    }
+  ],
+  "metrics": {
+    "accuracy": 0.53,
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1_score": 0.46,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 5,
+      "fn": 7
+    }
+  }
+}

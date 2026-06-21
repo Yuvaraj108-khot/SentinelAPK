@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "comparisons": {
+    "bitdefender": {
+      "name": "Bitdefender",
+      "before": {
+        "score": 25,
+        "verdict": "SAFE"
+      },
+      "after": {
+        "score": 5,
+        "verdict": "SAFE"
+      },
+      "fp_reduced": true
+    },
+    "avast": {
+      "name": "Avast",
+      "before": {
+        "score": 66,
+        "verdict": "SUSPICIOUS"
+      },
+      "after": {
+        "score": 31,
+        "verdict": "SAFE"
+      },
+      "fp_reduced": true
+    },
+    "malwarebytes": {
+      "name": "Malwarebytes",
+      "before": {
+        "score": 25,
+        "verdict": "SAFE"
+      },
+      "after": {
+        "score": 5,
+        "verdict": "SAFE"
+      },
+      "fp_reduced": true
+    }
+  }
+}

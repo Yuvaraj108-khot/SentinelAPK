@@ -1,0 +1,6 @@
+{
+  "malware_samples_analyzed": 0,
+  "certificate_extraction_failures": 0,
+  "f1_score": 0.0,
+  "decision": "NOT_PRODUCTION_READY"
+}

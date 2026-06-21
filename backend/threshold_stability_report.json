@@ -1,0 +1,64 @@
+{
+  "stability_analysis": {
+    "bitdefender": {
+      "current_score": 5,
+      "current_verdict": "SAFE",
+      "sensitivity_score": 10,
+      "sensitivity_verdict": "SAFE",
+      "stable": true,
+      "boundary_warning": false,
+      "distance_to_35": 30,
+      "distance_to_65": 60
+    },
+    "avast": {
+      "current_score": 31,
+      "current_verdict": "SAFE",
+      "sensitivity_score": 51,
+      "sensitivity_verdict": "SUSPICIOUS",
+      "stable": false,
+      "boundary_warning": true,
+      "distance_to_35": 4,
+      "distance_to_65": 34
+    },
+    "malwarebytes": {
+      "current_score": 5,
+      "current_verdict": "SAFE",
+      "sensitivity_score": 10,
+      "sensitivity_verdict": "SAFE",
+      "stable": true,
+      "boundary_warning": false,
+      "distance_to_35": 30,
+      "distance_to_65": 60
+    },
+    "securebank_official": {
+      "current_score": 0,
+      "current_verdict": "SAFE",
+      "sensitivity_score": 0,
+      "sensitivity_verdict": "SAFE",
+      "stable": true,
+      "boundary_warning": false,
+      "distance_to_35": 35,
+      "distance_to_65": 65
+    },
+    "securebank_plus": {
+      "current_score": 82,
+      "current_verdict": "MALICIOUS",
+      "sensitivity_score": 100,
+      "sensitivity_verdict": "MALICIOUS",
+      "stable": true,
+      "boundary_warning": false,
+      "distance_to_35": 47,
+      "distance_to_65": 17
+    },
+    "securebank_clone": {
+      "current_score": 85,
+      "current_verdict": "MALICIOUS",
+      "sensitivity_score": 90,
+      "sensitivity_verdict": "MALICIOUS",
+      "stable": true,
+      "boundary_warning": false,
+      "distance_to_35": 50,
+      "distance_to_65": 20
+    }
+  }
+}

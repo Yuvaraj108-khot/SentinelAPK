@@ -1,0 +1,107 @@
+[
+  {
+    "apk_name": "airtel_thanks_official.apk",
+    "ground_truth": "BENIGN",
+    "predicted_verdict": "SAFE",
+    "risk_score": 0,
+    "explanation": "Assigned score of 0 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "gpay_india_official.apk",
+    "ground_truth": "BENIGN",
+    "predicted_verdict": "SAFE",
+    "risk_score": 0,
+    "explanation": "Assigned score of 0 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "mobikwik_official.apk",
+    "ground_truth": "BENIGN",
+    "predicted_verdict": "SAFE",
+    "risk_score": 0,
+    "explanation": "Assigned score of 0 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "paytm_wallet_official.apk",
+    "ground_truth": "BENIGN",
+    "predicted_verdict": "SAFE",
+    "risk_score": 0,
+    "explanation": "Assigned score of 0 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "phonepe_official.apk",
+    "ground_truth": "BENIGN",
+    "predicted_verdict": "SAFE",
+    "risk_score": 0,
+    "explanation": "Assigned score of 0 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "fake_axis_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SUSPICIOUS",
+    "risk_score": 38,
+    "explanation": "Assigned score of 38 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SAFE",
+    "risk_score": 0,
+    "explanation": "Assigned score of 0 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SAFE",
+    "risk_score": 0,
+    "explanation": "Assigned score of 0 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "fake_phonepe_scratch.apk",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SUSPICIOUS",
+    "risk_score": 38,
+    "explanation": "Assigned score of 38 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "fake_yono_lite.apk",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "MALICIOUS",
+    "risk_score": 83,
+    "explanation": "Assigned score of 83 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "dropper_dynamic.apk",
+    "ground_truth": "MALICIOUS",
+    "predicted_verdict": "SUSPICIOUS",
+    "risk_score": 35,
+    "explanation": "Assigned score of 35 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "overlay_dropper.apk",
+    "ground_truth": "MALICIOUS",
+    "predicted_verdict": "MALICIOUS",
+    "risk_score": 100,
+    "explanation": "Assigned score of 100 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "overlay_spyware.apk",
+    "ground_truth": "MALICIOUS",
+    "predicted_verdict": "MALICIOUS",
+    "risk_score": 88,
+    "explanation": "Assigned score of 88 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "rat_accessibility.apk",
+    "ground_truth": "MALICIOUS",
+    "predicted_verdict": "SUSPICIOUS",
+    "risk_score": 59,
+    "explanation": "Assigned score of 59 based on permission risk contribution and static analysis indicators."
+  },
+  {
+    "apk_name": "spy_trojan.apk",
+    "ground_truth": "MALICIOUS",
+    "predicted_verdict": "SUSPICIOUS",
+    "risk_score": 50,
+    "explanation": "Assigned score of 50 based on permission risk contribution and static analysis indicators."
+  }
+]

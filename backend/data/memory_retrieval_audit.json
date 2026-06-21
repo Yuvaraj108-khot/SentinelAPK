@@ -1,0 +1,783 @@
+{
+  "generated_at": "2026-06-18T03:16:24.146127+00:00",
+  "source_file": "data/raw_validation_results.json",
+  "total_samples": 30,
+  "total_lesson_retrievals": 86,
+  "memory_lessons_available": 5,
+  "similarity_distribution": {
+    "0.0-0.2": {
+      "count": 0,
+      "percentage": 0.0,
+      "values": []
+    },
+    "0.2-0.4": {
+      "count": 21,
+      "percentage": 24.4,
+      "values": [
+        0.325,
+        0.367
+      ]
+    },
+    "0.4-0.6": {
+      "count": 47,
+      "percentage": 54.7,
+      "values": [
+        0.45,
+        0.5,
+        0.533
+      ]
+    },
+    "0.6-0.8": {
+      "count": 13,
+      "percentage": 15.1,
+      "values": [
+        0.7
+      ]
+    },
+    "0.8-1.0": {
+      "count": 5,
+      "percentage": 5.8,
+      "values": [
+        1.0
+      ]
+    }
+  },
+  "average_similarity": 0.5096,
+  "score_delta": {
+    "average_all_samples": 21.87,
+    "average_influenced_only": 22.62,
+    "min": 0,
+    "max": 36
+  },
+  "lesson_retrieval_frequency": [
+    {
+      "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+      "retrieval_count": 46
+    },
+    {
+      "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate.",
+      "retrieval_count": 40
+    }
+  ],
+  "lessons_per_analysis": {
+    "0 lessons": 1,
+    "2 lessons": 1,
+    "3 lessons": 28
+  },
+  "uninfluenced_samples": [
+    {
+      "apk_name": "SecureBank_Clone.apk",
+      "ground_truth": "SUSPICIOUS",
+      "score": 70,
+      "verdict": "MALICIOUS",
+      "lessons_retrieved_count": 0,
+      "similarity_scores": [],
+      "explanation": "SecureBank_Clone.apk scored 70 from static rules alone (SamePkgForgery=60 + UnknownCertificate=10). It has a different package name than all 5 FN lessons and its permission set (none declared) has zero intersection with lesson permission sets. Jaccard=0.0, DEX=0.0, clone_risk=HIGH (lessons all have LOW). Composite similarity = 0.5*0 + 0.3*0 + 0.2*0 = 0.0 for all 5 lessons. All scores are below threshold 0.30. Zero lessons retrieved. Score unchanged."
+    }
+  ],
+  "per_sample_breakdown": [
+    {
+      "apk_name": "SecureBank_Official.apk",
+      "split": "train",
+      "ground_truth": "BENIGN",
+      "score_no_memory": 0,
+      "score_with_memory": 20,
+      "score_delta": 20,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "score_deltas_per_lesson": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "airtel_thanks_official.apk",
+      "split": "validation",
+      "ground_truth": "BENIGN",
+      "score_no_memory": 10,
+      "score_with_memory": 30,
+      "score_delta": 20,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "score_deltas_per_lesson": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "bhim_upi_official.apk",
+      "split": "train",
+      "ground_truth": "BENIGN",
+      "score_no_memory": 0,
+      "score_with_memory": 20,
+      "score_delta": 20,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "score_deltas_per_lesson": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "gpay_india_official.apk",
+      "split": "validation",
+      "ground_truth": "BENIGN",
+      "score_no_memory": 10,
+      "score_with_memory": 30,
+      "score_delta": 20,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "score_deltas_per_lesson": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "hdfc_bank_official.apk",
+      "split": "train",
+      "ground_truth": "BENIGN",
+      "score_no_memory": 0,
+      "score_with_memory": 20,
+      "score_delta": 20,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "score_deltas_per_lesson": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "icici_imobile_official.apk",
+      "split": "train",
+      "ground_truth": "BENIGN",
+      "score_no_memory": 0,
+      "score_with_memory": 20,
+      "score_delta": 20,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "score_deltas_per_lesson": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "mobikwik_official.apk",
+      "split": "validation",
+      "ground_truth": "BENIGN",
+      "score_no_memory": 10,
+      "score_with_memory": 30,
+      "score_delta": 20,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "score_deltas_per_lesson": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "paytm_wallet_official.apk",
+      "split": "validation",
+      "ground_truth": "BENIGN",
+      "score_no_memory": 10,
+      "score_with_memory": 30,
+      "score_delta": 20,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "score_deltas_per_lesson": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "phonepe_official.apk",
+      "split": "validation",
+      "ground_truth": "BENIGN",
+      "score_no_memory": 10,
+      "score_with_memory": 30,
+      "score_delta": 20,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "score_deltas_per_lesson": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "sbi_yono_official.apk",
+      "split": "train",
+      "ground_truth": "BENIGN",
+      "score_no_memory": 0,
+      "score_with_memory": 20,
+      "score_delta": 20,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "score_deltas_per_lesson": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "accessibility_abuse.apk",
+      "split": "train",
+      "ground_truth": "MALICIOUS",
+      "score_no_memory": 35,
+      "score_with_memory": 52,
+      "score_delta": 17,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.367,
+        0.367,
+        0.367
+      ],
+      "score_deltas_per_lesson": [
+        5.5,
+        5.5,
+        5.5
+      ],
+      "verdict_before": "SUSPICIOUS",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "banking_cred_stealer.apk",
+      "split": "train",
+      "ground_truth": "MALICIOUS",
+      "score_no_memory": 55,
+      "score_with_memory": 70,
+      "score_delta": 15,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.325,
+        0.325,
+        0.325
+      ],
+      "score_deltas_per_lesson": [
+        4.88,
+        4.88,
+        4.88
+      ],
+      "verdict_before": "SUSPICIOUS",
+      "verdict_after": "MALICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "dropper_dynamic.apk",
+      "split": "validation",
+      "ground_truth": "MALICIOUS",
+      "score_no_memory": 10,
+      "score_with_memory": 36,
+      "score_delta": 26,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.7,
+        0.7,
+        0.367
+      ],
+      "score_deltas_per_lesson": [
+        10.5,
+        10.5,
+        5.5
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "otp_stealer.apk",
+      "split": "train",
+      "ground_truth": "MALICIOUS",
+      "score_no_memory": 30,
+      "score_with_memory": 45,
+      "score_delta": 15,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.325,
+        0.325,
+        0.325
+      ],
+      "score_deltas_per_lesson": [
+        4.88,
+        4.88,
+        4.88
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "overlay_dropper.apk",
+      "split": "validation",
+      "ground_truth": "MALICIOUS",
+      "score_no_memory": 55,
+      "score_with_memory": 79,
+      "score_delta": 24,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.533,
+        0.533,
+        0.533
+      ],
+      "score_deltas_per_lesson": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "verdict_before": "SUSPICIOUS",
+      "verdict_after": "MALICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "overlay_spyware.apk",
+      "split": "validation",
+      "ground_truth": "MALICIOUS",
+      "score_no_memory": 50,
+      "score_with_memory": 74,
+      "score_delta": 24,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.533,
+        0.533,
+        0.533
+      ],
+      "score_deltas_per_lesson": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "verdict_before": "SUSPICIOUS",
+      "verdict_after": "MALICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "overlay_trojan.apk",
+      "split": "train",
+      "ground_truth": "MALICIOUS",
+      "score_no_memory": 50,
+      "score_with_memory": 74,
+      "score_delta": 24,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.533,
+        0.533,
+        0.533
+      ],
+      "score_deltas_per_lesson": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "verdict_before": "SUSPICIOUS",
+      "verdict_after": "MALICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "rat_accessibility.apk",
+      "split": "validation",
+      "ground_truth": "MALICIOUS",
+      "score_no_memory": 35,
+      "score_with_memory": 52,
+      "score_delta": 17,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.367,
+        0.367,
+        0.367
+      ],
+      "score_deltas_per_lesson": [
+        5.5,
+        5.5,
+        5.5
+      ],
+      "verdict_before": "SUSPICIOUS",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "remote_control.apk",
+      "split": "train",
+      "ground_truth": "MALICIOUS",
+      "score_no_memory": 55,
+      "score_with_memory": 79,
+      "score_delta": 24,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.533,
+        0.533,
+        0.533
+      ],
+      "score_deltas_per_lesson": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "verdict_before": "SUSPICIOUS",
+      "verdict_after": "MALICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "spy_trojan.apk",
+      "split": "validation",
+      "ground_truth": "MALICIOUS",
+      "score_no_memory": 30,
+      "score_with_memory": 45,
+      "score_delta": 15,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.325,
+        0.325,
+        0.325
+      ],
+      "score_deltas_per_lesson": [
+        4.88,
+        4.88,
+        4.88
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "SecureBank_Clone.apk",
+      "split": "train",
+      "ground_truth": "SUSPICIOUS",
+      "score_no_memory": 70,
+      "score_with_memory": 70,
+      "score_delta": 0,
+      "lessons_retrieved": 0,
+      "similarity_scores": [],
+      "score_deltas_per_lesson": [],
+      "verdict_before": "MALICIOUS",
+      "verdict_after": "MALICIOUS",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "SecureBank_Plus.apk",
+      "split": "train",
+      "ground_truth": "SUSPICIOUS",
+      "score_no_memory": 50,
+      "score_with_memory": 72,
+      "score_delta": 22,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "score_deltas_per_lesson": [
+        7.5,
+        7.5,
+        7.5
+      ],
+      "verdict_before": "SUSPICIOUS",
+      "verdict_after": "MALICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "fake_axis_rewards.apk",
+      "split": "validation",
+      "ground_truth": "SUSPICIOUS",
+      "score_no_memory": 30,
+      "score_with_memory": 66,
+      "score_delta": 36,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        1.0,
+        0.7,
+        0.7
+      ],
+      "score_deltas_per_lesson": [
+        15.0,
+        10.5,
+        10.5
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "fake_gpay_bonus.apk",
+      "split": "validation",
+      "ground_truth": "SUSPICIOUS",
+      "score_no_memory": 10,
+      "score_with_memory": 41,
+      "score_delta": 31,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        1.0,
+        0.7,
+        0.367
+      ],
+      "score_deltas_per_lesson": [
+        15.0,
+        10.5,
+        5.5
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "fake_hdfc_rewards.apk",
+      "split": "train",
+      "ground_truth": "SUSPICIOUS",
+      "score_no_memory": 30,
+      "score_with_memory": 45,
+      "score_delta": 15,
+      "lessons_retrieved": 2,
+      "similarity_scores": [
+        0.5,
+        0.5
+      ],
+      "score_deltas_per_lesson": [
+        7.5,
+        7.5
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "fake_icici_verify.apk",
+      "split": "train",
+      "ground_truth": "SUSPICIOUS",
+      "score_no_memory": 10,
+      "score_with_memory": 26,
+      "score_delta": 16,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.367,
+        0.367,
+        0.367
+      ],
+      "score_deltas_per_lesson": [
+        5.5,
+        5.5,
+        5.5
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SAFE",
+      "verdict_changed": false
+    },
+    {
+      "apk_name": "fake_paytm_offers.apk",
+      "split": "validation",
+      "ground_truth": "SUSPICIOUS",
+      "score_no_memory": 10,
+      "score_with_memory": 41,
+      "score_delta": 31,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        1.0,
+        0.7,
+        0.367
+      ],
+      "score_deltas_per_lesson": [
+        15.0,
+        10.5,
+        5.5
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "fake_phonepe_scratch.apk",
+      "split": "validation",
+      "ground_truth": "SUSPICIOUS",
+      "score_no_memory": 30,
+      "score_with_memory": 66,
+      "score_delta": 36,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        1.0,
+        0.7,
+        0.7
+      ],
+      "score_deltas_per_lesson": [
+        15.0,
+        10.5,
+        10.5
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "fake_sbi_login.apk",
+      "split": "train",
+      "ground_truth": "SUSPICIOUS",
+      "score_no_memory": 30,
+      "score_with_memory": 62,
+      "score_delta": 32,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "score_deltas_per_lesson": [
+        10.5,
+        10.5,
+        10.5
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": true
+    },
+    {
+      "apk_name": "fake_yono_lite.apk",
+      "split": "validation",
+      "ground_truth": "SUSPICIOUS",
+      "score_no_memory": 30,
+      "score_with_memory": 66,
+      "score_delta": 36,
+      "lessons_retrieved": 3,
+      "similarity_scores": [
+        1.0,
+        0.7,
+        0.7
+      ],
+      "score_deltas_per_lesson": [
+        15.0,
+        10.5,
+        10.5
+      ],
+      "verdict_before": "SAFE",
+      "verdict_after": "SUSPICIOUS",
+      "verdict_changed": true
+    }
+  ],
+  "global_boost_verification": {
+    "is_global_boost": false,
+    "evidence": {
+      "truly_unrelated_app_sim_scores": {
+        "test_permissions": [
+          "android.permission.CAMERA",
+          "android.permission.ACCESS_FINE_LOCATION",
+          "android.permission.READ_CONTACTS"
+        ],
+        "per_lesson_similarities": [
+          {
+            "lesson_index": 1,
+            "sim": 0.2
+          },
+          {
+            "lesson_index": 2,
+            "sim": 0.2
+          },
+          {
+            "lesson_index": 3,
+            "sim": 0.2
+          },
+          {
+            "lesson_index": 4,
+            "sim": 0.2
+          },
+          {
+            "lesson_index": 5,
+            "sim": 0.2
+          }
+        ],
+        "max_sim": 0.2,
+        "above_threshold_030": false,
+        "result": "No retrieval. Score delta = 0. Learning does not fire."
+      },
+      "benign_official_apps": {
+        "unique_sim_values": [
+          0.45
+        ],
+        "max_score_reached": 30,
+        "suspicious_threshold": 35,
+        "verdict_flips_to_suspicious": 0,
+        "result": "Benign apps reach score 30 maximum. SUSPICIOUS threshold is 35. No verdict flip."
+      },
+      "similarity_is_proportional": "Score delta = sum(sim_i * 15) across top-3 lessons. An app with sim=0.45 receives delta = 3 * 0.45 * 15 = 20.25. An app with sim=1.0 receives delta = 1 * 1.0 * 15 = 15 (only 1 exact match possible). Delta is bounded and proportional — not a flat addition."
+    }
+  },
+  "structural_issue_identified": {
+    "name": "clone_risk_similarity_floor",
+    "description": "The clone_risk component (weight=0.20) contributes 0.20 similarity to ALL apps that share the same clone_risk level as stored lessons (currently all LOW). This means the effective retrieval threshold is 0.10 on permission+DEX signals alone. Combined with INTERNET being a ubiquitous permission, benign apps receive sim=0.45 and are retrieved when they should score near 0.",
+    "consequence": "All 10 benign official apps receive 3 lessons each and a +20.25 score delta. No false positive verdict flip occurred (max benign score = 30, threshold = 35), but the safety margin is only 5 points.",
+    "recommended_fix": "Option A: Raise retrieval threshold from 0.30 to 0.45, eliminating low-signal matches. Option B: Remove clone_risk from similarity (reduce to permissions 60% + DEX 40%), so apps with zero shared permissions score 0.0 regardless of clone_risk. Option C: Add a minimum permissions-only Jaccard floor before the composite is evaluated."
+  }
+}

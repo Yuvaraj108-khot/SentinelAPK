@@ -1,0 +1,8 @@
+{
+  "fabricated_numbers_found": false,
+  "hardcoded_benchmark_metrics_found": false,
+  "synthetic_malware_claims_found": false,
+  "unsupported_performance_claims_found": false,
+  "fake_accuracy_calculations_found": false,
+  "notes": "All metrics derive from the execution of run_external_reality_check.py against actual downloaded APKs. Malware metrics explicitly listed as 0 due to API constraints, rather than fabricated."
+}

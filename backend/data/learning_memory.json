@@ -1,0 +1,130 @@
+[
+  {
+    "timestamp": "2026-06-18T03:00:10.842054+00:00",
+    "package_name": "com.axis.mobile.rewards",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.SYSTEM_ALERT_WINDOW"
+    ],
+    "dex_indicators": [],
+    "certificate_status": "Unknown / Self-signed certificate",
+    "clone_risk": "LOW",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate."
+  },
+  {
+    "timestamp": "2026-06-18T03:00:10.842054+00:00",
+    "package_name": "com.gpay.bonus.helper.gift",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.REQUEST_INSTALL_PACKAGES"
+    ],
+    "dex_indicators": [],
+    "certificate_status": "Unknown / Self-signed certificate",
+    "clone_risk": "LOW",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SAFE",
+    "confidence": 60,
+    "error_type": "FALSE_NEGATIVE",
+    "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate."
+  },
+  {
+    "timestamp": "2026-06-18T03:00:10.842054+00:00",
+    "package_name": "net.one97.paytm.cashback",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.REQUEST_INSTALL_PACKAGES"
+    ],
+    "dex_indicators": [],
+    "certificate_status": "Unknown / Self-signed certificate",
+    "clone_risk": "LOW",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SAFE",
+    "confidence": 60,
+    "error_type": "FALSE_NEGATIVE",
+    "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate."
+  },
+  {
+    "timestamp": "2026-06-18T03:00:10.842054+00:00",
+    "package_name": "com.phonepe.scratchcard.helper",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.SYSTEM_ALERT_WINDOW"
+    ],
+    "dex_indicators": [],
+    "certificate_status": "Unknown / Self-signed certificate",
+    "clone_risk": "LOW",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate."
+  },
+  {
+    "timestamp": "2026-06-18T03:00:10.842054+00:00",
+    "package_name": "com.sbi.yono.lite.support",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.SYSTEM_ALERT_WINDOW"
+    ],
+    "dex_indicators": [],
+    "certificate_status": "Unknown / Self-signed certificate",
+    "clone_risk": "LOW",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate."
+  },
+  {
+    "timestamp": "2026-06-21T15:17:27.232022+00:00",
+    "package_name": "com.gpay.bonus.helper.gift",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.REQUEST_INSTALL_PACKAGES"
+    ],
+    "dex_indicators": [],
+    "certificate_status": "Unknown / Self-signed certificate",
+    "clone_risk": "LOW",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SAFE",
+    "confidence": 76,
+    "error_type": "FALSE_NEGATIVE",
+    "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate."
+  },
+  {
+    "timestamp": "2026-06-21T15:17:27.232820+00:00",
+    "package_name": "net.one97.paytm.cashback",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.REQUEST_INSTALL_PACKAGES"
+    ],
+    "dex_indicators": [],
+    "certificate_status": "Unknown / Self-signed certificate",
+    "clone_risk": "LOW",
+    "ground_truth": "SUSPICIOUS",
+    "predicted_verdict": "SAFE",
+    "confidence": 76,
+    "error_type": "FALSE_NEGATIVE",
+    "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate."
+  },
+  {
+    "timestamp": "2026-06-21T15:17:27.232820+00:00",
+    "package_name": "com.pdfreader.pro.helper",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.REQUEST_INSTALL_PACKAGES"
+    ],
+    "dex_indicators": [],
+    "certificate_status": "Unknown / Self-signed certificate",
+    "clone_risk": "LOW",
+    "ground_truth": "MALICIOUS",
+    "predicted_verdict": "SAFE",
+    "confidence": 76,
+    "error_type": "FALSE_NEGATIVE",
+    "lesson": "Missed: predicted SAFE but actual label is MALICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate."
+  }
+]

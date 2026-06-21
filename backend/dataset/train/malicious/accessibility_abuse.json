@@ -1,0 +1,23 @@
+{
+  "apk_name": "accessibility_abuse.apk",
+  "package_name": "com.access.service.helper",
+  "app_label": "Accessibility Service Helper",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.BIND_ACCESSIBILITY_SERVICE"
+  ],
+  "ground_truth": "MALICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "574759f70f21591102b014de4c89145524e69669efb2944bc3c5757b7253f960",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "internal_test",
+  "reviewed_by": "Auditor #2",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

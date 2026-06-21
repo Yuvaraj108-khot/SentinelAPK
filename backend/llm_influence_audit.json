@@ -1,0 +1,10 @@
+{
+  "score_identical": true,
+  "verdict_identical": true,
+  "clone_findings_identical": true,
+  "certificate_findings_identical": true,
+  "mitre_identical": true,
+  "evidence_validation_identical": true,
+  "explanations_differed": true,
+  "status": "PASS"
+}

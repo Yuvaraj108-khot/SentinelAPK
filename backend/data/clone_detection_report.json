@@ -1,0 +1,26 @@
+[
+  {
+    "package_name": "com.securebank.official",
+    "app_label": "SecureBank Official",
+    "brand_similarity": "100%",
+    "package_similarity": "100%",
+    "certificate_match": "true",
+    "clone_risk": "LOW"
+  },
+  {
+    "package_name": "com.securebank.plus",
+    "app_label": "SecureBank Plus",
+    "brand_similarity": "71%",
+    "package_similarity": "76%",
+    "certificate_match": "false",
+    "clone_risk": "HIGH"
+  },
+  {
+    "package_name": "com.securebank.official",
+    "app_label": "SecureBank Clone",
+    "brand_similarity": "69%",
+    "package_similarity": "100%",
+    "certificate_match": "false",
+    "clone_risk": "HIGH"
+  }
+]

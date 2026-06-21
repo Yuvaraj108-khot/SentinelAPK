@@ -1,0 +1,32 @@
+{
+  "report_trace": [
+    {
+      "report_section": "Executive Verdict Card",
+      "source_variable": "risk.verdict",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "value_used": "MALICIOUS / SUSPICIOUS / SAFE"
+    },
+    {
+      "report_section": "Executive Verdict Score",
+      "source_variable": "risk.score",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "value_used": "0 to 100"
+    },
+    {
+      "report_section": "Evidence-Based Detection Status",
+      "source_variable": "risk.evidence_validation",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "value_used": "evidence_validation map containing extraction status and matching bytes metadata"
+    },
+    {
+      "report_section": "MITRE Technique Mapping",
+      "source_variable": "risk.mitre_techniques",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "value_used": "Dynamic list generated strictly from validated items in evidence_validation"
+    }
+  ]
+}

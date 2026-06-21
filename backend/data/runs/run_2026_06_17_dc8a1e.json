@@ -1,0 +1,517 @@
+{
+  "run_id": "run_2026_06_17_dc8a1e",
+  "timestamp": "2026-06-17T07:39:51.514727",
+  "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+  "engine_version": "3.0.0",
+  "rules_version": "3.0.0",
+  "classification_mode": "binary",
+  "weights_before": {
+    "READ_SMS": 30,
+    "ACCESSIBILITY": 35,
+    "SYSTEM_ALERT_WINDOW": 38,
+    "DexClassLoader": 20,
+    "Reflection": 14,
+    "UnknownCertificate": 33,
+    "PackageImpersonation": 45
+  },
+  "weights_after": {
+    "READ_SMS": 30,
+    "ACCESSIBILITY": 35,
+    "SYSTEM_ALERT_WINDOW": 38,
+    "DexClassLoader": 20,
+    "Reflection": 14,
+    "UnknownCertificate": 33,
+    "PackageImpersonation": 45
+  },
+  "learning_success": false,
+  "counts": {
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "total": 30
+  },
+  "train_metrics": {
+    "before": {
+      "accuracy": 0.8,
+      "precision": 0.82,
+      "recall": 0.9,
+      "f1_score": 0.86,
+      "confusion_matrix": {
+        "tp": 9,
+        "fp": 2,
+        "tn": 3,
+        "fn": 1
+      }
+    },
+    "after": {
+      "accuracy": 0.8,
+      "precision": 0.82,
+      "recall": 0.9,
+      "f1_score": 0.86,
+      "confusion_matrix": {
+        "tp": 9,
+        "fp": 2,
+        "tn": 3,
+        "fn": 1
+      }
+    }
+  },
+  "validation_metrics": {
+    "before": {
+      "accuracy": 0.87,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1_score": 0.89,
+      "confusion_matrix": {
+        "tp": 8,
+        "fp": 0,
+        "tn": 5,
+        "fn": 2
+      }
+    },
+    "after": {
+      "accuracy": 0.87,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1_score": 0.89,
+      "confusion_matrix": {
+        "tp": 8,
+        "fp": 0,
+        "tn": 5,
+        "fn": 2
+      }
+    }
+  },
+  "predictions": [
+    {
+      "apk_name": "airtel_thanks_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 70,
+      "risk_score": 33,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TN",
+      "package_name": "com.myairtelapp",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "gpay_india_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 70,
+      "risk_score": 33,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TN",
+      "package_name": "com.google.android.apps.nbu.paisa.user",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "mobikwik_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 70,
+      "risk_score": 33,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TN",
+      "package_name": "com.mobikwik_new",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "paytm_wallet_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 70,
+      "risk_score": 33,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TN",
+      "package_name": "net.one97.paytm",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "phonepe_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 70,
+      "risk_score": 33,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TN",
+      "package_name": "com.phonepe.app",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "fake_axis_rewards.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 70,
+      "risk_score": 71,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.axis.mobile.gift",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "fake_gpay_bonus.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 70,
+      "risk_score": 33,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "FN",
+      "package_name": "com.gpay.bonus.helper",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.REQUEST_INSTALL_PACKAGES"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "fake_paytm_offers.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 70,
+      "risk_score": 33,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "FN",
+      "package_name": "com.paytm.cashback.promo",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.REQUEST_INSTALL_PACKAGES"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "fake_phonepe_scratch.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 70,
+      "risk_score": 71,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.phonepe.scratchcard",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "fake_yono_lite.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 70,
+      "risk_score": 71,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.yono.support.helper",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "dropper_dynamic.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 70,
+      "risk_score": 68,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.pdfreader.pro.helper",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.REQUEST_INSTALL_PACKAGES"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "overlay_dropper.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 70,
+      "risk_score": 100,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "org.videolan.vlc.codec",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.BIND_ACCESSIBILITY_SERVICE"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "overlay_spyware.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 70,
+      "risk_score": 100,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.wa.theme.hub",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_SMS"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "rat_accessibility.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 70,
+      "risk_score": 92,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.autoclicker.expert",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.BIND_ACCESSIBILITY_SERVICE"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    },
+    {
+      "apk_name": "spy_trojan.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 70,
+      "risk_score": 83,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.device.care.manager",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.READ_SMS",
+        "android.permission.RECEIVE_SMS"
+      ],
+      "dex_indicators": {},
+      "certificates": [],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "No signature files present"
+      }
+    }
+  ],
+  "metrics": {
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    }
+  }
+}

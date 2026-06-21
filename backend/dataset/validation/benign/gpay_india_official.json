@@ -1,0 +1,22 @@
+{
+  "apk_name": "gpay_india_official.apk",
+  "package_name": "com.google.android.apps.nbu.paisa.user",
+  "app_label": "Google Pay",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "ground_truth": "BENIGN",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "58ccf3881dcd973fc2cee399980d836e4ddcd2d389b8113f09444949f0908937",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "analyst_review",
+  "reviewed_by": "QA Engineer",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

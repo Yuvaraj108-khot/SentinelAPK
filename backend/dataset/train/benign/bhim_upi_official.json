@@ -1,0 +1,22 @@
+{
+  "apk_name": "bhim_upi_official.apk",
+  "package_name": "in.org.npci.upiapp",
+  "app_label": "BHIM UPI NPCI",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "ground_truth": "BENIGN",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "0ea1aa61dc012efe5b1db57ce3dd67dfbf41bce0cbc57f0a662c25e7165e8390",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "public_dataset",
+  "reviewed_by": "Auditor #2",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

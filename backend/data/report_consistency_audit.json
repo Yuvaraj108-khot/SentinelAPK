@@ -1,0 +1,9 @@
+{
+  "contradiction_findings": {
+    "symptom": "DEX scan section reported Accessibility signatures as FOUND, but the narrative section reported Accessibility service abuse is not expected.",
+    "root_cause": "The local XAI fallback analysis engine in llm_client.py was evaluating has_accessibility solely by checking if the BIND_ACCESSIBILITY_SERVICE permission was declared in the manifest. It ignored the bytecode analysis indicators, resulting in a narrative claiming abuse was not expected even when accessibility code patterns were found in the DEX scan."
+  },
+  "resolution": "Modified llm_client.py fallback analysis to evaluate accessibility, SMS, and overlay threat narratives using BOTH manifest permissions and bytecode DEX indicators. When bytecode indicators are present without manifest permissions, the narrative now correctly flags a SUSPICIOUS FINDING explaining the contradiction, ensuring complete consistency."
+}
+
+

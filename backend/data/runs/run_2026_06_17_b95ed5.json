@@ -1,0 +1,196 @@
+{
+  "run_id": "run_2026_06_17_b95ed5",
+  "timestamp": "2026-06-17T03:39:34.977615",
+  "dataset_hash": "1d302a40f1ade340ef67bb654837768d84828ca53aa82da21ade39bf913794c2",
+  "engine_version": "3.0.0",
+  "rules_version": "3.0.0",
+  "classification_mode": "binary",
+  "positive_classes": [
+    "MALICIOUS",
+    "SUSPICIOUS"
+  ],
+  "dataset_composition": {
+    "total": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15
+  },
+  "predictions": [
+    {
+      "apk_name": "bhim_upi_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 0,
+      "classification": "TN"
+    },
+    {
+      "apk_name": "hdfc_bank_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 0,
+      "classification": "TN"
+    },
+    {
+      "apk_name": "icici_imobile_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 0,
+      "classification": "TN"
+    },
+    {
+      "apk_name": "paytm_wallet_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 0,
+      "classification": "TN"
+    },
+    {
+      "apk_name": "sbi_yono_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 0,
+      "classification": "TN"
+    },
+    {
+      "apk_name": "fake_hdfc_rewards.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 0,
+      "classification": "FN"
+    },
+    {
+      "apk_name": "fake_icici_verify.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 0,
+      "classification": "FN"
+    },
+    {
+      "apk_name": "fake_kyc_update.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 0,
+      "classification": "FN"
+    },
+    {
+      "apk_name": "fake_sbi_login.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 80,
+      "risk_score": 38,
+      "classification": "TP"
+    },
+    {
+      "apk_name": "fake_upi_cashback.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 80,
+      "risk_score": 38,
+      "classification": "TP"
+    },
+    {
+      "apk_name": "accessibility_abuse.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 80,
+      "risk_score": 35,
+      "classification": "TP"
+    },
+    {
+      "apk_name": "banking_cred_stealer.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 80,
+      "risk_score": 63,
+      "classification": "TP"
+    },
+    {
+      "apk_name": "otp_stealer.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 28,
+      "classification": "FN"
+    },
+    {
+      "apk_name": "overlay_trojan.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 80,
+      "risk_score": 66,
+      "classification": "TP"
+    },
+    {
+      "apk_name": "remote_control.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 80,
+      "risk_score": 73,
+      "classification": "TP"
+    }
+  ],
+  "metrics": {
+    "accuracy": 0.73,
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1_score": 0.75,
+    "confusion_matrix": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 5,
+      "fn": 4
+    }
+  },
+  "baseline_metrics": {
+    "accuracy": 0.67,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 5
+    }
+  },
+  "verify_metrics": {
+    "accuracy": 0.73,
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1_score": 0.75,
+    "confusion_matrix": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 5,
+      "fn": 4
+    }
+  },
+  "weights_before": {
+    "READ_SMS": 26,
+    "ACCESSIBILITY": 34,
+    "SYSTEM_ALERT_WINDOW": 38,
+    "DexClassLoader": 20,
+    "Reflection": 14,
+    "UnknownCertificate": 40,
+    "PackageImpersonation": 46
+  },
+  "weights_after": {
+    "READ_SMS": 28,
+    "ACCESSIBILITY": 35,
+    "SYSTEM_ALERT_WINDOW": 38,
+    "DexClassLoader": 20,
+    "Reflection": 14,
+    "UnknownCertificate": 40,
+    "PackageImpersonation": 49
+  },
+  "learning_applied": true,
+  "rolled_back": false,
+  "snapshot_path": "C:\\Users\\YUVARAJ KHOT\\my files\\Desktop\\project\\SentinelAPK\\backend\\data\\weight_snapshots\\snapshot_20260617_033934_run_2026_06_17_b95ed5.json"
+}

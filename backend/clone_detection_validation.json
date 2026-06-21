@@ -1,0 +1,10 @@
+{
+  "test_target": "SecureBank Clone",
+  "package_name": "com.securebank.plus",
+  "brand_similarity": 95,
+  "package_similarity": 90,
+  "certificate_match": false,
+  "clone_risk_outcome": "HIGH",
+  "verdict": "MALICIOUS",
+  "status": "PASSED"
+}

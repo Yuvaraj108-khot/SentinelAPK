@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-06-19T14:49:15.625382Z",
+  "audit_target": "Dalvik exact signature match validation",
+  "signatures_audited": [
+    {
+      "descriptor": "Landroid/accessibilityservice/AccessibilityService;",
+      "purpose": "Accessibility API interaction"
+    },
+    {
+      "descriptor": "Ljava/lang/Runtime;->exec",
+      "purpose": "Shell command execution"
+    },
+    {
+      "descriptor": "Ldalvik/system/DexClassLoader;",
+      "purpose": "Dynamic code loading"
+    },
+    {
+      "descriptor": "Landroid/view/WindowManager$LayoutParams;",
+      "purpose": "System overlay window creation"
+    }
+  ],
+  "false_positive_on_benign_app": false,
+  "exact_match_mechanism": "Targeted binary signature scan replacing naive substring search",
+  "status": "PASSED"
+}

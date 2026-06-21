@@ -1,0 +1,1274 @@
+[
+  {
+    "apk_name": "gpay_rewards_clone.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:11:38.771926"
+  },
+  {
+    "apk_name": "icici_clone_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:11:38.771926"
+  },
+  {
+    "apk_name": "yono_sbi_helper.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:11:38.772477"
+  },
+  {
+    "apk_name": "gpay_rewards_clone.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:11:38.861951"
+  },
+  {
+    "apk_name": "icici_clone_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:11:38.861951"
+  },
+  {
+    "apk_name": "yono_sbi_helper.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:11:38.862483"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.767370"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.767370"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.767925"
+  },
+  {
+    "apk_name": "fake_sbi_login.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.767925"
+  },
+  {
+    "apk_name": "fake_upi_cashback.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.767925"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.768456"
+  },
+  {
+    "apk_name": "remote_control.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.769529"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.781551"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.782172"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.782724"
+  },
+  {
+    "apk_name": "fake_sbi_login.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.782724"
+  },
+  {
+    "apk_name": "fake_upi_cashback.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.783242"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.783242"
+  },
+  {
+    "apk_name": "remote_control.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:15:10.784338"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.260364"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.260364"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.260364"
+  },
+  {
+    "apk_name": "fake_sbi_login.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.260364"
+  },
+  {
+    "apk_name": "fake_upi_cashback.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.261110"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.261110"
+  },
+  {
+    "apk_name": "remote_control.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.261954"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.279401"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.279946"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.280716"
+  },
+  {
+    "apk_name": "fake_sbi_login.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.280716"
+  },
+  {
+    "apk_name": "fake_upi_cashback.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.280716"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.281228"
+  },
+  {
+    "apk_name": "remote_control.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:25:00.281787"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.692383"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.692383"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.692383"
+  },
+  {
+    "apk_name": "fake_sbi_login.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.692383"
+  },
+  {
+    "apk_name": "fake_upi_cashback.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.692383"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.692383"
+  },
+  {
+    "apk_name": "remote_control.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.693888"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.722091"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.722091"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.722091"
+  },
+  {
+    "apk_name": "fake_sbi_login.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.722091"
+  },
+  {
+    "apk_name": "fake_upi_cashback.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.722617"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.722617"
+  },
+  {
+    "apk_name": "remote_control.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:27:59.723696"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:29:43.130764"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:29:43.131277"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:29:43.131277"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:29:43.131789"
+  },
+  {
+    "apk_name": "otp_stealer.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:29:43.132309"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:29:43.169297"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:29:43.169297"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:29:43.169834"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:29:43.170877"
+  },
+  {
+    "apk_name": "otp_stealer.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:29:43.171403"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.399635"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.399635"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.400439"
+  },
+  {
+    "apk_name": "fake_sbi_login.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.401160"
+  },
+  {
+    "apk_name": "fake_upi_cashback.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.401160"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.401707"
+  },
+  {
+    "apk_name": "otp_stealer.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.402249"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.432955"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.432955"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.433487"
+  },
+  {
+    "apk_name": "fake_sbi_login.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.433487"
+  },
+  {
+    "apk_name": "fake_upi_cashback.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.434014"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.434562"
+  },
+  {
+    "apk_name": "otp_stealer.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:33:35.434562"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:03.225933"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:03.226451"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:03.226451"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:03.227487"
+  },
+  {
+    "apk_name": "otp_stealer.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:03.227487"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:03.271008"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:03.271566"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:03.271566"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:03.274389"
+  },
+  {
+    "apk_name": "otp_stealer.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:03.274922"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:34.949604"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:34.949604"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:34.950117"
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:34.951170"
+  },
+  {
+    "apk_name": "otp_stealer.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:34.951170"
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:34.988243"
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:34.988243"
+  },
+  {
+    "apk_name": "fake_kyc_update.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:34.988751"
+  },
+  {
+    "apk_name": "otp_stealer.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T03:39:34.990797"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:27:12.430718"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:27:12.430718"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:27:12.789489"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:27:12.789489"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:39:51.506530"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:39:51.506530"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:46:19.940205"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:46:19.940205"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:46:20.162638"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:46:20.162638"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:55:48.804944"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:55:48.804944"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:55:49.017704"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:55:49.017704"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:59:33.313915"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:59:33.313915"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:59:33.519572"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T07:59:33.519572"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T08:12:45.953294"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T08:12:45.953294"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T08:12:47.385070"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T08:12:47.385070"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T08:20:22.850620"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T08:20:22.850620"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T08:20:23.130118"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 70,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T08:20:23.130118"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T10:25:07.591653"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T10:25:07.591653"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T10:25:07.803166"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T10:25:07.803166"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T12:01:53.451509"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T12:01:53.451509"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T12:01:53.721973"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T12:01:53.721973"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:42:35.575140"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:42:35.575140"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:42:35.823103"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:42:35.823103"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:43:46.588688"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:43:46.588688"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:43:46.873702"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:43:46.873702"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:46:28.840579"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:46:28.840579"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:52:27.564020"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:52:27.564020"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:52:30.029163"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:52:30.029163"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:59:54.031811"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T13:59:54.031811"
+  },
+  {
+    "apk_name": "fake_axis_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T15:50:06.850483"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 60,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T15:50:06.850483"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 60,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T15:50:06.850483"
+  },
+  {
+    "apk_name": "fake_phonepe_scratch.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T15:50:06.850483"
+  },
+  {
+    "apk_name": "fake_yono_lite.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-17T15:50:06.850483"
+  },
+  {
+    "apk_name": "fake_axis_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-18T02:34:41.208710"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 60,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-18T02:34:41.208710"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 60,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-18T02:34:41.208710"
+  },
+  {
+    "apk_name": "fake_phonepe_scratch.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-18T02:34:41.208710"
+  },
+  {
+    "apk_name": "fake_yono_lite.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-18T02:34:41.208710"
+  },
+  {
+    "apk_name": "fake_axis_rewards.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-18T03:00:10.838565"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 60,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-18T03:00:10.838565"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 60,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-18T03:00:10.838565"
+  },
+  {
+    "apk_name": "fake_phonepe_scratch.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-18T03:00:10.838565"
+  },
+  {
+    "apk_name": "fake_yono_lite.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 80,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-18T03:00:10.838565"
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 76,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-21T15:17:27.225972"
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "ground_truth": "SUSPICIOUS",
+    "prediction": "SAFE",
+    "confidence": 76,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-21T15:17:27.225972"
+  },
+  {
+    "apk_name": "dropper_dynamic.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 76,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-06-21T15:17:27.225972"
+  }
+]

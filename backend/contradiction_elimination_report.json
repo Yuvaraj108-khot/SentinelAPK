@@ -1,0 +1,13 @@
+{
+  "status": "PASSED",
+  "contradictions_found": 0,
+  "resolved_subsystems": [
+    "UI Cards",
+    "PDF Reports",
+    "API Responses",
+    "Executive Summary",
+    "MITRE Mapping",
+    "Groq / Fallback Narratives"
+  ],
+  "verdict": "ELIMINATED"
+}

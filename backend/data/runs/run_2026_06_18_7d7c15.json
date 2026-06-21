@@ -1,0 +1,662 @@
+{
+  "run_id": "run_2026_06_18_7d7c15",
+  "timestamp": "2026-06-18T05:47:38.553867",
+  "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+  "engine_version": "3.0.0",
+  "rules_version": "3.0.0",
+  "classification_mode": "binary",
+  "weights_before": {
+    "READ_SMS": 20,
+    "ACCESSIBILITY": 25,
+    "SYSTEM_ALERT_WINDOW": 20,
+    "DexClassLoader": 15,
+    "DEX_SMS": 12,
+    "Reflection": 10,
+    "UnknownCertificate": 10,
+    "PackageImpersonation": 20,
+    "SamePkgForgery": 75,
+    "RuntimeExec": 8,
+    "WebviewBridge": 8,
+    "SuspiciousUrl": 5
+  },
+  "weights_after": {
+    "READ_SMS": 20,
+    "ACCESSIBILITY": 25,
+    "SYSTEM_ALERT_WINDOW": 20,
+    "DexClassLoader": 15,
+    "DEX_SMS": 12,
+    "Reflection": 10,
+    "UnknownCertificate": 10,
+    "PackageImpersonation": 20,
+    "SamePkgForgery": 75,
+    "RuntimeExec": 8,
+    "WebviewBridge": 8,
+    "SuspiciousUrl": 5
+  },
+  "learning_success": false,
+  "counts": {
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "total": 30
+  },
+  "train_metrics": {
+    "before": {
+      "accuracy": 0.93,
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.95,
+      "confusion_matrix": {
+        "tp": 9,
+        "fp": 0,
+        "tn": 5,
+        "fn": 1
+      }
+    },
+    "after": {
+      "accuracy": 0.93,
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.95,
+      "confusion_matrix": {
+        "tp": 9,
+        "fp": 0,
+        "tn": 5,
+        "fn": 1
+      }
+    }
+  },
+  "validation_metrics": {
+    "before": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "confusion_matrix": {
+        "tp": 10,
+        "fp": 0,
+        "tn": 5,
+        "fn": 0
+      }
+    },
+    "after": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "confusion_matrix": {
+        "tp": 10,
+        "fp": 0,
+        "tn": 5,
+        "fn": 0
+      }
+    }
+  },
+  "predictions": [
+    {
+      "apk_name": "airtel_thanks_official.apk",
+      "app_name": "Airtel Thanks",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 60,
+      "risk_score": 10,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TN",
+      "package_name": "com.myairtelapp",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "a2c5a0f72e0f2aebfc180ab23b1c7cfd62bb073dd712b007ed12294f18d405dc",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "gpay_india_official.apk",
+      "app_name": "Google Pay",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 60,
+      "risk_score": 10,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TN",
+      "package_name": "com.google.android.apps.nbu.paisa.user",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "58ccf3881dcd973fc2cee399980d836e4ddcd2d389b8113f09444949f0908937",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "mobikwik_official.apk",
+      "app_name": "MobiKwik",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 60,
+      "risk_score": 10,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TN",
+      "package_name": "com.mobikwik_new",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "7f3729952cd33a2d09f047ddef0d3506e7515ef52e841b1eab848a411157a86b",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "paytm_wallet_official.apk",
+      "app_name": "Paytm Wallet",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 60,
+      "risk_score": 10,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TN",
+      "package_name": "net.one97.paytm",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "03ed43817be7b97ac22ca5d895c85d02eb4f0d814e9179118ba5df6d3ac7c2aa",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "phonepe_official.apk",
+      "app_name": "PhonePe",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 60,
+      "risk_score": 10,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TN",
+      "package_name": "com.phonepe.app",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "a8ba25a4f81017ec4b2f55b66e4f1b0f6fe5e5574f23ef5f1bd3666f91378b76",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "fake_axis_rewards.apk",
+      "app_name": "Axis Mobile Rewards",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 98,
+      "risk_score": 66,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.axis.mobile.rewards",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "8630ad16507f63f74c19f68f08e6b5e6b3f02fa1380a9f26d9f4a4a8e88bb222",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "fake_gpay_bonus.apk",
+      "app_name": "Google Pay Bonus Hub Gift",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 86,
+      "risk_score": 36,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.gpay.bonus.helper.gift",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.REQUEST_INSTALL_PACKAGES"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "ada791e7354411218665e8d1e187614bb8c23055f8a06fbaa27f0e0b3ae6a5ff",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "fake_paytm_offers.apk",
+      "app_name": "Paytm Wallet Cashback Offers",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 86,
+      "risk_score": 36,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "net.one97.paytm.cashback",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.REQUEST_INSTALL_PACKAGES"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "8d73e5ae9b5aeb55b72001fe84da4702e295fcb89465a55e32623f5b9df08980",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "fake_phonepe_scratch.apk",
+      "app_name": "PhonePe Scratch Card Helper",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 98,
+      "risk_score": 66,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.phonepe.scratchcard.helper",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "ac5092c511ee00d166fb52a44dfd550e786ab5e7d8a58f5e5bc501631242ecb8",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "fake_yono_lite.apk",
+      "app_name": "Yono Lite SBI Official Support",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 98,
+      "risk_score": 66,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.sbi.yono.lite.support",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "e25dff064136622fef8c1cd6cd47fb752f340b8ed299539d57971a072c456890",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": "State Bank of India",
+        "brand_similarity": 41,
+        "package_similarity": 53,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "dropper_dynamic.apk",
+      "app_name": "PDF Reader Pro Upgrade",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 86,
+      "risk_score": 36,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.pdfreader.pro.helper",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.REQUEST_INSTALL_PACKAGES"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "a97d2adbd5a8095cb28c1e9e95c14459d17f8e13edd2fbcae8599781891c98a8",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "overlay_dropper.apk",
+      "app_name": "VLC Video Codec",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 98,
+      "risk_score": 89,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "org.videolan.vlc.codec",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.BIND_ACCESSIBILITY_SERVICE"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "64899bf6e769e9857886ee8785c79881111d7a2378300bf5896a2ea52e8e17e9",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "overlay_spyware.apk",
+      "app_name": "WhatsApp Theme Hub",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 98,
+      "risk_score": 83,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.wa.theme.hub",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_SMS"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "5bc0570b1148c71e0bfb98512ec459245e331d27e1bcae58b4b480f13c6860cb",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "rat_accessibility.apk",
+      "app_name": "Auto Clicker Expert",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 95,
+      "risk_score": 45,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.autoclicker.expert",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.BIND_ACCESSIBILITY_SERVICE"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "89309f3dcaa67b0bd4f7b26171cd99daa3bc9e3666c4c406b0bed2b421ad1d60",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    },
+    {
+      "apk_name": "spy_trojan.apk",
+      "app_name": "Device Care Manager",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 92,
+      "risk_score": 42,
+      "evaluation_mode": "synthetic_apk",
+      "classification": "TP",
+      "package_name": "com.device.care.manager",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.READ_SMS",
+        "android.permission.RECEIVE_SMS"
+      ],
+      "dex_indicators": {},
+      "certificates": [
+        {
+          "issuer": "CN=Android Debug, O=Android, C=US",
+          "subject": "CN=Android Debug, O=Android, C=US",
+          "serial_number": "12345678",
+          "sha256": "6a0683b31cf8172f86f05f4cf1efd06fa178037f699f332fb83f557dc7727f45",
+          "sha1": "SHA1:12:34:56"
+        }
+      ],
+      "clone_findings": {
+        "is_clone": false,
+        "official_target": null,
+        "brand_similarity": 0,
+        "package_similarity": 0,
+        "certificate_match": false,
+        "clone_risk": "LOW"
+      },
+      "cert_findings": {
+        "is_trusted": false,
+        "reputation_issue": "Unknown / Self-signed certificate"
+      }
+    }
+  ],
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    }
+  }
+}

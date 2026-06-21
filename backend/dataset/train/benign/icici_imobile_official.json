@@ -1,0 +1,22 @@
+{
+  "apk_name": "icici_imobile_official.apk",
+  "package_name": "com.csam.icici.shop.imobile",
+  "app_label": "iMobile Pay",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "ground_truth": "BENIGN",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "2a980c57def53baba167dd9067e29a88e7d13073ed4358271853bc07c05b4be9",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "public_dataset",
+  "reviewed_by": "Auditor #1",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

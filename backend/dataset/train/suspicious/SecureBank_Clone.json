@@ -1,0 +1,22 @@
+{
+  "apk_name": "SecureBank_Clone.apk",
+  "package_name": "com.securebank.official",
+  "app_label": "SecureBank Clone",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "ground_truth": "SUSPICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "a36a2de2c6fd4ea62d16bca34bc1793625be70506ad11dfb2c74117c606e2e86",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "analyst_review",
+  "reviewed_by": "Fraud Team",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

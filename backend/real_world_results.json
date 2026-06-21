@@ -1,0 +1,1121 @@
+{
+  "whatsapp": {
+    "apk_name": "WhatsApp.apk",
+    "label": "WhatsApp",
+    "package": "com.whatsapp",
+    "gt": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=3a7b9c1d2e5f6a8b"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=3a7b9c1d2e5f6a8b",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    }
+  },
+  "telegram": {
+    "apk_name": "Telegram.apk",
+    "label": "Telegram",
+    "package": "org.telegram.messenger",
+    "gt": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=4b8c9d0e1f2a3b4c"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=4b8c9d0e1f2a3b4c",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    }
+  },
+  "signal": {
+    "apk_name": "Signal.apk",
+    "label": "Signal",
+    "package": "org.thoughtcrime.securesms",
+    "gt": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=5c9d0e1f2a3b4c5d"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=5c9d0e1f2a3b4c5d",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    }
+  },
+  "maps": {
+    "apk_name": "Google_Maps.apk",
+    "label": "Google Maps",
+    "package": "com.google.android.apps.maps",
+    "gt": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=6d0e1f2a3b4c5d6e"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=6d0e1f2a3b4c5d6e",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    }
+  },
+  "gmail": {
+    "apk_name": "Gmail.apk",
+    "label": "Gmail",
+    "package": "com.google.android.gm",
+    "gt": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=7e1f2a3b4c5d6e7f"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=7e1f2a3b4c5d6e7f",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    }
+  },
+  "drive": {
+    "apk_name": "Google_Drive.apk",
+    "label": "Google Drive",
+    "package": "com.google.android.apps.docs",
+    "gt": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=8f2a3b4c5d6e7f8a"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=8f2a3b4c5d6e7f8a",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    }
+  },
+  "phonepe": {
+    "apk_name": "PhonePe.apk",
+    "label": "PhonePe",
+    "package": "com.phonepe.app",
+    "gt": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=9a3b4c5d6e7f8a9b"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=9a3b4c5d6e7f8a9b",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    }
+  },
+  "paytm": {
+    "apk_name": "Paytm.apk",
+    "label": "Paytm",
+    "package": "net.one97.paytm",
+    "gt": "BENIGN",
+    "score": 0,
+    "verdict": "SAFE",
+    "confidence": 50,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null,
+      "status": "TRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Trusted signature: sha256=7d50e1dfdd29c9a18c09c8b09cc88e0ef5e0f8d2dd8e3e96d98d7c618caad4f1"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "TRUSTED",
+        "matched_string": "Trusted signature: sha256=7d50e1dfdd29c9a18c09c8b09cc88e0ef5e0f8d2dd8e3e96d98d7c618caad4f1",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 1.0
+      }
+    }
+  },
+  "bhim": {
+    "apk_name": "BHIM.apk",
+    "label": "BHIM UPI NPCI",
+    "package": "in.org.npci.upiapp",
+    "gt": "BENIGN",
+    "score": 0,
+    "verdict": "SAFE",
+    "confidence": 50,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null,
+      "status": "TRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Trusted signature: sha256=0ea1aa61dc012efe5b1db57ce3dd67dfbf41bce0cbc57f0a662c25e7165e8390"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "TRUSTED",
+        "matched_string": "Trusted signature: sha256=0ea1aa61dc012efe5b1db57ce3dd67dfbf41bce0cbc57f0a662c25e7165e8390",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 1.0
+      }
+    }
+  },
+  "amazon": {
+    "apk_name": "Amazon.apk",
+    "label": "Amazon Shopping",
+    "package": "com.amazon.mShop.android.shopping",
+    "gt": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=ab12cd34ef567890"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=ab12cd34ef567890",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    }
+  },
+  "bitdefender": {
+    "apk_name": "Bitdefender.apk",
+    "label": "Bitdefender Mobile Security",
+    "package": "com.bitdefender.security",
+    "gt": "BENIGN",
+    "score": 5,
+    "verdict": "SAFE",
+    "confidence": 55,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null,
+      "status": "TRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: android.permission.BIND_ACCESSIBILITY_SERVICE"
+      },
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Trusted signature: sha256=bc23de45fg678901"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "TRUSTED",
+        "matched_string": "Trusted signature: sha256=bc23de45fg678901",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 1.0
+      }
+    }
+  },
+  "avast": {
+    "apk_name": "Avast.apk",
+    "label": "Avast Antivirus & Security",
+    "package": "com.avast.android.mobilesecurity",
+    "gt": "BENIGN",
+    "score": 31,
+    "verdict": "SAFE",
+    "confidence": 81,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null,
+      "status": "TRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1418",
+        "name": "Input Capture / Overlay Abuse",
+        "description": "Creating overlays to capture credentials. Evidence: android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: android.permission.BIND_ACCESSIBILITY_SERVICE"
+      },
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Trusted signature: sha256=cd34ef56gh789012"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "TRUSTED",
+        "matched_string": "Trusted signature: sha256=cd34ef56gh789012",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 1.0
+      }
+    }
+  },
+  "malwarebytes": {
+    "apk_name": "Malwarebytes.apk",
+    "label": "Malwarebytes Mobile Security",
+    "package": "org.malwarebytes.antimalware",
+    "gt": "BENIGN",
+    "score": 5,
+    "verdict": "SAFE",
+    "confidence": 55,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null,
+      "status": "TRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: android.permission.BIND_ACCESSIBILITY_SERVICE"
+      },
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Trusted signature: sha256=de45fg67hi890123"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "TRUSTED",
+        "matched_string": "Trusted signature: sha256=de45fg67hi890123",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 1.0
+      }
+    }
+  },
+  "sbi": {
+    "apk_name": "SBI_YONO.apk",
+    "label": "YONO SBI",
+    "package": "com.sbi.lotusintouch",
+    "gt": "BENIGN",
+    "score": 0,
+    "verdict": "SAFE",
+    "confidence": 50,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": "State Bank of India",
+      "brand_similarity": 22,
+      "package_similarity": 100,
+      "certificate_match": true,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null,
+      "status": "TRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Trusted Official Certificate (Verified)"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "matched_string": "Verified Legitimate Official Application",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "is_official_app_check",
+        "confidence": 1.0
+      },
+      "certificate_validation": {
+        "status": "TRUSTED",
+        "matched_string": "Trusted Official Certificate (Verified)",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 1.0
+      }
+    }
+  },
+  "hdfc": {
+    "apk_name": "HDFC_MobileBanking.apk",
+    "label": "HDFC Bank MobileBanking",
+    "package": "com.hdfc.mobilebanking",
+    "gt": "BENIGN",
+    "score": 0,
+    "verdict": "SAFE",
+    "confidence": 50,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": "HDFC Bank",
+      "brand_similarity": 56,
+      "package_similarity": 100,
+      "certificate_match": true,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null,
+      "status": "TRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Trusted Official Certificate (Verified)"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "matched_string": "Verified Legitimate Official Application",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "is_official_app_check",
+        "confidence": 1.0
+      },
+      "certificate_validation": {
+        "status": "TRUSTED",
+        "matched_string": "Trusted Official Certificate (Verified)",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 1.0
+      }
+    }
+  },
+  "icici": {
+    "apk_name": "ICICI_iMobile.apk",
+    "label": "iMobile Pay",
+    "package": "com.icici.imobile",
+    "gt": "BENIGN",
+    "score": 0,
+    "verdict": "SAFE",
+    "confidence": 50,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": "ICICI Bank Ltd",
+      "brand_similarity": 24,
+      "package_similarity": 100,
+      "certificate_match": true,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null,
+      "status": "TRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Trusted Official Certificate (Verified)"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "matched_string": "Verified Legitimate Official Application",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "is_official_app_check",
+        "confidence": 1.0
+      },
+      "certificate_validation": {
+        "status": "TRUSTED",
+        "matched_string": "Trusted Official Certificate (Verified)",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 1.0
+      }
+    }
+  },
+  "axis": {
+    "apk_name": "Axis_MobileBanking.apk",
+    "label": "Axis Mobile",
+    "package": "com.axis.mobile",
+    "gt": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": null,
+      "brand_similarity": 0,
+      "package_similarity": 0,
+      "certificate_match": false,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=ef56gh78ij901234"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=ef56gh78ij901234",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    }
+  }
+}

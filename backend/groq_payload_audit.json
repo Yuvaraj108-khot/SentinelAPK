@@ -1,0 +1,7 @@
+{
+  "only_allowed_fields_sent": true,
+  "apk_bytes_forbidden": true,
+  "manifest_xml_forbidden": true,
+  "dex_bytes_forbidden": true,
+  "status": "PASS"
+}

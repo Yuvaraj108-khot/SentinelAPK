@@ -1,0 +1,159 @@
+{
+  "metrics_comparison": {
+    "before_hardening": {
+      "accuracy": 0.9667,
+      "precision": 1.0,
+      "recall": 0.95,
+      "f1": 0.9744
+    },
+    "after_hardening": {
+      "accuracy": 0.8667,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889
+    }
+  },
+  "risk_ordering": [
+    {
+      "apk_name": "SecureBank_Official.apk",
+      "score": 0,
+      "verdict": "SAFE",
+      "confidence": 50
+    },
+    {
+      "apk_name": "SecureBank_Plus.apk",
+      "score": 82,
+      "verdict": "MALICIOUS",
+      "confidence": 98
+    },
+    {
+      "apk_name": "SecureBank_Clone.apk",
+      "score": 70,
+      "verdict": "MALICIOUS",
+      "confidence": 98
+    }
+  ],
+  "learning_effectiveness": {
+    "threat_apps_escalated_by_memory": [
+      {
+        "apk_name": "SecureBank_Plus.apk",
+        "ground_truth": "SUSPICIOUS",
+        "score_before_memory": 50,
+        "score_after_memory": 82,
+        "verdict_before_memory": "SUSPICIOUS",
+        "verdict_after_memory": "MALICIOUS",
+        "lessons_count": 3
+      },
+      {
+        "apk_name": "fake_hdfc_rewards.apk",
+        "ground_truth": "SUSPICIOUS",
+        "score_before_memory": 30,
+        "score_after_memory": 51,
+        "verdict_before_memory": "SAFE",
+        "verdict_after_memory": "SUSPICIOUS",
+        "lessons_count": 2
+      },
+      {
+        "apk_name": "fake_sbi_login.apk",
+        "ground_truth": "SUSPICIOUS",
+        "score_before_memory": 30,
+        "score_after_memory": 62,
+        "verdict_before_memory": "SAFE",
+        "verdict_after_memory": "SUSPICIOUS",
+        "lessons_count": 3
+      },
+      {
+        "apk_name": "overlay_trojan.apk",
+        "ground_truth": "MALICIOUS",
+        "score_before_memory": 50,
+        "score_after_memory": 71,
+        "verdict_before_memory": "SUSPICIOUS",
+        "verdict_after_memory": "MALICIOUS",
+        "lessons_count": 3
+      },
+      {
+        "apk_name": "remote_control.apk",
+        "ground_truth": "MALICIOUS",
+        "score_before_memory": 55,
+        "score_after_memory": 76,
+        "verdict_before_memory": "SUSPICIOUS",
+        "verdict_after_memory": "MALICIOUS",
+        "lessons_count": 3
+      },
+      {
+        "apk_name": "fake_axis_rewards.apk",
+        "ground_truth": "SUSPICIOUS",
+        "score_before_memory": 30,
+        "score_after_memory": 66,
+        "verdict_before_memory": "SAFE",
+        "verdict_after_memory": "SUSPICIOUS",
+        "lessons_count": 3
+      },
+      {
+        "apk_name": "fake_gpay_bonus.apk",
+        "ground_truth": "SUSPICIOUS",
+        "score_before_memory": 10,
+        "score_after_memory": 36,
+        "verdict_before_memory": "SAFE",
+        "verdict_after_memory": "SUSPICIOUS",
+        "lessons_count": 2
+      },
+      {
+        "apk_name": "fake_paytm_offers.apk",
+        "ground_truth": "SUSPICIOUS",
+        "score_before_memory": 10,
+        "score_after_memory": 36,
+        "verdict_before_memory": "SAFE",
+        "verdict_after_memory": "SUSPICIOUS",
+        "lessons_count": 2
+      },
+      {
+        "apk_name": "fake_phonepe_scratch.apk",
+        "ground_truth": "SUSPICIOUS",
+        "score_before_memory": 30,
+        "score_after_memory": 66,
+        "verdict_before_memory": "SAFE",
+        "verdict_after_memory": "SUSPICIOUS",
+        "lessons_count": 3
+      },
+      {
+        "apk_name": "fake_yono_lite.apk",
+        "ground_truth": "SUSPICIOUS",
+        "score_before_memory": 30,
+        "score_after_memory": 66,
+        "verdict_before_memory": "SAFE",
+        "verdict_after_memory": "SUSPICIOUS",
+        "lessons_count": 3
+      },
+      {
+        "apk_name": "dropper_dynamic.apk",
+        "ground_truth": "MALICIOUS",
+        "score_before_memory": 10,
+        "score_after_memory": 31,
+        "verdict_before_memory": "SAFE",
+        "verdict_after_memory": "SAFE",
+        "lessons_count": 2
+      },
+      {
+        "apk_name": "overlay_dropper.apk",
+        "ground_truth": "MALICIOUS",
+        "score_before_memory": 55,
+        "score_after_memory": 76,
+        "verdict_before_memory": "SUSPICIOUS",
+        "verdict_after_memory": "MALICIOUS",
+        "lessons_count": 3
+      },
+      {
+        "apk_name": "overlay_spyware.apk",
+        "ground_truth": "MALICIOUS",
+        "score_before_memory": 50,
+        "score_after_memory": 71,
+        "verdict_before_memory": "SUSPICIOUS",
+        "verdict_after_memory": "MALICIOUS",
+        "lessons_count": 3
+      }
+    ],
+    "benign_apps_influenced_by_memory": [],
+    "incorrect_escalations": []
+  }
+}

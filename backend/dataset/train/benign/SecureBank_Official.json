@@ -1,0 +1,22 @@
+{
+  "apk_name": "SecureBank_Official.apk",
+  "package_name": "com.securebank.official",
+  "app_label": "SecureBank Official",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "ground_truth": "BENIGN",
+  "certificates": [
+    {
+      "issuer": "CN=SecureBank Official, O=SecureBank, C=US",
+      "subject": "CN=SecureBank Official, O=SecureBank, C=US",
+      "serial_number": "12345678",
+      "sha256": "86f71bae47be40288086f28795563ba741a101ad98387cc934e1b68bfee539fa",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "analyst_review",
+  "reviewed_by": "QA Engineer",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

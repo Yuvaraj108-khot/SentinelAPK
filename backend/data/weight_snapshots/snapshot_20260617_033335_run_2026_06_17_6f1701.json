@@ -1,0 +1,37 @@
+{
+  "READ_SMS": {
+    "value": 20,
+    "min": 5,
+    "max": 50
+  },
+  "ACCESSIBILITY": {
+    "value": 28,
+    "min": 5,
+    "max": 50
+  },
+  "SYSTEM_ALERT_WINDOW": {
+    "value": 32,
+    "min": 5,
+    "max": 50
+  },
+  "DexClassLoader": {
+    "value": 18,
+    "min": 5,
+    "max": 40
+  },
+  "Reflection": {
+    "value": 12,
+    "min": 2,
+    "max": 30
+  },
+  "UnknownCertificate": {
+    "value": 27,
+    "min": 5,
+    "max": 40
+  },
+  "PackageImpersonation": {
+    "value": 35,
+    "min": 5,
+    "max": 50
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "trojans_audited": {
+    "securebank_clone": {
+      "name": "SecureBank Clone",
+      "verdict": "MALICIOUS",
+      "score": 85,
+      "classification_retained": true
+    },
+    "securebank_plus": {
+      "name": "SecureBank Plus",
+      "verdict": "MALICIOUS",
+      "score": 82,
+      "classification_retained": true
+    },
+    "fake_sbi_login": {
+      "name": "Yono SBI Rewards Hub",
+      "verdict": "SUSPICIOUS",
+      "score": 62,
+      "classification_retained": true
+    },
+    "overlay_trojan": {
+      "name": "Flash Player Update",
+      "verdict": "MALICIOUS",
+      "score": 71,
+      "classification_retained": true
+    },
+    "banking_cred_stealer": {
+      "name": "Chrome Update Service",
+      "verdict": "SUSPICIOUS",
+      "score": 55,
+      "classification_retained": true
+    }
+  }
+}

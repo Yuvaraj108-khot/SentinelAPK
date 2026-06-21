@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "accessibility": {
+      "source_variable": "evidence_validation['accessibility']",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_line_number": 381,
+      "transformation_chain": "RiskEngine.calculate_risk() -> risk_data['evidence_validation']['accessibility'] -> LLMClient.analyze_apk()",
+      "final_rendered_location": "PDF (add_dex_indicators), UI Cards, LLM Narrative"
+    },
+    "overlay": {
+      "source_variable": "evidence_validation['overlay']",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_line_number": 420,
+      "transformation_chain": "RiskEngine.calculate_risk() -> risk_data['evidence_validation']['overlay'] -> LLMClient.analyze_apk()",
+      "final_rendered_location": "PDF (add_dex_indicators), UI Cards, LLM Narrative"
+    },
+    "sms": {
+      "source_variable": "evidence_validation['sms']",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_line_number": 397,
+      "transformation_chain": "RiskEngine.calculate_risk() -> risk_data['evidence_validation']['sms'] -> LLMClient.analyze_apk()",
+      "final_rendered_location": "PDF (add_dex_indicators), UI Cards, LLM Narrative"
+    },
+    "runtime_exec": {
+      "source_variable": "evidence_validation['runtime_exec']",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_line_number": 478,
+      "transformation_chain": "RiskEngine.calculate_risk() -> risk_data['evidence_validation']['runtime_exec'] -> LLMClient.analyze_apk()",
+      "final_rendered_location": "PDF (add_dex_indicators), UI Cards, LLM Narrative"
+    },
+    "dynamic_loading": {
+      "source_variable": "evidence_validation['dynamic_loading']",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_line_number": 459,
+      "transformation_chain": "RiskEngine.calculate_risk() -> risk_data['evidence_validation']['dynamic_loading'] -> LLMClient.analyze_apk()",
+      "final_rendered_location": "PDF (add_dex_indicators), UI Cards, LLM Narrative"
+    },
+    "clone_detection": {
+      "source_variable": "evidence_validation['clone_detection']",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_line_number": 234,
+      "transformation_chain": "RiskEngine.calculate_risk() -> risk_data['evidence_validation']['clone_detection'] -> LLMClient.analyze_apk()",
+      "final_rendered_location": "PDF (add_dex_indicators), UI Cards, LLM Narrative"
+    },
+    "certificate_validation": {
+      "source_variable": "evidence_validation['certificate_validation']",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_line_number": 279,
+      "transformation_chain": "RiskEngine.calculate_risk() -> risk_data['evidence_validation']['certificate_validation'] -> LLMClient.analyze_apk()",
+      "final_rendered_location": "PDF (add_dex_indicators), UI Cards, LLM Narrative"
+    }
+  }
+}

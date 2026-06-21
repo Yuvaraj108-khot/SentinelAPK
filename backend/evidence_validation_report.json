@@ -1,0 +1,88 @@
+{
+  "status": "COMPLETED",
+  "total_scanned_apks": 30,
+  "evidence_only_policy_enforced": true,
+  "verifications": [
+    {
+      "category": "Accessibility",
+      "evidence_matched": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+      "source_file": "AndroidManifest.xml",
+      "offset_location": 0,
+      "extraction_method": "manifest_permission_tag",
+      "confidence": 1.0,
+      "status": "FOUND"
+    },
+    {
+      "category": "Overlay",
+      "evidence_matched": "android.permission.SYSTEM_ALERT_WINDOW",
+      "source_file": "AndroidManifest.xml",
+      "offset_location": 0,
+      "extraction_method": "manifest_permission_tag",
+      "confidence": 1.0,
+      "status": "FOUND"
+    },
+    {
+      "category": "SMS",
+      "evidence_matched": "android.permission.READ_SMS, android.permission.RECEIVE_SMS",
+      "source_file": "AndroidManifest.xml",
+      "offset_location": 0,
+      "extraction_method": "manifest_permission_tag",
+      "confidence": 1.0,
+      "status": "FOUND"
+    },
+    {
+      "category": "Runtime.exec",
+      "evidence_matched": "Ljava/lang/Runtime;->exec",
+      "source_file": "classes.dex",
+      "offset_location": 21890,
+      "extraction_method": "dex_find_bytes",
+      "confidence": 0.95,
+      "status": "FOUND"
+    },
+    {
+      "category": "DexClassLoader",
+      "evidence_matched": "Ldalvik/system/DexClassLoader;",
+      "source_file": "classes.dex",
+      "offset_location": 18456,
+      "extraction_method": "dex_find_bytes",
+      "confidence": 0.95,
+      "status": "FOUND"
+    },
+    {
+      "category": "Reflection",
+      "evidence_matched": "Landroid/accessibilityservice/AccessibilityService;",
+      "source_file": "classes.dex",
+      "offset_location": 12892,
+      "extraction_method": "dex_find_bytes",
+      "confidence": 0.95,
+      "status": "FOUND"
+    },
+    {
+      "category": "Suspicious URL",
+      "evidence_matched": "N/A",
+      "source_file": "N/A",
+      "offset_location": 0,
+      "extraction_method": "N/A",
+      "confidence": 0.0,
+      "status": "UNKNOWN"
+    },
+    {
+      "category": "Clone Detection",
+      "evidence_matched": "Impersonates SecureBank Official (brand_sim=100%, pkg_sim=100%)",
+      "source_file": "AndroidManifest.xml",
+      "offset_location": 0,
+      "extraction_method": "manifest_similarity_comparison",
+      "confidence": 0.85,
+      "status": "FOUND"
+    },
+    {
+      "category": "Certificate Validation",
+      "evidence_matched": "Untrusted certificate: sha256=ac82e3f4e5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2",
+      "source_file": "META-INF/CERT.RSA",
+      "offset_location": 0,
+      "extraction_method": "signature_scan_comparison",
+      "confidence": 0.95,
+      "status": "FOUND"
+    }
+  ]
+}

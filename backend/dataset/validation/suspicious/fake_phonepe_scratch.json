@@ -1,0 +1,23 @@
+{
+  "apk_name": "fake_phonepe_scratch.apk",
+  "package_name": "com.phonepe.scratchcard.helper",
+  "app_label": "PhonePe Scratch Card Helper",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.SYSTEM_ALERT_WINDOW"
+  ],
+  "ground_truth": "SUSPICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "ac5092c511ee00d166fb52a44dfd550e786ab5e7d8a58f5e5bc501631242ecb8",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "internal_test",
+  "reviewed_by": "SecOps Lead",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

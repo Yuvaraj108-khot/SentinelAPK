@@ -1,0 +1,52 @@
+[
+  {
+    "feature_id": "F_001",
+    "name": "Control Flow Graph (CFG) Analysis",
+    "closes_gap": "Reflection / Indirect system calls API hiding"
+  },
+  {
+    "feature_id": "F_002",
+    "name": "Static String Decryption Heuristic Solver",
+    "closes_gap": "Encrypted strings / Obfuscated class names"
+  },
+  {
+    "feature_id": "F_003",
+    "name": "Certificate Authority Chain Validation",
+    "closes_gap": "Untrusted / Self-signed certificate masquerading"
+  },
+  {
+    "feature_id": "F_004",
+    "name": "SMS BroadcastReceiver Intent-Filter Matcher",
+    "closes_gap": "SMS theft detection via custom priority levels"
+  },
+  {
+    "feature_id": "F_005",
+    "name": "WindowLayout LayoutParams Validation",
+    "closes_gap": "Overlay abuse matching SYSTEM_ALERT_WINDOW layouts"
+  },
+  {
+    "feature_id": "F_006",
+    "name": "DexClassLoader Asset Path Validation",
+    "closes_gap": "Dynamic loading of payloads from local assets"
+  },
+  {
+    "feature_id": "F_007",
+    "name": "System API Reflection Call Tracker",
+    "closes_gap": "Accessing TelephonyManager/SmsManager via reflection"
+  },
+  {
+    "feature_id": "F_008",
+    "name": "Window Content Event Monitor Analysis",
+    "closes_gap": "Accessibility abuse tracking WindowContentChanged callbacks"
+  },
+  {
+    "feature_id": "F_009",
+    "name": "Launcher Activity Layout Comparison",
+    "closes_gap": "Fake banking clones impersonating legitimate icons/colors"
+  },
+  {
+    "feature_id": "F_010",
+    "name": "Dalvik Opcode Entropy Scanner",
+    "closes_gap": "Packed / Cryptographically wrapped payloads in classes.dex"
+  }
+]

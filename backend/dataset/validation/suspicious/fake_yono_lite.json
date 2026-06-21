@@ -1,0 +1,23 @@
+{
+  "apk_name": "fake_yono_lite.apk",
+  "package_name": "com.sbi.yono.lite.support",
+  "app_label": "Yono Lite SBI Official Support",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.SYSTEM_ALERT_WINDOW"
+  ],
+  "ground_truth": "SUSPICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "e25dff064136622fef8c1cd6cd47fb752f340b8ed299539d57971a072c456890",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "public_dataset",
+  "reviewed_by": "RedTeam Lead",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-06-19T14:49:15.624240Z",
+  "description": "Trace mapping verify that evidence, risk engine, and narrative contain zero contradictions.",
+  "scenarios": {
+    "official": {
+      "verdict": "SAFE",
+      "score": 0,
+      "clone_risk": "LOW",
+      "is_clone": false,
+      "accessibility_status": "UNKNOWN",
+      "overlay_status": "UNKNOWN",
+      "sms_status": "UNKNOWN",
+      "contradictions_found": false
+    },
+    "plus": {
+      "verdict": "MALICIOUS",
+      "score": 82,
+      "clone_risk": "HIGH",
+      "is_clone": true,
+      "accessibility_status": "UNKNOWN",
+      "overlay_status": "FOUND",
+      "sms_status": "UNKNOWN",
+      "contradictions_found": false
+    },
+    "clone": {
+      "verdict": "MALICIOUS",
+      "score": 85,
+      "clone_risk": "HIGH",
+      "is_clone": true,
+      "accessibility_status": "UNKNOWN",
+      "overlay_status": "UNKNOWN",
+      "sms_status": "UNKNOWN",
+      "contradictions_found": false
+    }
+  }
+}

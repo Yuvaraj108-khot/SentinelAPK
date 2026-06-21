@@ -1,0 +1,17 @@
+[
+  {
+    "target": "UnknownCertificate",
+    "issue": "Penalizes all valid indie and F-Droid apps as UNTRUSTED because their signatures aren't in the hardcoded known list.",
+    "action": "Lower the base penalty of UnknownCertificate. If an app has no other malicious behaviors, an unknown certificate alone should not push the risk score into SUSPICIOUS territory."
+  },
+  {
+    "target": "Reflection / Accessibility",
+    "issue": "Legitimate apps (KeePassDX, AdAway, automation tools) use performAction and onAccessibilityEvent.",
+    "action": "Reduce the base score for Accessibility hooks. Only escalate risk if Accessibility is paired with Overlay Windows or SMS sending."
+  },
+  {
+    "target": "DexClassLoader",
+    "issue": "Legitimate complex apps dynamically load modules or plugins.",
+    "action": "Reduce the static penalty for DexClassLoader. Require combination with malicious endpoints or unknown network activity."
+  }
+]

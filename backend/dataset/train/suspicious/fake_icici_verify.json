@@ -1,0 +1,23 @@
+{
+  "apk_name": "fake_icici_verify.apk",
+  "package_name": "com.icici.verification.app",
+  "app_label": "iMobile Security Guard",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.RECEIVE_BOOT_COMPLETED"
+  ],
+  "ground_truth": "SUSPICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "97a5555a741e0fcc9b55b87da618ee2a4544d6156334c15baa5471980f21870c",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "internal_test",
+  "reviewed_by": "RedTeam Lead",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

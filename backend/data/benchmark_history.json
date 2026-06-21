@@ -1,0 +1,1240 @@
+[
+  {
+    "run_id": "run_2026_06_17_a480f3",
+    "timestamp": "2026-06-17T03:11:38.776968",
+    "dataset_hash": "260bb0db9d7b38515daef0d481794fc3f1748e9758df233f1e32e34b2c41e44c",
+    "dataset_size": 10,
+    "apk_samples": 0,
+    "metadata_samples": 10,
+    "accuracy": 0.7,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 4,
+      "fn": 3
+    }
+  },
+  {
+    "run_id": "run_2026_06_17_5e63df",
+    "timestamp": "2026-06-17T03:11:38.866665",
+    "dataset_hash": "260bb0db9d7b38515daef0d481794fc3f1748e9758df233f1e32e34b2c41e44c",
+    "dataset_size": 10,
+    "apk_samples": 0,
+    "metadata_samples": 10,
+    "accuracy": 0.7,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 4,
+      "fn": 3
+    }
+  },
+  {
+    "run_id": "run_2026_06_17_a60c29",
+    "timestamp": "2026-06-17T03:15:10.772157",
+    "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.53,
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1_score": 0.46,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 5,
+      "fn": 7
+    }
+  },
+  {
+    "run_id": "run_2026_06_17_f5b9f6",
+    "timestamp": "2026-06-17T03:15:10.785916",
+    "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.53,
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1_score": 0.46,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 5,
+      "fn": 7
+    }
+  },
+  {
+    "run_id": "run_2026_06_17_ee487f",
+    "timestamp": "2026-06-17T03:25:00.265616",
+    "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.53,
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1_score": 0.46,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 5,
+      "fn": 7
+    }
+  },
+  {
+    "run_id": "run_2026_06_17_ebda2a",
+    "timestamp": "2026-06-17T03:25:00.284440",
+    "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.53,
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1_score": 0.46,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 5,
+      "fn": 7
+    }
+  },
+  {
+    "run_id": "run_2026_06_17_96ee63",
+    "timestamp": "2026-06-17T03:27:59.712573",
+    "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.53,
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1_score": 0.46,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 5,
+      "fn": 7
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_876819",
+    "timestamp": "2026-06-17T03:27:59.735384",
+    "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.53,
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1_score": 0.46,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 5,
+      "fn": 7
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_1db4e8",
+    "timestamp": "2026-06-17T03:29:43.157068",
+    "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.67,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 5
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_a0057a",
+    "timestamp": "2026-06-17T03:29:43.189891",
+    "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.67,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 5
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_1071c4",
+    "timestamp": "2026-06-17T03:33:35.423899",
+    "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.53,
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1_score": 0.46,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 5,
+      "fn": 7
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_6f1701",
+    "timestamp": "2026-06-17T03:33:35.453368",
+    "dataset_hash": "571626433d3e1de6a7cce47cd054e1e0f07075b75e43a6ef014dc3d551c31498",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.67,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 5
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_a88f23",
+    "timestamp": "2026-06-17T03:39:03.262232",
+    "dataset_hash": "1d302a40f1ade340ef67bb654837768d84828ca53aa82da21ade39bf913794c2",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.67,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 5
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_84c232",
+    "timestamp": "2026-06-17T03:39:03.295932",
+    "dataset_hash": "1d302a40f1ade340ef67bb654837768d84828ca53aa82da21ade39bf913794c2",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.67,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 5
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_b95ed5",
+    "timestamp": "2026-06-17T03:39:34.977615",
+    "dataset_hash": "1d302a40f1ade340ef67bb654837768d84828ca53aa82da21ade39bf913794c2",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.73,
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1_score": 0.75,
+    "confusion_matrix": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 5,
+      "fn": 4
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_e7c663",
+    "timestamp": "2026-06-17T03:39:35.013935",
+    "dataset_hash": "1d302a40f1ade340ef67bb654837768d84828ca53aa82da21ade39bf913794c2",
+    "dataset_size": 15,
+    "apk_samples": 0,
+    "metadata_samples": 15,
+    "accuracy": 0.73,
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1_score": 0.75,
+    "confusion_matrix": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 5,
+      "fn": 4
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_35e76c",
+    "timestamp": "2026-06-17T07:27:12.434014",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": false
+  },
+  {
+    "run_id": "run_2026_06_17_6b7f0c",
+    "timestamp": "2026-06-17T07:27:12.792724",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_dc8a1e",
+    "timestamp": "2026-06-17T07:39:51.514727",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_248c2a",
+    "timestamp": "2026-06-17T07:46:19.943372",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_497a6f",
+    "timestamp": "2026-06-17T07:46:20.165702",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_3608ee",
+    "timestamp": "2026-06-17T07:55:48.808581",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_74825c",
+    "timestamp": "2026-06-17T07:55:49.018704",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_8df999",
+    "timestamp": "2026-06-17T07:59:33.317192",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_a13690",
+    "timestamp": "2026-06-17T07:59:33.522894",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_d56e44",
+    "timestamp": "2026-06-17T08:12:45.957854",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_4eb867",
+    "timestamp": "2026-06-17T08:12:47.388585",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_c07270",
+    "timestamp": "2026-06-17T08:20:22.853152",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_b61a09",
+    "timestamp": "2026-06-17T08:20:23.133361",
+    "dataset_hash": "64becc65fef428ff364a6f5f954c5f89f06bb0eafa4807cb7e60164c1fdca697",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_762914",
+    "timestamp": "2026-06-17T10:25:07.595623",
+    "dataset_hash": "e39d1fb7d334ac888989b799e83f744e3c22797b38f7a37b8b662c392f743bc1",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_6031df",
+    "timestamp": "2026-06-17T10:25:07.806237",
+    "dataset_hash": "e39d1fb7d334ac888989b799e83f744e3c22797b38f7a37b8b662c392f743bc1",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_a64868",
+    "timestamp": "2026-06-17T12:01:53.456897",
+    "dataset_hash": "ccb2b771f79ccfe049e425a2f6818eeffc3985ab3ce2f94771369a0f843b97af",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_231e2d",
+    "timestamp": "2026-06-17T12:01:53.724922",
+    "dataset_hash": "ccb2b771f79ccfe049e425a2f6818eeffc3985ab3ce2f94771369a0f843b97af",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_ee63f2",
+    "timestamp": "2026-06-17T13:42:35.578159",
+    "dataset_hash": "ccb2b771f79ccfe049e425a2f6818eeffc3985ab3ce2f94771369a0f843b97af",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_d6ef5a",
+    "timestamp": "2026-06-17T13:42:35.826111",
+    "dataset_hash": "ccb2b771f79ccfe049e425a2f6818eeffc3985ab3ce2f94771369a0f843b97af",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_1c3c76",
+    "timestamp": "2026-06-17T13:43:46.591714",
+    "dataset_hash": "06f7418d6f7cb8260641aaadb695e287dbcd82477fd5c559adc49b53595b1101",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_528582",
+    "timestamp": "2026-06-17T13:43:46.875814",
+    "dataset_hash": "06f7418d6f7cb8260641aaadb695e287dbcd82477fd5c559adc49b53595b1101",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_982bbd",
+    "timestamp": "2026-06-17T13:46:28.844728",
+    "dataset_hash": "06f7418d6f7cb8260641aaadb695e287dbcd82477fd5c559adc49b53595b1101",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_564250",
+    "timestamp": "2026-06-17T13:52:27.588757",
+    "dataset_hash": "06f7418d6f7cb8260641aaadb695e287dbcd82477fd5c559adc49b53595b1101",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_a696b8",
+    "timestamp": "2026-06-17T13:52:30.046461",
+    "dataset_hash": "06f7418d6f7cb8260641aaadb695e287dbcd82477fd5c559adc49b53595b1101",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_43fd5b",
+    "timestamp": "2026-06-17T13:59:54.038570",
+    "dataset_hash": "06f7418d6f7cb8260641aaadb695e287dbcd82477fd5c559adc49b53595b1101",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.87,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.89,
+    "confusion_matrix": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_17_43fdfc",
+    "timestamp": "2026-06-17T15:50:06.860746",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.67,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 5
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_f45228",
+    "timestamp": "2026-06-18T02:34:41.211332",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.67,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 5
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_fe7328",
+    "timestamp": "2026-06-18T03:00:10.843275",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.67,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 5
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_958d19",
+    "timestamp": "2026-06-18T04:56:46.925592",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_0fa97c",
+    "timestamp": "2026-06-18T04:56:47.315477",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_4f5001",
+    "timestamp": "2026-06-18T05:43:46.740634",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_f279d2",
+    "timestamp": "2026-06-18T05:43:47.131213",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_b42f0e",
+    "timestamp": "2026-06-18T05:46:26.675079",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_5f7b30",
+    "timestamp": "2026-06-18T05:46:27.107560",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_7d7c15",
+    "timestamp": "2026-06-18T05:47:38.553867",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_eff95f",
+    "timestamp": "2026-06-18T05:47:38.925061",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_a59432",
+    "timestamp": "2026-06-18T05:50:25.548119",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_716da7",
+    "timestamp": "2026-06-18T05:50:25.905980",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_214876",
+    "timestamp": "2026-06-18T06:01:09.953254",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_2fb066",
+    "timestamp": "2026-06-18T06:01:10.302188",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_c45a8c",
+    "timestamp": "2026-06-18T06:11:45.171424",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_65913e",
+    "timestamp": "2026-06-18T06:11:45.530503",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_59a0e6",
+    "timestamp": "2026-06-18T06:52:52.969129",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_a28eb3",
+    "timestamp": "2026-06-18T06:52:53.287815",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_b57d31",
+    "timestamp": "2026-06-18T07:08:51.496796",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_18_9432ba",
+    "timestamp": "2026-06-18T07:08:52.141034",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0
+    },
+    "rolled_back": true
+  },
+  {
+    "run_id": "run_2026_06_21_dee73a",
+    "timestamp": "2026-06-21T15:17:27.235179",
+    "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+    "dataset_size": 30,
+    "generated_apks": 30,
+    "user_apks": 0,
+    "external_apks": 0,
+    "accuracy": 0.8,
+    "precision": 1.0,
+    "recall": 0.7,
+    "f1_score": 0.82,
+    "confusion_matrix": {
+      "tp": 7,
+      "fp": 0,
+      "tn": 5,
+      "fn": 3
+    },
+    "rolled_back": false
+  }
+]

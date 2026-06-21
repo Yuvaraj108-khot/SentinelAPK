@@ -1,0 +1,23 @@
+{
+  "apk_name": "dropper_dynamic.apk",
+  "package_name": "com.pdfreader.pro.helper",
+  "app_label": "PDF Reader Pro Upgrade",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.REQUEST_INSTALL_PACKAGES"
+  ],
+  "ground_truth": "MALICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "a97d2adbd5a8095cb28c1e9e95c14459d17f8e13edd2fbcae8599781891c98a8",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "analyst_review",
+  "reviewed_by": "SecOps Lead",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

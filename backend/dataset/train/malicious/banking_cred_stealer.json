@@ -1,0 +1,24 @@
+{
+  "apk_name": "banking_cred_stealer.apk",
+  "package_name": "com.android.chrome.services",
+  "app_label": "Chrome Update Service",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.READ_SMS",
+    "android.permission.BIND_ACCESSIBILITY_SERVICE"
+  ],
+  "ground_truth": "MALICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "4ede042213ee83a8025ab4c2fab403488c5432a6a13fe85d7fd8620fe9d53399",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "public_dataset",
+  "reviewed_by": "Fraud Team",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

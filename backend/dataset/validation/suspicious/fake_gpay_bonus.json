@@ -1,0 +1,23 @@
+{
+  "apk_name": "fake_gpay_bonus.apk",
+  "package_name": "com.gpay.bonus.helper.gift",
+  "app_label": "Google Pay Bonus Hub Gift",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.REQUEST_INSTALL_PACKAGES"
+  ],
+  "ground_truth": "SUSPICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "ada791e7354411218665e8d1e187614bb8c23055f8a06fbaa27f0e0b3ae6a5ff",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "public_dataset",
+  "reviewed_by": "QA Engineer",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

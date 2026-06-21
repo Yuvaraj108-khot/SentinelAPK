@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-06-19T14:49:15.629119Z",
+  "test_target": "SecureBank Official",
+  "package_name": "com.securebank.official",
+  "certificate_matched": true,
+  "clone_risk_outcome": "LOW",
+  "is_clone": false,
+  "final_score": 0,
+  "verdict": "SAFE",
+  "cert_trusted": true,
+  "status": "PASSED"
+}

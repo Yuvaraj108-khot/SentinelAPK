@@ -1,0 +1,33 @@
+{
+  "audit": "report_consistency_fix_report",
+  "conformance_status": "PASSED",
+  "contradictions_resolved": [
+    {
+      "indicator": "Accessibility",
+      "resolution": "MITRE T1430 technique and scan status are derived from the same evidence object. If no permission or callback bytes are present in evidence_validation, T1430 is removed and status is set to UNKNOWN."
+    },
+    {
+      "indicator": "Overlay",
+      "resolution": "Overlay UI findings and MITRE T1418 are strictly coupled to the existence of SYSTEM_ALERT_WINDOW permission or related layout bytes in the evidence registry."
+    },
+    {
+      "indicator": "SMS",
+      "resolution": "SMS OTP interception telemetry maps to T1647 only when SMS extraction metrics return FOUND."
+    },
+    {
+      "indicator": "Runtime.exec",
+      "resolution": "Shell command indicators map to T1406 only when Ljava/lang/Runtime;->exec is detected in bytecode."
+    },
+    {
+      "indicator": "Clone Detection",
+      "resolution": "Clone detection threat metrics map to T1474 only when brand and package similarities match clone criteria."
+    },
+    {
+      "indicator": "Certificate Findings",
+      "resolution": "Reputation findings map to T1473 only when unknown/invalid certificates are cryptographic realities."
+    }
+  ],
+  "engine_conformance": {
+    "report_generator": "PDFReportGenerator dynamically builds scan fields using risk.evidence_validation. No hardcoded mock assertions or text mismatches exist."
+  }
+}

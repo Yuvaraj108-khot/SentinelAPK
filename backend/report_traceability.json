@@ -1,0 +1,58 @@
+{
+  "report_traceability": [
+    {
+      "display_field": "Application Name",
+      "source_file": "analyzer.py",
+      "source_function": "analyze",
+      "source_variable": "metadata.app_name"
+    },
+    {
+      "display_field": "Package Name",
+      "source_file": "analyzer.py",
+      "source_function": "analyze",
+      "source_variable": "metadata.package_name"
+    },
+    {
+      "display_field": "Version",
+      "source_file": "analyzer.py",
+      "source_function": "analyze",
+      "source_variable": "metadata.version_name"
+    },
+    {
+      "display_field": "Risk Score",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_variable": "risk.score"
+    },
+    {
+      "display_field": "Executive Verdict",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_variable": "risk.verdict"
+    },
+    {
+      "display_field": "Confidence Rating",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_variable": "risk.confidence"
+    },
+    {
+      "display_field": "Evidence-Based Detection Status",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_variable": "risk.evidence_validation"
+    },
+    {
+      "display_field": "MITRE Technique Mapping",
+      "source_file": "risk_engine.py",
+      "source_function": "calculate_risk",
+      "source_variable": "risk.mitre_techniques"
+    },
+    {
+      "display_field": "AI Rationale Narratives",
+      "source_file": "llm_client.py",
+      "source_function": "_fallback_analysis",
+      "source_variable": "ai.accessibility_abuse / ai.otp_theft_capability / ai.impersonation_risk"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "apk_name": "sbi_yono_official.apk",
+  "package_name": "com.sbi.yono",
+  "app_label": "SBI Yono Official",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "ground_truth": "BENIGN",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "642f94ae5759d80d8350e48214ee487137c0b40a0a5e265a9e9aa78ea06dbf1d",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "analyst_review",
+  "reviewed_by": "SecOps Lead",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

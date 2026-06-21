@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-06-21T15:17:27.224691+00:00",
+  "apk": {
+    "package_name": "com.device.care.manager",
+    "app_name": "Device Care Manager"
+  },
+  "retrieved_lessons": [],
+  "score_before_retrieval": 35,
+  "verdict_before_retrieval": "SUSPICIOUS",
+  "score_after_retrieval": 35,
+  "verdict_after_retrieval": "SUSPICIOUS",
+  "cumulative_delta": 0,
+  "learning_influenced": false,
+  "influence_note": "no learning influence detected"
+}

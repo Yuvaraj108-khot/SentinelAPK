@@ -1,0 +1,50 @@
+[
+  {
+    "detector": "UnknownCertificate",
+    "count": 10,
+    "total_score_contribution": 100,
+    "most_frequent_evidence": [
+      "Untrusted certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+    ]
+  },
+  {
+    "detector": "Reflection",
+    "count": 10,
+    "total_score_contribution": 100,
+    "most_frequent_evidence": [
+      "DEX: Contains Accessibility service callbacks"
+    ]
+  },
+  {
+    "detector": "SYSTEM_ALERT_WINDOW",
+    "count": 6,
+    "total_score_contribution": 120,
+    "most_frequent_evidence": []
+  },
+  {
+    "detector": "DexClassLoader",
+    "count": 5,
+    "total_score_contribution": 75,
+    "most_frequent_evidence": [
+      "DEX: Dynamic class loading (DexClassLoader)"
+    ]
+  },
+  {
+    "detector": "SuspiciousUrl",
+    "count": 3,
+    "total_score_contribution": 15,
+    "most_frequent_evidence": []
+  },
+  {
+    "detector": "WebviewBridge",
+    "count": 2,
+    "total_score_contribution": 16,
+    "most_frequent_evidence": []
+  },
+  {
+    "detector": "DEX_SMS",
+    "count": 1,
+    "total_score_contribution": 12,
+    "most_frequent_evidence": []
+  }
+]

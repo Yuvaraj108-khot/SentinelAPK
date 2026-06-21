@@ -1,0 +1,34 @@
+[
+  {
+    "bank_name": "State Bank of India",
+    "package_name": "com.sbi.lotusintouch",
+    "certificate_sha256": "642f94ae5759d80d8350e48214ee487137c0b40a0a5e265a9e9aa78ea06dbf1d",
+    "official_certificates": [
+      "642f94ae5759d80d8350e48214ee487137c0b40a0a5e265a9e9aa78ea06dbf1d"
+    ]
+  },
+  {
+    "bank_name": "ICICI Bank Ltd",
+    "package_name": "com.icici.imobile",
+    "certificate_sha256": "2a980c57def53baba167dd9067e29a88e7d13073ed4358271853bc07c05b4be9",
+    "official_certificates": [
+      "2a980c57def53baba167dd9067e29a88e7d13073ed4358271853bc07c05b4be9"
+    ]
+  },
+  {
+    "bank_name": "HDFC Bank",
+    "package_name": "com.hdfc.mobilebanking",
+    "certificate_sha256": "ae16b603f3b0067915274392398a5d41778faa38a3de3fa7c05e1fa25a756efa",
+    "official_certificates": [
+      "ae16b603f3b0067915274392398a5d41778faa38a3de3fa7c05e1fa25a756efa"
+    ]
+  },
+  {
+    "bank_name": "SecureBank Official",
+    "package_name": "com.securebank.official",
+    "certificate_sha256": "86f71bae47be40288086f28795563ba741a101ad98387cc934e1b68bfee539fa",
+    "official_certificates": [
+      "86f71bae47be40288086f28795563ba741a101ad98387cc934e1b68bfee539fa"
+    ]
+  }
+]

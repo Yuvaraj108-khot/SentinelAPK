@@ -1,0 +1,63 @@
+{
+  "benchmark_metrics": {
+    "validation": {
+      "accuracy": 0.8667,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "confusion_matrix": {
+        "tp": 8,
+        "fp": 0,
+        "tn": 5,
+        "fn": 2
+      }
+    },
+    "train": {
+      "accuracy": 0.8667,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "confusion_matrix": {
+        "tp": 8,
+        "fp": 0,
+        "tn": 5,
+        "fn": 2
+      }
+    }
+  },
+  "learning_metrics": {
+    "learning_memory_lessons_count": 5,
+    "threat_apps_escalated_by_memory": 13
+  },
+  "retrieval_metrics": {
+    "total_lessons_retrieved": 35,
+    "average_similarity_score": 0.663,
+    "benign_retrieval_leakage": 0
+  },
+  "clone_detection_metrics": {
+    "total_clones_evaluated": 3,
+    "clone_detection_accuracy": 1.0
+  },
+  "risk_ordering_validation": {
+    "SecureBank_Official": 0,
+    "SecureBank_Plus": 82,
+    "SecureBank_Clone": 85,
+    "ordering_status": "PASS",
+    "ordering_expression": "Official (0) < Plus (82) < Clone (85)"
+  },
+  "dataset_statistics": {
+    "train": {
+      "benign": 5,
+      "suspicious": 5,
+      "malicious": 5,
+      "total": 15
+    },
+    "validation": {
+      "benign": 5,
+      "suspicious": 5,
+      "malicious": 5,
+      "total": 15
+    },
+    "total_samples": 30
+  }
+}

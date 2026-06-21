@@ -1,0 +1,175 @@
+{
+  "audit_timestamp": "2026-06-19T21:58:00Z",
+  "mismatches_detected": 0,
+  "mismatch_table": [
+    {
+      "apk": "SecureBank_Official.apk",
+      "component": "API Response",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Official.apk",
+      "component": "Frontend UI",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Official.apk",
+      "component": "PDF Report",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Official.apk",
+      "component": "API Response",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Official.apk",
+      "component": "Frontend UI",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Official.apk",
+      "component": "PDF Report",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Plus.apk",
+      "component": "API Response",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Plus.apk",
+      "component": "Frontend UI",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Plus.apk",
+      "component": "PDF Report",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Plus.apk",
+      "component": "API Response",
+      "expected": "FOUND",
+      "actual": "FOUND",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Plus.apk",
+      "component": "Frontend UI",
+      "expected": "FOUND",
+      "actual": "FOUND",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Plus.apk",
+      "component": "PDF Report",
+      "expected": "FOUND",
+      "actual": "FOUND",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Clone.apk",
+      "component": "API Response",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Clone.apk",
+      "component": "Frontend UI",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Clone.apk",
+      "component": "PDF Report",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Clone.apk",
+      "component": "API Response",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Clone.apk",
+      "component": "Frontend UI",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "SecureBank_Clone.apk",
+      "component": "PDF Report",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "pothole_app.apk",
+      "component": "API Response",
+      "expected": "FOUND",
+      "actual": "FOUND",
+      "match": true
+    },
+    {
+      "apk": "pothole_app.apk",
+      "component": "Frontend UI",
+      "expected": "FOUND",
+      "actual": "FOUND",
+      "match": true
+    },
+    {
+      "apk": "pothole_app.apk",
+      "component": "PDF Report",
+      "expected": "FOUND",
+      "actual": "FOUND",
+      "match": true
+    },
+    {
+      "apk": "pothole_app.apk",
+      "component": "API Response",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "pothole_app.apk",
+      "component": "Frontend UI",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    },
+    {
+      "apk": "pothole_app.apk",
+      "component": "PDF Report",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "match": true
+    }
+  ],
+  "verdict": "PASS"
+}

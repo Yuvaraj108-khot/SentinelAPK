@@ -1,0 +1,1222 @@
+[
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 20,
+    "new_weight": 23,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 25,
+    "new_weight": 28,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 20,
+    "new_weight": 22,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 23,
+    "new_weight": 26,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 28,
+    "new_weight": 30,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 22,
+    "new_weight": 24,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 26,
+    "new_weight": 28,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 30,
+    "new_weight": 32,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 24,
+    "new_weight": 25,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 28,
+    "new_weight": 30,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 32,
+    "new_weight": 34,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 25,
+    "new_weight": 26,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 30,
+    "new_weight": 32,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 34,
+    "new_weight": 35,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 26,
+    "new_weight": 27,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.706002",
+    "run_id": "run_2026_06_17_96ee63",
+    "apk_name": "accessibility_abuse.apk",
+    "feature": "ACCESSIBILITY",
+    "old_weight": 25,
+    "new_weight": 28,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: accessibility_abuse.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 32,
+    "new_weight": 34,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 35,
+    "new_weight": 36,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 27,
+    "new_weight": 28,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 34,
+    "new_weight": 35,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 36,
+    "new_weight": 37,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 28,
+    "new_weight": 29,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 35,
+    "new_weight": 36,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 37,
+    "new_weight": 38,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 29,
+    "new_weight": 30,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 36,
+    "new_weight": 37,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 38,
+    "new_weight": 39,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 30,
+    "new_weight": 31,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 37,
+    "new_weight": 38,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 39,
+    "new_weight": 40,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 31,
+    "new_weight": 32,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:27:59.728645",
+    "run_id": "run_2026_06_17_876819",
+    "apk_name": "accessibility_abuse.apk",
+    "feature": "ACCESSIBILITY",
+    "old_weight": 28,
+    "new_weight": 30,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: accessibility_abuse.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 38,
+    "new_weight": 39,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 40,
+    "new_weight": 41,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 32,
+    "new_weight": 33,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 39,
+    "new_weight": 40,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 41,
+    "new_weight": 42,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 33,
+    "new_weight": 34,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 40,
+    "new_weight": 41,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 42,
+    "new_weight": 43,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 34,
+    "new_weight": 35,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "accessibility_abuse.apk",
+    "feature": "ACCESSIBILITY",
+    "old_weight": 30,
+    "new_weight": 32,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: accessibility_abuse.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "otp_stealer.apk",
+    "feature": "DexClassLoader",
+    "old_weight": 15,
+    "new_weight": 18,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.142264",
+    "run_id": "run_2026_06_17_1db4e8",
+    "apk_name": "otp_stealer.apk",
+    "feature": "Reflection",
+    "old_weight": 10,
+    "new_weight": 12,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 41,
+    "new_weight": 42,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 43,
+    "new_weight": 44,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 35,
+    "new_weight": 36,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 42,
+    "new_weight": 43,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 44,
+    "new_weight": 45,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 36,
+    "new_weight": 37,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 43,
+    "new_weight": 44,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 45,
+    "new_weight": 46,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 37,
+    "new_weight": 38,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "accessibility_abuse.apk",
+    "feature": "ACCESSIBILITY",
+    "old_weight": 32,
+    "new_weight": 34,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: accessibility_abuse.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "otp_stealer.apk",
+    "feature": "DexClassLoader",
+    "old_weight": 18,
+    "new_weight": 20,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:29:43.178558",
+    "run_id": "run_2026_06_17_a0057a",
+    "apk_name": "otp_stealer.apk",
+    "feature": "Reflection",
+    "old_weight": 12,
+    "new_weight": 14,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 20,
+    "new_weight": 23,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 25,
+    "new_weight": 28,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 20,
+    "new_weight": 22,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 23,
+    "new_weight": 26,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 28,
+    "new_weight": 30,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 22,
+    "new_weight": 24,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 26,
+    "new_weight": 28,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 30,
+    "new_weight": 32,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 24,
+    "new_weight": 25,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 28,
+    "new_weight": 30,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 32,
+    "new_weight": 34,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 25,
+    "new_weight": 26,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 30,
+    "new_weight": 32,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 34,
+    "new_weight": 35,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 26,
+    "new_weight": 27,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "accessibility_abuse.apk",
+    "feature": "ACCESSIBILITY",
+    "old_weight": 25,
+    "new_weight": 28,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: accessibility_abuse.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "otp_stealer.apk",
+    "feature": "DexClassLoader",
+    "old_weight": 15,
+    "new_weight": 18,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.411544",
+    "run_id": "run_2026_06_17_1071c4",
+    "apk_name": "otp_stealer.apk",
+    "feature": "Reflection",
+    "old_weight": 10,
+    "new_weight": 12,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 32,
+    "new_weight": 34,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 35,
+    "new_weight": 36,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 27,
+    "new_weight": 28,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 34,
+    "new_weight": 35,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 36,
+    "new_weight": 37,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 28,
+    "new_weight": 29,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 35,
+    "new_weight": 36,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 37,
+    "new_weight": 38,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 29,
+    "new_weight": 30,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 36,
+    "new_weight": 37,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 38,
+    "new_weight": 39,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_sbi_login.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 30,
+    "new_weight": 31,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_sbi_login.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "SYSTEM_ALERT_WINDOW",
+    "old_weight": 37,
+    "new_weight": 38,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 39,
+    "new_weight": 40,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "fake_upi_cashback.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 31,
+    "new_weight": 32,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_upi_cashback.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "accessibility_abuse.apk",
+    "feature": "ACCESSIBILITY",
+    "old_weight": 28,
+    "new_weight": 30,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: accessibility_abuse.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "otp_stealer.apk",
+    "feature": "DexClassLoader",
+    "old_weight": 18,
+    "new_weight": 20,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:33:35.441144",
+    "run_id": "run_2026_06_17_6f1701",
+    "apk_name": "otp_stealer.apk",
+    "feature": "Reflection",
+    "old_weight": 12,
+    "new_weight": 14,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.245686",
+    "run_id": "run_2026_06_17_a88f23",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 32,
+    "new_weight": 33,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.245686",
+    "run_id": "run_2026_06_17_a88f23",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 40,
+    "new_weight": 41,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.246694",
+    "run_id": "run_2026_06_17_a88f23",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 33,
+    "new_weight": 34,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.246694",
+    "run_id": "run_2026_06_17_a88f23",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 41,
+    "new_weight": 42,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.247672",
+    "run_id": "run_2026_06_17_a88f23",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 34,
+    "new_weight": 35,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.247672",
+    "run_id": "run_2026_06_17_a88f23",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 42,
+    "new_weight": 43,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.247672",
+    "run_id": "run_2026_06_17_a88f23",
+    "apk_name": "accessibility_abuse.apk",
+    "feature": "ACCESSIBILITY",
+    "old_weight": 30,
+    "new_weight": 32,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: accessibility_abuse.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.247672",
+    "run_id": "run_2026_06_17_a88f23",
+    "apk_name": "accessibility_abuse.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 35,
+    "new_weight": 36,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: accessibility_abuse.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.248678",
+    "run_id": "run_2026_06_17_a88f23",
+    "apk_name": "otp_stealer.apk",
+    "feature": "READ_SMS",
+    "old_weight": 20,
+    "new_weight": 23,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.248678",
+    "run_id": "run_2026_06_17_a88f23",
+    "apk_name": "otp_stealer.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 36,
+    "new_weight": 37,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.282288",
+    "run_id": "run_2026_06_17_84c232",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 37,
+    "new_weight": 38,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.282288",
+    "run_id": "run_2026_06_17_84c232",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 43,
+    "new_weight": 44,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.283286",
+    "run_id": "run_2026_06_17_84c232",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 38,
+    "new_weight": 39,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.283286",
+    "run_id": "run_2026_06_17_84c232",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 44,
+    "new_weight": 45,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.283286",
+    "run_id": "run_2026_06_17_84c232",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "UnknownCertificate",
+    "old_weight": 39,
+    "new_weight": 40,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.283286",
+    "run_id": "run_2026_06_17_84c232",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 45,
+    "new_weight": 46,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.283792",
+    "run_id": "run_2026_06_17_84c232",
+    "apk_name": "accessibility_abuse.apk",
+    "feature": "ACCESSIBILITY",
+    "old_weight": 32,
+    "new_weight": 34,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: accessibility_abuse.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:03.284360",
+    "run_id": "run_2026_06_17_84c232",
+    "apk_name": "otp_stealer.apk",
+    "feature": "READ_SMS",
+    "old_weight": 23,
+    "new_weight": 26,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:34.961984",
+    "run_id": "run_2026_06_17_b95ed5",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 46,
+    "new_weight": 47,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:34.963557",
+    "run_id": "run_2026_06_17_b95ed5",
+    "apk_name": "fake_icici_verify.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 47,
+    "new_weight": 48,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_icici_verify.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:34.963557",
+    "run_id": "run_2026_06_17_b95ed5",
+    "apk_name": "fake_kyc_update.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 48,
+    "new_weight": 49,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_kyc_update.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:34.963557",
+    "run_id": "run_2026_06_17_b95ed5",
+    "apk_name": "accessibility_abuse.apk",
+    "feature": "ACCESSIBILITY",
+    "old_weight": 34,
+    "new_weight": 35,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: accessibility_abuse.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:34.965145",
+    "run_id": "run_2026_06_17_b95ed5",
+    "apk_name": "otp_stealer.apk",
+    "feature": "READ_SMS",
+    "old_weight": 26,
+    "new_weight": 28,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:35.000084",
+    "run_id": "run_2026_06_17_e7c663",
+    "apk_name": "fake_hdfc_rewards.apk",
+    "feature": "PackageImpersonation",
+    "old_weight": 49,
+    "new_weight": 50,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: fake_hdfc_rewards.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T03:39:35.001605",
+    "run_id": "run_2026_06_17_e7c663",
+    "apk_name": "otp_stealer.apk",
+    "feature": "READ_SMS",
+    "old_weight": 28,
+    "new_weight": 30,
+    "confidence": 80,
+    "reason": "Observed in False Negative sample: otp_stealer.apk (Attributed contribution)"
+  },
+  {
+    "timestamp": "2026-06-17T07:27:12.283315",
+    "run_id": "run_2026_06_17_35e76c",
+    "apk_name": "train_optimization",
+    "feature": "UnknownCertificate",
+    "old_weight": 40,
+    "new_weight": 33,
+    "confidence": 100,
+    "reason": "FN=0, FP=5 in train set"
+  },
+  {
+    "timestamp": "2026-06-17T07:27:12.285402",
+    "run_id": "run_2026_06_17_35e76c",
+    "apk_name": "train_optimization",
+    "feature": "PackageImpersonation",
+    "old_weight": 50,
+    "new_weight": 45,
+    "confidence": 100,
+    "reason": "FN=0, FP=3 in train set"
+  },
+  {
+    "timestamp": "2026-06-21T15:17:26.857030",
+    "run_id": "run_2026_06_21_dee73a",
+    "apk_name": "train_optimization",
+    "feature": "READ_SMS",
+    "old_weight": 20,
+    "new_weight": 23,
+    "confidence": 100,
+    "reason": "FN=1, FP=0 in train set"
+  },
+  {
+    "timestamp": "2026-06-21T15:17:26.866180",
+    "run_id": "run_2026_06_21_dee73a",
+    "apk_name": "train_optimization",
+    "feature": "UnknownCertificate",
+    "old_weight": 10,
+    "new_weight": 12,
+    "confidence": 100,
+    "reason": "FN=2, FP=0 in train set"
+  },
+  {
+    "timestamp": "2026-06-21T15:17:26.869751",
+    "run_id": "run_2026_06_21_dee73a",
+    "apk_name": "train_optimization",
+    "feature": "PackageImpersonation",
+    "old_weight": 20,
+    "new_weight": 22,
+    "confidence": 100,
+    "reason": "FN=1, FP=0 in train set"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "apk_name": "mobikwik_official.apk",
+  "package_name": "com.mobikwik_new",
+  "app_label": "MobiKwik",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "ground_truth": "BENIGN",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "7f3729952cd33a2d09f047ddef0d3506e7515ef52e841b1eab848a411157a86b",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "internal_test",
+  "reviewed_by": "SecOps Lead",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

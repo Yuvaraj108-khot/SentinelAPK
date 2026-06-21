@@ -1,0 +1,47 @@
+{
+  "fallback_apk_manifest_parsing": {
+    "classification": "SUPPORTED",
+    "evidence": "backend/analyzer.py (function _analyze_fallback, lines 276-350)",
+    "description": "The zip-level fallback parser successfully reads plain text AndroidManifest.xml files using regex when binary androguard parsing fails."
+  },
+  "dex_bytecode_scan_indicators": {
+    "classification": "SUPPORTED",
+    "evidence": "backend/analyzer.py (function _scan_dex_zip, lines 382-433)",
+    "description": "Scans the decompressed classes.dex bytes inside the APK ZIP file to locate API keywords such as SmsManager, AccessibilityService, and window layout managers."
+  },
+  "validation_gated_weight_calibration": {
+    "classification": "SUPPORTED",
+    "evidence": "backend/adaptive_learning.py (function update_weights_from_errors, lines 160-205)",
+    "description": "Validation metrics are computed during parameter search and weights are rolled back to baseline if validation split F1-score degrades."
+  },
+  "india_banking_clone_detection": {
+    "classification": "SUPPORTED",
+    "evidence": "backend/risk_engine.py (lines 102-262) and backend/data/official_banks.json",
+    "description": "Computes sequence matcher ratio and certificate matches against major Indian banks configured in official_banks.json."
+  },
+  "xai_rationale_fallback_engine": {
+    "classification": "SUPPORTED",
+    "evidence": "backend/llm_client.py (lines 120-170)",
+    "description": "Uses a local rule-based descriptor engine to generate explanation rationales when connection to external Vertex AI LLM APIs fails."
+  },
+  "dynamic_sandbox_telemetry": {
+    "classification": "UNSUPPORTED",
+    "evidence": "None (all sandbox telemetry is mocked; no Android emulator or dynamic tracer is integrated)",
+    "description": "The execution and socket telemetries are mock structures and not driven by live device execution."
+  },
+  "autonomous_evasive_bytecode_generation": {
+    "classification": "UNSUPPORTED",
+    "evidence": "backend/evader_agent.py (produces text recommendations only; no bytecode compilation)",
+    "description": "Suggests evasive strategies textually but does not write or compile Dalvik bytecode."
+  },
+  "visual_screen_deception_checking": {
+    "classification": "UNSUPPORTED",
+    "evidence": "None (impersonation checks are text-based sequence ratio matchers on package name and app label)",
+    "description": "Does not analyze screenshot layouts or perform pixel checks."
+  },
+  "threat_graph_visual_engine": {
+    "classification": "UNSUPPORTED",
+    "evidence": "None (dashboard renders steps as a list)",
+    "description": "No graphical node network library is integrated in the dashboard."
+  }
+}

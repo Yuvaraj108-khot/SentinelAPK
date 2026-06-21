@@ -1,0 +1,46 @@
+[
+  {
+    "apk_name": "VLC.apk",
+    "score": 35,
+    "verdict": "SUSPICIOUS",
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "Requests System Alert overlay window",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Suspicious URL found: https://www.openssl.org/docs/man1.0.2/apps/verify.html.\u0000!"
+    ]
+  },
+  {
+    "apk_name": "Termux.apk",
+    "score": 45,
+    "verdict": "SUSPICIOUS",
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "Requests System Alert overlay window",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Dynamic class loading (DexClassLoader)"
+    ]
+  },
+  {
+    "apk_name": "Element.apk",
+    "score": 55,
+    "verdict": "SUSPICIOUS",
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "Requests System Alert overlay window",
+      "DEX: Contains SMS sending bytecode",
+      "DEX: Contains Accessibility service callbacks"
+    ]
+  },
+  {
+    "apk_name": "NewPipe.apk",
+    "score": 38,
+    "verdict": "SUSPICIOUS",
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=Christian Schabesberger,C=DE'",
+      "Requests System Alert overlay window",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Exposes native bridge via addJavascriptInterface"
+    ]
+  }
+]

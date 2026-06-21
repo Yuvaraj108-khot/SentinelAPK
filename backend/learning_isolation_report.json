@@ -1,0 +1,108 @@
+{
+  "learning_only_changes_scores": true,
+  "no_unsupported_evidence_created": true,
+  "scenarios": {
+    "whatsapp": {
+      "score_with_memory": 10,
+      "score_without_memory": 10,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "telegram": {
+      "score_with_memory": 10,
+      "score_without_memory": 10,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "signal": {
+      "score_with_memory": 10,
+      "score_without_memory": 10,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "maps": {
+      "score_with_memory": 10,
+      "score_without_memory": 10,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "gmail": {
+      "score_with_memory": 10,
+      "score_without_memory": 10,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "drive": {
+      "score_with_memory": 10,
+      "score_without_memory": 10,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "phonepe": {
+      "score_with_memory": 10,
+      "score_without_memory": 10,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "paytm": {
+      "score_with_memory": 0,
+      "score_without_memory": 0,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "bhim": {
+      "score_with_memory": 0,
+      "score_without_memory": 0,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "amazon": {
+      "score_with_memory": 10,
+      "score_without_memory": 10,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "bitdefender": {
+      "score_with_memory": 5,
+      "score_without_memory": 5,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "avast": {
+      "score_with_memory": 31,
+      "score_without_memory": 10,
+      "score_difference": 21,
+      "evidence_intact": true
+    },
+    "malwarebytes": {
+      "score_with_memory": 5,
+      "score_without_memory": 5,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "sbi": {
+      "score_with_memory": 0,
+      "score_without_memory": 0,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "hdfc": {
+      "score_with_memory": 0,
+      "score_without_memory": 0,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "icici": {
+      "score_with_memory": 0,
+      "score_without_memory": 0,
+      "score_difference": 0,
+      "evidence_intact": true
+    },
+    "axis": {
+      "score_with_memory": 10,
+      "score_without_memory": 10,
+      "score_difference": 0,
+      "evidence_intact": true
+    }
+  }
+}

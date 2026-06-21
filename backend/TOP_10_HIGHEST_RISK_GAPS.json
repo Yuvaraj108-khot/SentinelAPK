@@ -1,0 +1,82 @@
+[
+  {
+    "scenario_id": "EV_SCENARIO_015",
+    "technique": "SMS theft",
+    "likelihood": "MEDIUM",
+    "impact": "CRITICAL",
+    "ease_of_exploitation": "MEDIUM",
+    "risk_score": 9.0
+  },
+  {
+    "scenario_id": "EV_SCENARIO_001",
+    "technique": "Reflection",
+    "likelihood": "HIGH",
+    "impact": "HIGH",
+    "ease_of_exploitation": "EASY",
+    "risk_score": 7.5
+  },
+  {
+    "scenario_id": "EV_SCENARIO_003",
+    "technique": "Encrypted strings",
+    "likelihood": "HIGH",
+    "impact": "HIGH",
+    "ease_of_exploitation": "MEDIUM",
+    "risk_score": 7.5
+  },
+  {
+    "scenario_id": "EV_SCENARIO_004",
+    "technique": "Delayed execution",
+    "likelihood": "MEDIUM",
+    "impact": "HIGH",
+    "ease_of_exploitation": "EASY",
+    "risk_score": 7.5
+  },
+  {
+    "scenario_id": "EV_SCENARIO_006",
+    "technique": "Overlay abuse",
+    "likelihood": "MEDIUM",
+    "impact": "CRITICAL",
+    "ease_of_exploitation": "MEDIUM",
+    "risk_score": 7.5
+  },
+  {
+    "scenario_id": "EV_SCENARIO_009",
+    "technique": "Reflection",
+    "likelihood": "HIGH",
+    "impact": "HIGH",
+    "ease_of_exploitation": "EASY",
+    "risk_score": 7.5
+  },
+  {
+    "scenario_id": "EV_SCENARIO_011",
+    "technique": "Encrypted strings",
+    "likelihood": "HIGH",
+    "impact": "HIGH",
+    "ease_of_exploitation": "MEDIUM",
+    "risk_score": 7.5
+  },
+  {
+    "scenario_id": "EV_SCENARIO_012",
+    "technique": "Delayed execution",
+    "likelihood": "MEDIUM",
+    "impact": "HIGH",
+    "ease_of_exploitation": "EASY",
+    "risk_score": 7.5
+  },
+  {
+    "scenario_id": "EV_SCENARIO_017",
+    "technique": "Reflection",
+    "likelihood": "HIGH",
+    "impact": "HIGH",
+    "ease_of_exploitation": "EASY",
+    "risk_score": 7.5
+  },
+  {
+    "scenario_id": "EV_SCENARIO_018",
+    "technique": "Dynamic loading",
+    "likelihood": "MEDIUM",
+    "impact": "HIGH",
+    "ease_of_exploitation": "MEDIUM",
+    "risk_score": 7.5
+  }
+]

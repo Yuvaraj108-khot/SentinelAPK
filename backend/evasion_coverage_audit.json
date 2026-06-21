@@ -1,0 +1,214 @@
+{
+  "status": "COMPLETED",
+  "scenarios_analyzed": 50,
+  "coverage_summary": {
+    "DETECTED": 21,
+    "PARTIALLY_DETECTED": 0,
+    "MISSED": 29
+  },
+  "missed_details": [
+    {
+      "scenario_id": "EV_SCENARIO_001",
+      "attack_technique": "Reflection",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Reflection."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_003",
+      "attack_technique": "Encrypted strings",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Encrypted strings."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_004",
+      "attack_technique": "Delayed execution",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Delayed execution."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_006",
+      "attack_technique": "Overlay abuse",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via overlay abuse hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Overlay abuse."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_009",
+      "attack_technique": "Reflection",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Reflection."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_011",
+      "attack_technique": "Encrypted strings",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Encrypted strings."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_012",
+      "attack_technique": "Delayed execution",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Delayed execution."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_015",
+      "attack_technique": "SMS theft",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via sms theft hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for SMS theft."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_017",
+      "attack_technique": "Reflection",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Reflection."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_018",
+      "attack_technique": "Dynamic loading",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via dynamic loading hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Dynamic loading."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_019",
+      "attack_technique": "Encrypted strings",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Encrypted strings."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_020",
+      "attack_technique": "Delayed execution",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Delayed execution."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_021",
+      "attack_technique": "Accessibility abuse",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via accessibility abuse hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Accessibility abuse."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_024",
+      "attack_technique": "Fake banking clones",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via fake banking clones hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Fake banking clones."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_025",
+      "attack_technique": "Reflection",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Reflection."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_027",
+      "attack_technique": "Encrypted strings",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Encrypted strings."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_028",
+      "attack_technique": "Delayed execution",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Delayed execution."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_030",
+      "attack_technique": "Overlay abuse",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via overlay abuse hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Overlay abuse."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_033",
+      "attack_technique": "Reflection",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Reflection."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_035",
+      "attack_technique": "Encrypted strings",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Encrypted strings."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_036",
+      "attack_technique": "Delayed execution",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Delayed execution."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_039",
+      "attack_technique": "SMS theft",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via sms theft hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for SMS theft."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_041",
+      "attack_technique": "Reflection",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Reflection."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_042",
+      "attack_technique": "Dynamic loading",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via dynamic loading hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Dynamic loading."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_043",
+      "attack_technique": "Encrypted strings",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Encrypted strings."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_044",
+      "attack_technique": "Delayed execution",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Delayed execution."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_045",
+      "attack_technique": "Accessibility abuse",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via accessibility abuse hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Accessibility abuse."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_048",
+      "attack_technique": "Fake banking clones",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via fake banking clones hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Fake banking clones."
+    },
+    {
+      "scenario_id": "EV_SCENARIO_049",
+      "attack_technique": "Reflection",
+      "why_it_bypasses": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_should_have_fired": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "required_implementation_change": "Implement dynamic/decryption parsing logic or control flow graph mapping for Reflection."
+    }
+  ]
+}

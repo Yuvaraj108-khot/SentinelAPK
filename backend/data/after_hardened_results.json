@@ -1,0 +1,625 @@
+[
+  {
+    "apk_name": "SecureBank_Official.apk",
+    "split": "train",
+    "ground_truth": "BENIGN",
+    "score": 0,
+    "verdict": "SAFE",
+    "confidence": 50,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "bhim_upi_official.apk",
+    "split": "train",
+    "ground_truth": "BENIGN",
+    "score": 0,
+    "verdict": "SAFE",
+    "confidence": 50,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "hdfc_bank_official.apk",
+    "split": "train",
+    "ground_truth": "BENIGN",
+    "score": 0,
+    "verdict": "SAFE",
+    "confidence": 50,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "icici_imobile_official.apk",
+    "split": "train",
+    "ground_truth": "BENIGN",
+    "score": 0,
+    "verdict": "SAFE",
+    "confidence": 50,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "sbi_yono_official.apk",
+    "split": "train",
+    "ground_truth": "BENIGN",
+    "score": 0,
+    "verdict": "SAFE",
+    "confidence": 50,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "SecureBank_Clone.apk",
+    "split": "train",
+    "ground_truth": "SUSPICIOUS",
+    "score": 70,
+    "verdict": "MALICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "SecureBank_Plus.apk",
+    "split": "train",
+    "ground_truth": "SUSPICIOUS",
+    "score": 82,
+    "verdict": "MALICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "fake_hdfc_rewards.apk",
+    "split": "train",
+    "ground_truth": "SUSPICIOUS",
+    "score": 51,
+    "verdict": "SUSPICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "fake_icici_verify.apk",
+    "split": "train",
+    "ground_truth": "SUSPICIOUS",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "fake_sbi_login.apk",
+    "split": "train",
+    "ground_truth": "SUSPICIOUS",
+    "score": 62,
+    "verdict": "SUSPICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "accessibility_abuse.apk",
+    "split": "train",
+    "ground_truth": "MALICIOUS",
+    "score": 35,
+    "verdict": "SUSPICIOUS",
+    "confidence": 85,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "banking_cred_stealer.apk",
+    "split": "train",
+    "ground_truth": "MALICIOUS",
+    "score": 55,
+    "verdict": "SUSPICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "otp_stealer.apk",
+    "split": "train",
+    "ground_truth": "MALICIOUS",
+    "score": 30,
+    "verdict": "SAFE",
+    "confidence": 80,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "overlay_trojan.apk",
+    "split": "train",
+    "ground_truth": "MALICIOUS",
+    "score": 71,
+    "verdict": "MALICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "remote_control.apk",
+    "split": "train",
+    "ground_truth": "MALICIOUS",
+    "score": 76,
+    "verdict": "MALICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "airtel_thanks_official.apk",
+    "split": "validation",
+    "ground_truth": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "gpay_india_official.apk",
+    "split": "validation",
+    "ground_truth": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "mobikwik_official.apk",
+    "split": "validation",
+    "ground_truth": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "paytm_wallet_official.apk",
+    "split": "validation",
+    "ground_truth": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "phonepe_official.apk",
+    "split": "validation",
+    "ground_truth": "BENIGN",
+    "score": 10,
+    "verdict": "SAFE",
+    "confidence": 60,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "fake_axis_rewards.apk",
+    "split": "validation",
+    "ground_truth": "SUSPICIOUS",
+    "score": 66,
+    "verdict": "SUSPICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [
+      {
+        "similarity": 1.0,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 15.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "fake_gpay_bonus.apk",
+    "split": "validation",
+    "ground_truth": "SUSPICIOUS",
+    "score": 36,
+    "verdict": "SUSPICIOUS",
+    "confidence": 86,
+    "lessons_retrieved": [
+      {
+        "similarity": 1.0,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 15.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "fake_paytm_offers.apk",
+    "split": "validation",
+    "ground_truth": "SUSPICIOUS",
+    "score": 36,
+    "verdict": "SUSPICIOUS",
+    "confidence": 86,
+    "lessons_retrieved": [
+      {
+        "similarity": 1.0,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 15.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "fake_phonepe_scratch.apk",
+    "split": "validation",
+    "ground_truth": "SUSPICIOUS",
+    "score": 66,
+    "verdict": "SUSPICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [
+      {
+        "similarity": 1.0,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 15.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "fake_yono_lite.apk",
+    "split": "validation",
+    "ground_truth": "SUSPICIOUS",
+    "score": 66,
+    "verdict": "SUSPICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [
+      {
+        "similarity": 1.0,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 15.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "dropper_dynamic.apk",
+    "split": "validation",
+    "ground_truth": "MALICIOUS",
+    "score": 31,
+    "verdict": "SAFE",
+    "confidence": 81,
+    "lessons_retrieved": [
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.7,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 10.5,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "overlay_dropper.apk",
+    "split": "validation",
+    "ground_truth": "MALICIOUS",
+    "score": 76,
+    "verdict": "MALICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "overlay_spyware.apk",
+    "split": "validation",
+    "ground_truth": "MALICIOUS",
+    "score": 71,
+    "verdict": "MALICIOUS",
+    "confidence": 98,
+    "lessons_retrieved": [
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      },
+      {
+        "similarity": 0.467,
+        "error_type": "FALSE_NEGATIVE",
+        "ground_truth": "SUSPICIOUS",
+        "lesson": "Missed: predicted SAFE but actual label is SUSPICIOUS. Increase suspicion for similar apps in future. Key permissions: SYSTEM_ALERT_WINDOW. Certificate: Unknown / Self-signed certificate.",
+        "score_delta": 7.0,
+        "direction": "escalated"
+      }
+    ],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "rat_accessibility.apk",
+    "split": "validation",
+    "ground_truth": "MALICIOUS",
+    "score": 35,
+    "verdict": "SUSPICIOUS",
+    "confidence": 85,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  },
+  {
+    "apk_name": "spy_trojan.apk",
+    "split": "validation",
+    "ground_truth": "MALICIOUS",
+    "score": 30,
+    "verdict": "SAFE",
+    "confidence": 80,
+    "lessons_retrieved": [],
+    "score_changed": null,
+    "verdict_changed": null
+  }
+]

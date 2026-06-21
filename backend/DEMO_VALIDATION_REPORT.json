@@ -1,0 +1,30 @@
+{
+  "Scenario A (SecureBank Official)": {
+    "expected": [
+      "SAFE",
+      "Trusted certificate",
+      "Official application",
+      "Clone risk LOW",
+      "Risk score 0"
+    ],
+    "status": "PASS"
+  },
+  "Scenario B (SecureBank Plus)": {
+    "expected": [
+      "Suspicious or Malicious",
+      "Overlay evidence",
+      "Clone evidence",
+      "Untrusted certificate"
+    ],
+    "status": "PASS"
+  },
+  "Scenario C (SecureBank Clone)": {
+    "expected": [
+      "Malicious",
+      "Same package forgery",
+      "Certificate mismatch",
+      "Clone detection FOUND"
+    ],
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "READ_SMS": {
+    "value": 20,
+    "min": 5,
+    "max": 50
+  },
+  "ACCESSIBILITY": {
+    "value": 25,
+    "min": 5,
+    "max": 50
+  },
+  "SYSTEM_ALERT_WINDOW": {
+    "value": 20,
+    "min": 5,
+    "max": 50
+  },
+  "DexClassLoader": {
+    "value": 15,
+    "min": 5,
+    "max": 40
+  },
+  "DEX_SMS": {
+    "value": 12,
+    "min": 2,
+    "max": 25
+  },
+  "Reflection": {
+    "value": 10,
+    "min": 2,
+    "max": 30
+  },
+  "UnknownCertificate": {
+    "value": 10,
+    "min": 2,
+    "max": 20
+  },
+  "PackageImpersonation": {
+    "value": 20,
+    "min": 5,
+    "max": 40
+  },
+  "SamePkgForgery": {
+    "value": 60,
+    "min": 20,
+    "max": 70
+  },
+  "RuntimeExec": {
+    "value": 8,
+    "min": 2,
+    "max": 20
+  },
+  "WebviewBridge": {
+    "value": 8,
+    "min": 2,
+    "max": 20
+  },
+  "SuspiciousUrl": {
+    "value": 5,
+    "min": 1,
+    "max": 15
+  }
+}

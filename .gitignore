@@ -141,3 +141,9 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+backend/venv/
+backend/temp_uploads/
+backend/temp_reports/
+backend/__pycache__/
+*.apk
+*.pdf

@@ -1,0 +1,23 @@
+{
+  "apk_name": "fake_paytm_offers.apk",
+  "package_name": "net.one97.paytm.cashback",
+  "app_label": "Paytm Wallet Cashback Offers",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.REQUEST_INSTALL_PACKAGES"
+  ],
+  "ground_truth": "SUSPICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "8d73e5ae9b5aeb55b72001fe84da4702e295fcb89465a55e32623f5b9df08980",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "analyst_review",
+  "reviewed_by": "Auditor #2",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

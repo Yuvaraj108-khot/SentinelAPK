@@ -1,0 +1,316 @@
+{
+  "generated_at": "2026-06-21T06:21:10.101359+00:00",
+  "total_fp": 4,
+  "total_fn": 0,
+  "false_positives": [
+    {
+      "apk_name": "VLC.apk",
+      "package_name": "org.videolan.vlc",
+      "category": "Utility",
+      "risk_score": 35,
+      "verdict": "SUSPICIOUS",
+      "ground_truth": "BENIGN",
+      "certificate_status": "UNKNOWN",
+      "clone_risk": "LOW",
+      "top_reasons": [
+        "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+        "Requests System Alert overlay window",
+        "DEX: Contains Accessibility service callbacks",
+        "DEX: Suspicious URL found: https://www.openssl.org/docs/man1.0.2/apps/verify.html.\u0000!"
+      ],
+      "triggering_evidence": [
+        {
+          "detector": "UnknownCertificate",
+          "score_contribution": 0,
+          "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+        },
+        {
+          "detector": "SYSTEM_ALERT_WINDOW",
+          "score_contribution": 20,
+          "description": "Requests System Alert overlay window"
+        },
+        {
+          "detector": "Reflection",
+          "score_contribution": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        },
+        {
+          "detector": "SuspiciousUrl",
+          "score_contribution": 5,
+          "description": "DEX: Suspicious URL found: https://www.openssl.org/docs/man1.0.2/apps/verify.html.\u0000!"
+        }
+      ],
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.CHANGE_NETWORK_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        "android.permission.INTERNET",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.READ_LOGS",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.WRITE_SETTINGS",
+        "com.android.providers.tv.permission.READ_EPG_DATA",
+        "com.android.providers.tv.permission.WRITE_EPG_DATA",
+        "org.videolan.vlc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        "org.videolan.vlc.MEDIA",
+        "org.videolan.vlc.permission.BIND_DATA_CONSUMER",
+        "org.videolan.vlc.permission.READ_EXTENSION_DATA"
+      ],
+      "failure_type": "FALSE_POSITIVE",
+      "analysis": "Benign app incorrectly classified as threat"
+    },
+    {
+      "apk_name": "Termux.apk",
+      "package_name": "com.termux",
+      "category": "Utility",
+      "risk_score": 45,
+      "verdict": "SUSPICIOUS",
+      "ground_truth": "BENIGN",
+      "certificate_status": "UNKNOWN",
+      "clone_risk": "LOW",
+      "top_reasons": [
+        "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+        "Requests System Alert overlay window",
+        "DEX: Contains Accessibility service callbacks",
+        "DEX: Dynamic class loading (DexClassLoader)"
+      ],
+      "triggering_evidence": [
+        {
+          "detector": "UnknownCertificate",
+          "score_contribution": 0,
+          "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+        },
+        {
+          "detector": "SYSTEM_ALERT_WINDOW",
+          "score_contribution": 20,
+          "description": "Requests System Alert overlay window"
+        },
+        {
+          "detector": "Reflection",
+          "score_contribution": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        },
+        {
+          "detector": "DexClassLoader",
+          "score_contribution": 15,
+          "description": "DEX: Dynamic class loading (DexClassLoader)"
+        }
+      ],
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.DUMP",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.INTERNET",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.PACKAGE_USAGE_STATS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.READ_LOGS",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.WRITE_SECURE_SETTINGS",
+        "com.android.alarm.permission.SET_ALARM"
+      ],
+      "failure_type": "FALSE_POSITIVE",
+      "analysis": "Benign app incorrectly classified as threat"
+    },
+    {
+      "apk_name": "Element.apk",
+      "package_name": "im.vector.app",
+      "category": "OpenSource",
+      "risk_score": 55,
+      "verdict": "SUSPICIOUS",
+      "ground_truth": "BENIGN",
+      "certificate_status": "UNKNOWN",
+      "clone_risk": "LOW",
+      "top_reasons": [
+        "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+        "Requests System Alert overlay window",
+        "DEX: Contains SMS sending bytecode",
+        "DEX: Contains Accessibility service callbacks"
+      ],
+      "triggering_evidence": [
+        {
+          "detector": "UnknownCertificate",
+          "score_contribution": 0,
+          "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+        },
+        {
+          "detector": "SYSTEM_ALERT_WINDOW",
+          "score_contribution": 20,
+          "description": "Requests System Alert overlay window"
+        },
+        {
+          "detector": "DEX_SMS",
+          "score_contribution": 12,
+          "description": "DEX: Contains SMS sending bytecode"
+        },
+        {
+          "detector": "Reflection",
+          "score_contribution": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        },
+        {
+          "detector": "WebviewBridge",
+          "score_contribution": 8,
+          "description": "DEX: Exposes native bridge via addJavascriptInterface"
+        },
+        {
+          "detector": "SuspiciousUrl",
+          "score_contribution": 5,
+          "description": "DEX: Suspicious URL found: https://api.maptiler.com/maps/basic/static/\u00000https://api.maptiler.com/maps/streets/style.json\u0000\u0016https://app.element.io\u0000\u001ahttps://develop.element.io\u0000Xhttps://docs.element.io/latest/element-support/device-verification/how-to-verify-devices\u0000\u0011https://dummy.org\u0000.https://element.io/acceptable-use-policy-terms\u0000\u001chttps://element.io/copyright\u0000\u0017https://element.io/help\u0000{https://element.io/matrix-services?utm_source=element-android&utm_medium=native&utm_campaign=element-android-authentication\u0000\u001ahttps://element.io/privacy\u0000\u0011https://matrix.to\u0000\u0014https://matrix.to/#/\u0000\u001ahttps://staging.element.io\u0000\u0004huge\u0000\u0001i\u0000\u0003iOS\u0000\u0004iPad\u0000\u0006iPhone\u0000\u0003iat\u0000\u0015ic_action_dont_notify\u0000\u0016ic_action_notify_noisy\u0000\u0017ic_action_notify_silent\u0000\u0019ic_action_send_bug_report\u0000\u000fic_add_reaction\u0000\u0015ic_add_reaction_small\u0000\u001aic_add_to_home_screen_24dp\u0000\u0011ic_alert_triangle\u0000\u000eic_arrow_right\u0000!ic_attachment_live_location_white\u0000\u0012ic_attachment_poll\u0000$ic_baseline_perm_contact_calendar_24\u0000"
+        }
+      ],
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.CAMERA",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.FOREGROUND_SERVICE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION",
+        "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+        "android.permission.FOREGROUND_SERVICE_PHONE_CALL",
+        "android.permission.INTERNET",
+        "android.permission.MANAGE_OWN_CALLS",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.READ_CALENDAR",
+        "android.permission.READ_CONTACTS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.USE_FULL_SCREEN_INTENT",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_CALENDAR",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "im.vector.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      ],
+      "failure_type": "FALSE_POSITIVE",
+      "analysis": "Benign app incorrectly classified as threat"
+    },
+    {
+      "apk_name": "NewPipe.apk",
+      "package_name": "org.schabi.newpipe",
+      "category": "OpenSource",
+      "risk_score": 38,
+      "verdict": "SUSPICIOUS",
+      "ground_truth": "BENIGN",
+      "certificate_status": "UNKNOWN",
+      "clone_risk": "LOW",
+      "top_reasons": [
+        "Unknown certificate: issuer 'CN=Christian Schabesberger,C=DE'",
+        "Requests System Alert overlay window",
+        "DEX: Contains Accessibility service callbacks",
+        "DEX: Exposes native bridge via addJavascriptInterface"
+      ],
+      "triggering_evidence": [
+        {
+          "detector": "UnknownCertificate",
+          "score_contribution": 0,
+          "description": "Unknown certificate: issuer 'CN=Christian Schabesberger,C=DE'"
+        },
+        {
+          "detector": "SYSTEM_ALERT_WINDOW",
+          "score_contribution": 20,
+          "description": "Requests System Alert overlay window"
+        },
+        {
+          "detector": "Reflection",
+          "score_contribution": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        },
+        {
+          "detector": "WebviewBridge",
+          "score_contribution": 8,
+          "description": "DEX: Exposes native bridge via addJavascriptInterface"
+        }
+      ],
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.INTERNET",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "org.schabi.newpipe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      ],
+      "failure_type": "FALSE_POSITIVE",
+      "analysis": "Benign app incorrectly classified as threat"
+    }
+  ],
+  "false_negatives": [],
+  "fp_detector_frequency": {
+    "UnknownCertificate": 4,
+    "SYSTEM_ALERT_WINDOW": 4,
+    "Reflection": 4,
+    "SuspiciousUrl": 2,
+    "DexClassLoader": 1,
+    "DEX_SMS": 1,
+    "WebviewBridge": 2
+  },
+  "fn_malware_families": [],
+  "analysis_questions": {
+    "Q1_detections_fail_most": [
+      "UnknownCertificate",
+      "SYSTEM_ALERT_WINDOW",
+      "Reflection",
+      "SuspiciousUrl",
+      "WebviewBridge"
+    ],
+    "Q2_permissions_cause_fp": [
+      "UnknownCertificate",
+      "SYSTEM_ALERT_WINDOW",
+      "Reflection",
+      "SuspiciousUrl",
+      "WebviewBridge"
+    ],
+    "Q3_malware_evade_detection": [
+      "All malware samples detected"
+    ],
+    "Q4_incorrectly_safe": [
+      "None \u2014 all malware correctly flagged"
+    ],
+    "Q5_incorrectly_malicious": [
+      "VLC.apk",
+      "Termux.apk",
+      "Element.apk",
+      "NewPipe.apk"
+    ]
+  }
+}

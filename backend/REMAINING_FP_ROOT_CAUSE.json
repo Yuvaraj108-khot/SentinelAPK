@@ -1,0 +1,21 @@
+{
+  "detector_scores": {
+    "RuntimeExec": 0,
+    "DynamicLoading": 15,
+    "Reflection": 40,
+    "Accessibility": 0,
+    "Overlay": 80,
+    "SMS": 12,
+    "Other": 26
+  },
+  "detector_counts": {
+    "RuntimeExec": 0,
+    "DynamicLoading": 1,
+    "Reflection": 4,
+    "Accessibility": 0,
+    "Overlay": 4,
+    "SMS": 1,
+    "Other": 8
+  },
+  "heaviest_contributor": "Overlay"
+}

@@ -1,0 +1,23 @@
+{
+  "apk_name": "SecureBank_Plus.apk",
+  "package_name": "com.securebank.plus",
+  "app_label": "SecureBank Plus",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.SYSTEM_ALERT_WINDOW"
+  ],
+  "ground_truth": "SUSPICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "2820ff29ced94f75f091458d778abc63c999b21ffe9daae4ba38ef2ed10affce",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "public_dataset",
+  "reviewed_by": "RedTeam Lead",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

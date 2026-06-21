@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-06-21T05:57:30.232250+00:00",
+  "total_targets": 60,
+  "downloaded": 29,
+  "failed": 31,
+  "integrity_issues": 0,
+  "analysis_eligible": 29,
+  "failed_list": [
+    {
+      "apk_name": "GnuCash_Android.apk",
+      "reason": "Package not found in F-Droid: org.gnucash.android"
+    },
+    {
+      "apk_name": "Cashier.apk",
+      "reason": "Package not found in F-Droid: de.bitsandbites.cashier"
+    },
+    {
+      "apk_name": "Budget_watch.apk",
+      "reason": "Package not found in F-Droid: protect.budgetwatch"
+    },
+    {
+      "apk_name": "Spendings.apk",
+      "reason": "Package not found in F-Droid: org.kde.spends"
+    },
+    {
+      "apk_name": "BitBanker.apk",
+      "reason": "Package not found in F-Droid: com.gravilink.bitcoin"
+    },
+    {
+      "apk_name": "Leanback_Finance.apk",
+      "reason": "Package not found in F-Droid: com.leanback.finance"
+    },
+    {
+      "apk_name": "WireGuard.apk",
+      "reason": "Package not found in F-Droid: com.wireguard.android"
+    },
+    {
+      "apk_name": "Syncthing.apk",
+      "reason": "Package not found in F-Droid: com.nutomic.syncthingandroid"
+    },
+    {
+      "apk_name": "Orbot.apk",
+      "reason": "Package not found in F-Droid: org.torproject.android"
+    },
+    {
+      "apk_name": "OsmAnd.apk",
+      "reason": "Package not found in F-Droid: net.osmand"
+    },
+    {
+      "apk_name": "Simple_Gallery.apk",
+      "reason": "Package not found in F-Droid: com.simplemobiletools.gallery.pro"
+    },
+    {
+      "apk_name": "Signal.apk",
+      "reason": "No asset matching 'Signal-website-universal-release-*.apk' in signalapp/Signal-Android"
+    },
+    {
+      "apk_name": "TalkBack_Community.apk",
+      "reason": "Package not found in F-Droid: com.google.android.marvin.talkback"
+    },
+    {
+      "apk_name": "AccessScan.apk",
+      "reason": "Package not found in F-Droid: com.google.android.apps.accessibility.auditor"
+    },
+    {
+      "apk_name": "Accessibledroid.apk",
+      "reason": "Package not found in F-Droid: org.a11y.android"
+    },
+    {
+      "apk_name": "AutoInput.apk",
+      "reason": "Package not found in F-Droid: com.joaomgcd.autoinput"
+    },
+    {
+      "apk_name": "MacroDroid.apk",
+      "reason": "Package not found in F-Droid: com.arlosoft.macrodroid"
+    },
+    {
+      "apk_name": "Universal_Copy.apk",
+      "reason": "Package not found in F-Droid: com.camel.universal.copy"
+    },
+    {
+      "apk_name": "AutoClicker.apk",
+      "reason": "Package not found in F-Droid: com.github.android.accessibility.click"
+    },
+    {
+      "apk_name": "Magnification.apk",
+      "reason": "Package not found in F-Droid: net.angrybs.magic"
+    },
+    {
+      "apk_name": "Live_Transcribe.apk",
+      "reason": "Package not found in F-Droid: com.google.audio.hearing.visualization"
+    },
+    {
+      "apk_name": "FluBot_sample.apk",
+      "reason": "No Android samples found for 'FluBot' on MalwareBazaar"
+    },
+    {
+      "apk_name": "Cerberus_sample.apk",
+      "reason": "No Android samples found for 'Cerberus' on MalwareBazaar"
+    },
+    {
+      "apk_name": "Joker_sample.apk",
+      "reason": "No Android samples found for 'Joker' on MalwareBazaar"
+    },
+    {
+      "apk_name": "Anubis_sample.apk",
+      "reason": "No Android samples found for 'Anubis' on MalwareBazaar"
+    },
+    {
+      "apk_name": "BRATA_sample.apk",
+      "reason": "No Android samples found for 'BRATA' on MalwareBazaar"
+    },
+    {
+      "apk_name": "SpyNote_sample.apk",
+      "reason": "No Android samples found for 'SpyNote' on MalwareBazaar"
+    },
+    {
+      "apk_name": "Triada_sample.apk",
+      "reason": "No Android samples found for 'Triada' on MalwareBazaar"
+    },
+    {
+      "apk_name": "BlackRock_sample.apk",
+      "reason": "No Android samples found for 'BlackRock' on MalwareBazaar"
+    },
+    {
+      "apk_name": "Hydra_sample.apk",
+      "reason": "No Android samples found for 'Hydra' on MalwareBazaar"
+    },
+    {
+      "apk_name": "SharkBot_sample.apk",
+      "reason": "No Android samples found for 'SharkBot' on MalwareBazaar"
+    }
+  ],
+  "integrity_issue_list": [],
+  "note": "Only APKs with download_ok=True and apk_parseable=True are submitted for analysis."
+}

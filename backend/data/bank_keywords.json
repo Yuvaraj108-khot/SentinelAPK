@@ -1,0 +1,7 @@
+{
+  "SBI": ["sbi", "state bank", "yono"],
+  "HDFC": ["hdfc"],
+  "ICICI": ["icici", "imobile"],
+  "Axis": ["axis"],
+  "SecureBank": ["securebank"]
+}

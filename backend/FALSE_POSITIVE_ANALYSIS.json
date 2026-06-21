@@ -1,0 +1,782 @@
+[
+  {
+    "apk_name": "MoneyWallet.apk",
+    "package_name": "com.oriondev.moneywallet",
+    "score": 35,
+    "verdict": "SUSPICIOUS",
+    "ground_truth": "BENIGN",
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "DexClassLoader",
+        "weight": 15,
+        "description": "DEX: Dynamic class loading (DexClassLoader)"
+      }
+    ],
+    "score_breakdown": {
+      "UnknownCertificate": 10,
+      "Reflection": 10,
+      "DexClassLoader": 15
+    },
+    "evidence": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes2.dex",
+        "offset": 3849694,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "FOUND",
+        "matched_string": "Ldalvik/system/DexClassLoader;",
+        "source_file": "classes.dex",
+        "offset": 5798640,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.95
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=573a3866355abe6dc90c36981191de3cb720acb11b3da8a9f17d7d138fc042e5",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "root_cause": "App dynamically loads code (common in plugins, large apps, or specific libraries).",
+    "recommended_fix": "Reduce penalty for standard class loaders unless loading from external untrusted storage."
+  },
+  {
+    "apk_name": "Vespucci_Wallet.apk",
+    "package_name": "de.blau.android",
+    "score": 35,
+    "verdict": "SUSPICIOUS",
+    "ground_truth": "BENIGN",
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "DexClassLoader",
+        "weight": 15,
+        "description": "DEX: Dynamic class loading (DexClassLoader)"
+      }
+    ],
+    "score_breakdown": {
+      "UnknownCertificate": 10,
+      "Reflection": 10,
+      "DexClassLoader": 15
+    },
+    "evidence": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 6663803,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "FOUND",
+        "matched_string": "Ldalvik/system/PathClassLoader;",
+        "source_file": "classes.dex",
+        "offset": 6085488,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.95
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=ac5d0c287a060c1fd051f1d203c4ce33ff7008735f2d38d1951a900cbd673969",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "root_cause": "App dynamically loads code (common in plugins, large apps, or specific libraries).",
+    "recommended_fix": "Reduce penalty for standard class loaders unless loading from external untrusted storage."
+  },
+  {
+    "apk_name": "Shelter.apk",
+    "package_name": "net.typeblog.shelter",
+    "score": 40,
+    "verdict": "SUSPICIOUS",
+    "ground_truth": "BENIGN",
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "score_breakdown": {
+      "UnknownCertificate": 10,
+      "SYSTEM_ALERT_WINDOW": 20,
+      "Reflection": 10
+    },
+    "evidence": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 1449341,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=2d4837134f3519a11d104630ed42a4a795f4ab2327e1c9899cbebfbf89aba483",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "root_cause": "Combination of heuristics pushed score over threshold.",
+    "recommended_fix": "Adjust weights or require multiple high-confidence indicators."
+  },
+  {
+    "apk_name": "VLC.apk",
+    "package_name": "org.videolan.vlc",
+    "score": 45,
+    "verdict": "SUSPICIOUS",
+    "ground_truth": "BENIGN",
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "SuspiciousUrl",
+        "weight": 5,
+        "description": "DEX: Suspicious URL found: https://www.openssl.org/docs/man1.0.2/apps/verify.html.\u0000!"
+      }
+    ],
+    "score_breakdown": {
+      "UnknownCertificate": 10,
+      "SYSTEM_ALERT_WINDOW": 20,
+      "Reflection": 10,
+      "SuspiciousUrl": 5
+    },
+    "evidence": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 8286670,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=80535be61eedb9a03b0476a6f493d496c3498770404339ea7a8000f5e61d22c0",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "root_cause": "Combination of heuristics pushed score over threshold.",
+    "recommended_fix": "Adjust weights or require multiple high-confidence indicators."
+  },
+  {
+    "apk_name": "Termux.apk",
+    "package_name": "com.termux",
+    "score": 55,
+    "verdict": "SUSPICIOUS",
+    "ground_truth": "BENIGN",
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "DexClassLoader",
+        "weight": 15,
+        "description": "DEX: Dynamic class loading (DexClassLoader)"
+      }
+    ],
+    "score_breakdown": {
+      "UnknownCertificate": 10,
+      "SYSTEM_ALERT_WINDOW": 20,
+      "Reflection": 10,
+      "DexClassLoader": 15
+    },
+    "evidence": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 2779821,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "FOUND",
+        "matched_string": "Ldalvik/system/PathClassLoader;",
+        "source_file": "classes.dex",
+        "offset": 2396076,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.95
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=228fb2cfe90831c1499ec3ccaf61e96e8e1ce70766b9474672ce427334d41c42",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "root_cause": "Combination of heuristics pushed score over threshold.",
+    "recommended_fix": "Adjust weights or require multiple high-confidence indicators."
+  },
+  {
+    "apk_name": "AuroraStore.apk",
+    "package_name": "com.aurora.store",
+    "score": 35,
+    "verdict": "SUSPICIOUS",
+    "ground_truth": "BENIGN",
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "DexClassLoader",
+        "weight": 15,
+        "description": "DEX: Dynamic class loading (DexClassLoader)"
+      }
+    ],
+    "score_breakdown": {
+      "UnknownCertificate": 10,
+      "Reflection": 10,
+      "DexClassLoader": 15
+    },
+    "evidence": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 5583404,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "FOUND",
+        "matched_string": "Ldalvik/system/PathClassLoader;",
+        "source_file": "classes2.dex",
+        "offset": 4831941,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.95
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=5c83c7672b929955dc0a1db89a5e6ae4389e2eae7ec939956041694e5815f532",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "root_cause": "App dynamically loads code (common in plugins, large apps, or specific libraries).",
+    "recommended_fix": "Reduce penalty for standard class loaders unless loading from external untrusted storage."
+  },
+  {
+    "apk_name": "Element.apk",
+    "package_name": "im.vector.app",
+    "score": 65,
+    "verdict": "SUSPICIOUS",
+    "ground_truth": "BENIGN",
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "DEX_SMS",
+        "weight": 12,
+        "description": "DEX: Contains SMS sending bytecode"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      },
+      {
+        "permission": "SuspiciousUrl",
+        "weight": 5,
+        "description": "DEX: Suspicious URL found: https://api.maptiler.com/maps/basic/static/\u00000https://api.maptiler.com/maps/streets/style.json\u0000\u0016https://app.element.io\u0000\u001ahttps://develop.element.io\u0000Xhttps://docs.element.io/latest/element-support/device-verification/how-to-verify-devices\u0000\u0011https://dummy.org\u0000.https://element.io/acceptable-use-policy-terms\u0000\u001chttps://element.io/copyright\u0000\u0017https://element.io/help\u0000{https://element.io/matrix-services?utm_source=element-android&utm_medium=native&utm_campaign=element-android-authentication\u0000\u001ahttps://element.io/privacy\u0000\u0011https://matrix.to\u0000\u0014https://matrix.to/#/\u0000\u001ahttps://staging.element.io\u0000\u0004huge\u0000\u0001i\u0000\u0003iOS\u0000\u0004iPad\u0000\u0006iPhone\u0000\u0003iat\u0000\u0015ic_action_dont_notify\u0000\u0016ic_action_notify_noisy\u0000\u0017ic_action_notify_silent\u0000\u0019ic_action_send_bug_report\u0000\u000fic_add_reaction\u0000\u0015ic_add_reaction_small\u0000\u001aic_add_to_home_screen_24dp\u0000\u0011ic_alert_triangle\u0000\u000eic_arrow_right\u0000!ic_attachment_live_location_white\u0000\u0012ic_attachment_poll\u0000$ic_baseline_perm_contact_calendar_24\u0000"
+      }
+    ],
+    "score_breakdown": {
+      "UnknownCertificate": 10,
+      "SYSTEM_ALERT_WINDOW": 20,
+      "DEX_SMS": 12,
+      "Reflection": 10,
+      "WebviewBridge": 8,
+      "SuspiciousUrl": 5
+    },
+    "evidence": {
+      "sms": {
+        "status": "FOUND",
+        "matched_string": "sendTextMessage",
+        "source_file": "classes8.dex",
+        "offset": 4768147,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.9
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 7575035,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=b15d9b673b55b9fe656190794d872e59ec5b85b3bfb8a76b9442f17eae2887c9",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "root_cause": "Combination of heuristics pushed score over threshold.",
+    "recommended_fix": "Adjust weights or require multiple high-confidence indicators."
+  },
+  {
+    "apk_name": "Conversations.apk",
+    "package_name": "eu.siacs.conversations",
+    "score": 40,
+    "verdict": "SUSPICIOUS",
+    "ground_truth": "BENIGN",
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "score_breakdown": {
+      "UnknownCertificate": 10,
+      "SYSTEM_ALERT_WINDOW": 20,
+      "Reflection": 10
+    },
+    "evidence": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 6834946,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=c75abe78593643ae7cac527327cd2193482db067404a88b8c13f7a0701946187",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "root_cause": "Combination of heuristics pushed score over threshold.",
+    "recommended_fix": "Adjust weights or require multiple high-confidence indicators."
+  },
+  {
+    "apk_name": "NewPipe.apk",
+    "package_name": "org.schabi.newpipe",
+    "score": 48,
+    "verdict": "SUSPICIOUS",
+    "ground_truth": "BENIGN",
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=Christian Schabesberger,C=DE'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      }
+    ],
+    "score_breakdown": {
+      "UnknownCertificate": 10,
+      "SYSTEM_ALERT_WINDOW": 20,
+      "Reflection": 10,
+      "WebviewBridge": 8
+    },
+    "evidence": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 7950586,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=cb84069bd68116bafae5ee4ee5b08a567aa6d898404e7cb12f9e756df5cf5cab",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "root_cause": "Combination of heuristics pushed score over threshold.",
+    "recommended_fix": "Adjust weights or require multiple high-confidence indicators."
+  },
+  {
+    "apk_name": "Rboard.apk",
+    "package_name": "de.dertyp7214.rboardthememanager",
+    "score": 40,
+    "verdict": "SUSPICIOUS",
+    "ground_truth": "BENIGN",
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 10,
+        "description": "Untrusted certificate: issuer 'CN=Hacker'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "DexClassLoader",
+        "weight": 15,
+        "description": "DEX: Dynamic class loading (DexClassLoader)"
+      },
+      {
+        "permission": "SuspiciousUrl",
+        "weight": 5,
+        "description": "DEX: Suspicious URL found: https://bin.utwitch.net\u00005https://github.com/GboardThemes/PackRepoBeta/raw/main\u00003https://github.com/GboardThemes/RepoTemplate#readme\u0000Bhttps://gitlab.com/dertyp7214/RboardMirror/-/raw/main/PackRepoBeta\u0000.https://play.google.com/store/apps/details?id=\u0000"
+      }
+    ],
+    "score_breakdown": {
+      "UnknownCertificate": 10,
+      "Reflection": 10,
+      "DexClassLoader": 15,
+      "SuspiciousUrl": 5
+    },
+    "evidence": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes3.dex",
+        "offset": 7133245,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "FOUND",
+        "matched_string": "Ldalvik/system/PathClassLoader;",
+        "source_file": "classes3.dex",
+        "offset": 6267266,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.95
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=b01ff556b752eea00c491582a65259db98919c3fa6925149e50f32352a08faf4",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "root_cause": "App dynamically loads code (common in plugins, large apps, or specific libraries).",
+    "recommended_fix": "Reduce penalty for standard class loaders unless loading from external untrusted storage."
+  }
+]

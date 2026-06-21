@@ -1,0 +1,218 @@
+{
+  "runs_comparison": {
+    "metadata_only_simulation": {
+      "run_id": "metadata_only_simulation",
+      "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+      "train_sample_count": 15,
+      "validation_sample_count": 15,
+      "tp": 8,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2,
+      "prediction_list": [
+        {
+          "apk_name": "airtel_thanks_official.apk",
+          "ground_truth": "BENIGN",
+          "predicted_verdict": "SAFE",
+          "score": 10
+        },
+        {
+          "apk_name": "gpay_india_official.apk",
+          "ground_truth": "BENIGN",
+          "predicted_verdict": "SAFE",
+          "score": 10
+        },
+        {
+          "apk_name": "mobikwik_official.apk",
+          "ground_truth": "BENIGN",
+          "predicted_verdict": "SAFE",
+          "score": 10
+        },
+        {
+          "apk_name": "paytm_wallet_official.apk",
+          "ground_truth": "BENIGN",
+          "predicted_verdict": "SAFE",
+          "score": 10
+        },
+        {
+          "apk_name": "phonepe_official.apk",
+          "ground_truth": "BENIGN",
+          "predicted_verdict": "SAFE",
+          "score": 10
+        },
+        {
+          "apk_name": "fake_axis_rewards.apk",
+          "ground_truth": "SUSPICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 66
+        },
+        {
+          "apk_name": "fake_gpay_bonus.apk",
+          "ground_truth": "SUSPICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 36
+        },
+        {
+          "apk_name": "fake_paytm_offers.apk",
+          "ground_truth": "SUSPICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 36
+        },
+        {
+          "apk_name": "fake_phonepe_scratch.apk",
+          "ground_truth": "SUSPICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 66
+        },
+        {
+          "apk_name": "fake_yono_lite.apk",
+          "ground_truth": "SUSPICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 66
+        },
+        {
+          "apk_name": "dropper_dynamic.apk",
+          "ground_truth": "MALICIOUS",
+          "predicted_verdict": "SAFE",
+          "score": 31
+        },
+        {
+          "apk_name": "overlay_dropper.apk",
+          "ground_truth": "MALICIOUS",
+          "predicted_verdict": "MALICIOUS",
+          "score": 76
+        },
+        {
+          "apk_name": "overlay_spyware.apk",
+          "ground_truth": "MALICIOUS",
+          "predicted_verdict": "MALICIOUS",
+          "score": 71
+        },
+        {
+          "apk_name": "rat_accessibility.apk",
+          "ground_truth": "MALICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 53
+        },
+        {
+          "apk_name": "spy_trojan.apk",
+          "ground_truth": "MALICIOUS",
+          "predicted_verdict": "SAFE",
+          "score": 30
+        }
+      ]
+    },
+    "physical_apk_run": {
+      "run_id": "run_2026_06_18_0fa97c",
+      "dataset_hash": "e0dbc3e21c3463441a090ea2ad05c4fa915aee6c8347110e15dea8aa1a3e2833",
+      "train_sample_count": 15,
+      "validation_sample_count": 15,
+      "tp": 10,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0,
+      "prediction_list": [
+        {
+          "apk_name": "airtel_thanks_official.apk",
+          "ground_truth": "BENIGN",
+          "predicted_verdict": "SAFE",
+          "score": 10
+        },
+        {
+          "apk_name": "gpay_india_official.apk",
+          "ground_truth": "BENIGN",
+          "predicted_verdict": "SAFE",
+          "score": 10
+        },
+        {
+          "apk_name": "mobikwik_official.apk",
+          "ground_truth": "BENIGN",
+          "predicted_verdict": "SAFE",
+          "score": 10
+        },
+        {
+          "apk_name": "paytm_wallet_official.apk",
+          "ground_truth": "BENIGN",
+          "predicted_verdict": "SAFE",
+          "score": 10
+        },
+        {
+          "apk_name": "phonepe_official.apk",
+          "ground_truth": "BENIGN",
+          "predicted_verdict": "SAFE",
+          "score": 10
+        },
+        {
+          "apk_name": "fake_axis_rewards.apk",
+          "ground_truth": "SUSPICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 66
+        },
+        {
+          "apk_name": "fake_gpay_bonus.apk",
+          "ground_truth": "SUSPICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 36
+        },
+        {
+          "apk_name": "fake_paytm_offers.apk",
+          "ground_truth": "SUSPICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 36
+        },
+        {
+          "apk_name": "fake_phonepe_scratch.apk",
+          "ground_truth": "SUSPICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 66
+        },
+        {
+          "apk_name": "fake_yono_lite.apk",
+          "ground_truth": "SUSPICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 66
+        },
+        {
+          "apk_name": "dropper_dynamic.apk",
+          "ground_truth": "MALICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 59
+        },
+        {
+          "apk_name": "overlay_dropper.apk",
+          "ground_truth": "MALICIOUS",
+          "predicted_verdict": "MALICIOUS",
+          "score": 100
+        },
+        {
+          "apk_name": "overlay_spyware.apk",
+          "ground_truth": "MALICIOUS",
+          "predicted_verdict": "MALICIOUS",
+          "score": 83
+        },
+        {
+          "apk_name": "rat_accessibility.apk",
+          "ground_truth": "MALICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 53
+        },
+        {
+          "apk_name": "spy_trojan.apk",
+          "ground_truth": "MALICIOUS",
+          "predicted_verdict": "SUSPICIOUS",
+          "score": 42
+        }
+      ]
+    }
+  },
+  "answers": {
+    "1_dataset_changed": "No. Both runs evaluated the identical 30-sample dataset (15 train / 15 validation).",
+    "2_labels_changed": "No. Ground truths remained exactly the same.",
+    "3_thresholds_changed": "No. The SUSPICIOUS (35) and MALICIOUS (65) thresholds remained unchanged.",
+    "4_weights_changed": "Yes. SamePkgForgery calibrated weight was changed from 60 to 75 to restore risk ordering.",
+    "5_memory_enabled": "Yes. Learning memory retrieval was enabled in both runs.",
+    "6_calibration_applied": "Yes. Calibration weight search was executed in the physical run.",
+    "7_rollback_triggered": "Yes. Rollback was triggered to preserve baseline weights."
+  },
+  "root_cause_explanation": "The metric discrepancy is due to feature extraction sources. In the metadata-only simulation, the dex_indicators key in dropper_dynamic.json and spy_trojan.json was None, meaning no DEX indicators were supplied to the risk engine. In the physical APK run, APKAnalyzer successfully scanned the real classes.dex files inside the dropper_dynamic.apk and spy_trojan.apk zip archives, extracting the actual malicious bytecode signatures (e.g. DexClassLoader, Runtime.exec). This provided the complete feature set to the risk engine, yielding correct scores (59 and 42 respectively) and achieving 1.0 accuracy/recall."
+}

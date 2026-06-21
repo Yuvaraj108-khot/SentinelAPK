@@ -1,0 +1,2999 @@
+[
+  {
+    "apk_name": "MoneyWallet.apk",
+    "package_name": "com.oriondev.moneywallet",
+    "sha256": "815e57ae6881e4f73e0ea73f2c2f494cc23df380c5f264a6b1b796ca91119263",
+    "category": "Banking",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 25,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes2.dex",
+        "offset": 3849694,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "FOUND",
+        "matched_string": "Ldalvik/system/DexClassLoader;",
+        "source_file": "classes.dex",
+        "offset": 5798640,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.95
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=573a3866355abe6dc90c36981191de3cb720acb11b3da8a9f17d7d138fc042e5",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1407",
+        "name": "Dynamic Code Loading",
+        "description": "Loading execution payloads dynamically. Evidence: Ldalvik/system/DexClassLoader;"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.INTERNET",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.USE_FINGERPRINT",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "DexClassLoader",
+        "weight": 15,
+        "description": "DEX: Dynamic class loading (DexClassLoader)"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Dynamic class loading (DexClassLoader)"
+    ],
+    "app_name": "MoneyWallet"
+  },
+  {
+    "apk_name": "My_Expenses.apk",
+    "package_name": "org.totschnig.myexpenses",
+    "sha256": "d12a6cfc27ff2dc70d3241455a6ac7f5b27bbd4371bff626ac5672ff3d2b5eaa",
+    "category": "Banking",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 10,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 8420593,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=cc73d1af732cd02b84a9c7d56b7b64b9d69d47a265ec34b088d6857d9fbf97ce",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.AUTHENTICATE_ACCOUNTS",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "android.permission.GET_ACCOUNTS",
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_ACCOUNTS",
+      "android.permission.NFC",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_CALENDAR",
+      "android.permission.READ_SYNC_SETTINGS",
+      "android.permission.READ_SYNC_STATS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.USE_CREDENTIALS",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_CALENDAR",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.WRITE_SYNC_SETTINGS",
+      "com.android.launcher.permission.INSTALL_SHORTCUT",
+      "org.totschnig.myexpenses.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "My Expenses"
+  },
+  {
+    "apk_name": "Firefly_III.apk",
+    "package_name": "xyz.hisname.fireflyiii",
+    "sha256": "739fae2c6facab68c3e4706995d232bbb278216f0a214a3d04b34cf0d67d6bc5",
+    "category": "Banking",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 10,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 5645690,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=e765baae47b7691d055b408c197d5a8ae90eb76442667e286e4f01cf6f6aac9f",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.AUTHENTICATE_ACCOUNTS",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.INTERNET",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "com.android.launcher.permission.INSTALL_SHORTCUT"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "Photuris III"
+  },
+  {
+    "apk_name": "Vespucci_Wallet.apk",
+    "package_name": "de.blau.android",
+    "sha256": "d99fc6da2a35b6fcb57c872f12093ba77125dfda3b043f3c4a79b3cdd7ce0ac6",
+    "category": "Banking",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 25,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 6663803,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "FOUND",
+        "matched_string": "Ldalvik/system/PathClassLoader;",
+        "source_file": "classes.dex",
+        "offset": 6085488,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.95
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=ac5d0c287a060c1fd051f1d203c4ce33ff7008735f2d38d1951a900cbd673969",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1407",
+        "name": "Dynamic Code Loading",
+        "description": "Loading execution payloads dynamically. Evidence: Ldalvik/system/PathClassLoader;"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_MEDIA_LOCATION",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_LOCATION",
+      "android.permission.INTERNET",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_MEDIA_IMAGES",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "de.blau.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "DexClassLoader",
+        "weight": 15,
+        "description": "DEX: Dynamic class loading (DexClassLoader)"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Dynamic class loading (DexClassLoader)"
+    ],
+    "app_name": "Vespucci"
+  },
+  {
+    "apk_name": "Aegis_Authenticator.apk",
+    "package_name": "com.beemdevelopment.aegis",
+    "sha256": "5b9d496d21c5938bdd733b01583516d27cd556db0749357f58baa648ef8ef804",
+    "category": "Security",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 10,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 3945751,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=c6db80a8e14e5230c1de8415ef820d13dc901d8fe33cf3acb57b6862d858a823",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.CAMERA",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "android.permission.VIBRATE",
+      "com.beemdevelopment.aegis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=Beem Development'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=Beem Development'",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "Aegis"
+  },
+  {
+    "apk_name": "OpenKeychain.apk",
+    "package_name": "org.sufficientlysecure.keychain",
+    "sha256": "f88374b9113aa9ddba865258bd989eb3ac2ca1577d92e59d6e84228e080674ce",
+    "category": "Security",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 15,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 8288843,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=2805a6f465acb923103a2ab3a145e1a97a74c44acf751250b588ebc3f88a0cc9",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.CAMERA",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "android.permission.INTERNET",
+      "android.permission.NFC",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.READ_MEDIA_AUDIO",
+      "android.permission.READ_MEDIA_IMAGES",
+      "android.permission.READ_MEDIA_VIDEO",
+      "android.permission.READ_SYNC_SETTINGS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_SYNC_SETTINGS",
+      "org.sufficientlysecure.keychain.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "SuspiciousUrl",
+        "weight": 5,
+        "description": "DEX: Suspicious URL found: https://api.fidesmo.com/service/\u00004https://api.fidesmo.com/service/0cdc651e/OKC-install\u0000Bhttps://f-droid.org/repository/browse/?fdid=org.torproject.android\u0000\u0018https://fontawesome.com/\u0000/https://github.com/google/material-design-icons\u0000\u001fhttps://maps.google.com/maps?q=\u0000\u0013https://openpgpkey.\u0000.https://play.google.com/store/apps/details?id=\u0000Dhttps://play.google.com/store/apps/details?id=org.torproject.android\u0000Nhttps://raw.githubusercontent.com/Templarian/MaterialDesign/master/license.txt\u0000.https://www.facebook.com/%s/publickey/download\u0000\u0002hw\u0000"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Suspicious URL found: https://api.fidesmo.com/service/\u00004https://api.fidesmo.com/service/0cdc651e/OKC-install\u0000Bhttps://f-droid.org/repository/browse/?fdid=org.torproject.android\u0000\u0018https://fontawesome.com/\u0000/https://github.com/google/material-design-icons\u0000\u001fhttps://maps.google.com/maps?q=\u0000\u0013https://openpgpkey.\u0000.https://play.google.com/store/apps/details?id=\u0000Dhttps://play.google.com/store/apps/details?id=org.torproject.android\u0000Nhttps://raw.githubusercontent.com/Templarian/MaterialDesign/master/license.txt\u0000.https://www.facebook.com/%s/publickey/download\u0000\u0002hw\u0000"
+    ],
+    "app_name": "OpenKeychain"
+  },
+  {
+    "apk_name": "KeePassDX.apk",
+    "package_name": "com.kunzisoft.keepass.libre",
+    "sha256": "23d6917bf11fcde7f4a2b8072faa893df857955d6201244e370357bd7d65c598",
+    "category": "Security",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 10,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 7812783,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=c810aab7efa4d5ad3fc2941fdf5f99b88a3b73f86219715627edb4dabac541a4",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.QUERY_ALL_PACKAGES",
+      "android.permission.SCHEDULE_EXACT_ALARM",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "android.permission.VIBRATE",
+      "com.kunzisoft.keepass.libre.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "KeePassDX"
+  },
+  {
+    "apk_name": "AdAway.apk",
+    "package_name": "org.adaway",
+    "sha256": "0de00a58a0dbb4c4b6befc9fe1f5e53800993484baab955824798f46fbf3338e",
+    "category": "Security",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 10,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 5233721,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=42203f1ac857426d1496e971db96fbe1f88c25c9e1f895a5c98d703891292277",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.INTERNET",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.QUERY_ALL_PACKAGES",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.WAKE_LOCK",
+      "org.adaway.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "AdAway"
+  },
+  {
+    "apk_name": "Privacy_Browser.apk",
+    "package_name": "com.stoutner.privacybrowser.standard",
+    "sha256": "209e0670cb44a959dd628737eaa5b8df05bfb605e4706de49ea2b72684cf72e3",
+    "category": "Security",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 18,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 1739820,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=f97614dc96964bea2e4fa66b24608a510a87b3b1e01ba68e0753c099133a8768",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.INTERNET",
+      "com.android.launcher.permission.INSTALL_SHORTCUT",
+      "com.stoutner.privacybrowser.standard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Exposes native bridge via addJavascriptInterface"
+    ],
+    "app_name": "Privacy Browser"
+  },
+  {
+    "apk_name": "Cryptomator.apk",
+    "package_name": "org.cryptomator.lite",
+    "sha256": "d5cb6c0bb40b5a82fe4ea5689599aa871bb725c25f0d6d1bde44120b696073b9",
+    "category": "Security",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 10,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 7917135,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=f7c3ec3b0d588d3cb52983e9eb1a7421c93d4339a286398e71d7b651e8d8ecdd",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "android.permission.INTERNET",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.READ_MEDIA_IMAGES",
+      "android.permission.READ_MEDIA_VIDEO",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.REORDER_TASKS",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "org.cryptomator.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'O=Skymatic,L=Bonn,ST=North Rhine-Westphalia,C=DE'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'O=Skymatic,L=Bonn,ST=North Rhine-Westphalia,C=DE'",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "Cryptomator"
+  },
+  {
+    "apk_name": "Shelter.apk",
+    "package_name": "net.typeblog.shelter",
+    "sha256": "d6d67b22f066d40f8771d8d7c0e0efe9315b37224d5b7e724f4c0e9b0eecca07",
+    "category": "Security",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 30,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 1449341,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=2d4837134f3519a11d104630ed42a4a795f4ab2327e1c9899cbebfbf89aba483",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1418",
+        "name": "Input Capture / Overlay Abuse",
+        "description": "Creating overlays to capture credentials. Evidence: android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED",
+      "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "android.permission.NFC",
+      "android.permission.PACKAGE_USAGE_STATS",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.REQUEST_DELETE_PACKAGES",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "com.android.launcher.permission.INSTALL_SHORTCUT",
+      "net.typeblog.shelter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "Requests System Alert overlay window",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "Shelter"
+  },
+  {
+    "apk_name": "VLC.apk",
+    "package_name": "org.videolan.vlc",
+    "sha256": "4a9144fadfd8606cc5c0e9db892fd24846b7b2efeb1630db5377955d1612b119",
+    "category": "Utility",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 35,
+    "verdict": "SUSPICIOUS",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 8286670,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=80535be61eedb9a03b0476a6f493d496c3498770404339ea7a8000f5e61d22c0",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1418",
+        "name": "Input Capture / Overlay Abuse",
+        "description": "Creating overlays to capture credentials. Evidence: android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.BLUETOOTH",
+      "android.permission.BLUETOOTH_CONNECT",
+      "android.permission.CHANGE_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.READ_LOGS",
+      "android.permission.READ_MEDIA_AUDIO",
+      "android.permission.READ_MEDIA_IMAGES",
+      "android.permission.READ_MEDIA_VIDEO",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.WRITE_SETTINGS",
+      "com.android.providers.tv.permission.READ_EPG_DATA",
+      "com.android.providers.tv.permission.WRITE_EPG_DATA",
+      "org.videolan.vlc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "org.videolan.vlc.MEDIA",
+      "org.videolan.vlc.permission.BIND_DATA_CONSUMER",
+      "org.videolan.vlc.permission.READ_EXTENSION_DATA"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "SuspiciousUrl",
+        "weight": 5,
+        "description": "DEX: Suspicious URL found: https://www.openssl.org/docs/man1.0.2/apps/verify.html.\u0000!"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "Requests System Alert overlay window",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Suspicious URL found: https://www.openssl.org/docs/man1.0.2/apps/verify.html.\u0000!"
+    ],
+    "app_name": "VLC"
+  },
+  {
+    "apk_name": "Nextcloud.apk",
+    "package_name": "com.nextcloud.client",
+    "sha256": "ac2ac97c3c5c73fa821d59a7b583ca9fdc78df70049110023209128f6d3f639b",
+    "category": "Utility",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 18,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes3.dex",
+        "offset": 7339476,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=5709576f9d6c6a7687dd5d56b269d1fa5e379702b91bc83f39fd7b7c597c1b83",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_MEDIA_LOCATION",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.AUTHENTICATE_ACCOUNTS",
+      "android.permission.CAMERA",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "android.permission.GET_ACCOUNTS",
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_ACCOUNTS",
+      "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_CALENDAR",
+      "android.permission.READ_CONTACTS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.READ_MEDIA_IMAGES",
+      "android.permission.READ_MEDIA_VIDEO",
+      "android.permission.READ_SYNC_SETTINGS",
+      "android.permission.READ_SYNC_STATS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_CREDENTIALS",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_CALENDAR",
+      "android.permission.WRITE_CONTACTS",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.WRITE_SYNC_SETTINGS",
+      "com.android.launcher.permission.INSTALL_SHORTCUT",
+      "com.nextcloud.client.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Exposes native bridge via addJavascriptInterface"
+    ],
+    "app_name": "Nextcloud"
+  },
+  {
+    "apk_name": "Markor.apk",
+    "package_name": "net.gsantner.markor",
+    "sha256": "3f9f260dc3e32a1281cb8803eea6f926eef897579f68a5d35f922523974b84b9",
+    "category": "Utility",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 18,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 7802921,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=9c70033237dc46fe5052e420c665708de8b3105b89842843818981826b7eec9c",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "com.android.launcher.permission.INSTALL_SHORTCUT",
+      "net.gsantner.markor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Exposes native bridge via addJavascriptInterface"
+    ],
+    "app_name": "Markor"
+  },
+  {
+    "apk_name": "K9Mail.apk",
+    "package_name": "com.fsck.k9",
+    "sha256": "10a81c2a360868d1c26ab37c6225365b1ee02757ab8f90facb377560becfba55",
+    "category": "Utility",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 18,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 9418757,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=c430665e3662253b2078dcda350c2c6ce44d915a3d8a147b63ced619bb9e8576",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.CAMERA",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "android.permission.INTERNET",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_CONTACTS",
+      "android.permission.READ_SYNC_SETTINGS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.SCHEDULE_EXACT_ALARM",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "com.fsck.k9.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Exposes native bridge via addJavascriptInterface"
+    ],
+    "app_name": "K-9 Mail"
+  },
+  {
+    "apk_name": "AnkiDroid.apk",
+    "package_name": "com.ichi2.anki",
+    "sha256": "3a641d4a269aefd06104e89f57880f0b9723fa380d87885d909c76249e6f081b",
+    "category": "Utility",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 23,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 8407631,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=24a3d4756c62dd69c86df69aa7fa327b2a6bf55f55c4a1749f99bd1da75906bb",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.GET_PACKAGE_SIZE",
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "com.ichi2.anki.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "com.ichi2.anki.permission.READ_WRITE_DATABASE"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      },
+      {
+        "permission": "SuspiciousUrl",
+        "weight": 5,
+        "description": "DEX: Suspicious URL found: https://docs.ankiweb.net/templates/errors.html#front-of-card-is-blank"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Exposes native bridge via addJavascriptInterface",
+      "DEX: Suspicious URL found: https://docs.ankiweb.net/templates/errors.html#front-of-card-is-blank"
+    ],
+    "app_name": "AnkiDroid"
+  },
+  {
+    "apk_name": "Tasks.apk",
+    "package_name": "org.tasks",
+    "sha256": "ae19d8719932692b10236a4ef6e1e74f7e1a70328eca13a905156cfd2f08ecb8",
+    "category": "Utility",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 10,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 13820881,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=a038a055bf43b2659cbaf862808afd5e447d4d0e2749a10391910009cbd8dcfa",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_BACKGROUND_LOCATION",
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.INTERNET",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_APP_BADGE",
+      "android.permission.READ_CALENDAR",
+      "android.permission.READ_SYNC_STATS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.SCHEDULE_EXACT_ALARM",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_CALENDAR",
+      "com.anddoes.launcher.permission.UPDATE_COUNT",
+      "com.android.launcher.permission.INSTALL_SHORTCUT",
+      "com.google.android.googleapps.permission.GOOGLE_AUTH",
+      "com.google.android.providers.gsf.permission.READ_GSERVICES",
+      "com.htc.launcher.permission.READ_SETTINGS",
+      "com.htc.launcher.permission.UPDATE_SHORTCUT",
+      "com.huawei.android.launcher.permission.CHANGE_BADGE",
+      "com.huawei.android.launcher.permission.READ_SETTINGS",
+      "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+      "com.majeur.launcher.permission.UPDATE_BADGE",
+      "com.oppo.launcher.permission.READ_SETTINGS",
+      "com.oppo.launcher.permission.WRITE_SETTINGS",
+      "com.sec.android.provider.badge.permission.READ",
+      "com.sec.android.provider.badge.permission.WRITE",
+      "com.sonyericsson.home.permission.BROADCAST_BADGE",
+      "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+      "me.everything.badger.permission.BADGE_COUNT_READ",
+      "me.everything.badger.permission.BADGE_COUNT_WRITE",
+      "org.tasks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "Tasks"
+  },
+  {
+    "apk_name": "Termux.apk",
+    "package_name": "com.termux",
+    "sha256": "fdd476982cd74f2f00aac12d3683b1fa260a0b2d146411b94e09d773be3a7b56",
+    "category": "Utility",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 45,
+    "verdict": "SUSPICIOUS",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 2779821,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "FOUND",
+        "matched_string": "Ldalvik/system/PathClassLoader;",
+        "source_file": "classes.dex",
+        "offset": 2396076,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.95
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=228fb2cfe90831c1499ec3ccaf61e96e8e1ce70766b9474672ce427334d41c42",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1418",
+        "name": "Input Capture / Overlay Abuse",
+        "description": "Creating overlays to capture credentials. Evidence: android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "id": "T1407",
+        "name": "Dynamic Code Loading",
+        "description": "Loading execution payloads dynamically. Evidence: Ldalvik/system/PathClassLoader;"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.DUMP",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "android.permission.PACKAGE_USAGE_STATS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.READ_LOGS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.WRITE_SECURE_SETTINGS",
+      "com.android.alarm.permission.SET_ALARM"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "DexClassLoader",
+        "weight": 15,
+        "description": "DEX: Dynamic class loading (DexClassLoader)"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "Requests System Alert overlay window",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Dynamic class loading (DexClassLoader)"
+    ],
+    "app_name": "Termux"
+  },
+  {
+    "apk_name": "FairEmail.apk",
+    "package_name": "eu.faircode.email",
+    "sha256": "c63d25b6c5f82fa1339308d8244f014bb0ac322dcfa61265f10053fc21a56b6b",
+    "category": "Utility",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 18,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 9567747,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=b9d041582af46ee39bba0f2f1829d948ae21ecf7ffa6ba120385d245ebb788ae",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_LOCAL_NETWORK",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.DETECT_SCREEN_RECORDING",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "android.permission.GET_ACCOUNTS",
+      "android.permission.INTERNET",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_APP_BADGE",
+      "android.permission.READ_CALENDAR",
+      "android.permission.READ_CONTACTS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+      "android.permission.SCHEDULE_EXACT_ALARM",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_CREDENTIALS",
+      "android.permission.USE_FINGERPRINT",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_CALENDAR",
+      "com.anddoes.launcher.permission.UPDATE_COUNT",
+      "com.android.vending.BILLING",
+      "com.htc.launcher.permission.READ_SETTINGS",
+      "com.htc.launcher.permission.UPDATE_SHORTCUT",
+      "com.huawei.android.launcher.permission.CHANGE_BADGE",
+      "com.huawei.android.launcher.permission.READ_SETTINGS",
+      "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+      "com.majeur.launcher.permission.UPDATE_BADGE",
+      "com.oppo.launcher.permission.READ_SETTINGS",
+      "com.oppo.launcher.permission.WRITE_SETTINGS",
+      "com.sec.android.provider.badge.permission.READ",
+      "com.sec.android.provider.badge.permission.WRITE",
+      "com.sonyericsson.home.permission.BROADCAST_BADGE",
+      "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+      "com.vivo.notification.permission.BADGE_ICON",
+      "eu.faircode.email.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "me.everything.badger.permission.BADGE_COUNT_READ",
+      "me.everything.badger.permission.BADGE_COUNT_WRITE"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Exposes native bridge via addJavascriptInterface"
+    ],
+    "app_name": "FairEmail"
+  },
+  {
+    "apk_name": "Wikipedia.apk",
+    "package_name": "org.wikipedia",
+    "sha256": "ce97a4b75f84002ac3338a69446a198d622ac76dd94d05ab0ecc43c7f4fc88d7",
+    "category": "OpenSource",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 18,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 10908508,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=1c3ddb0e8f3258b0ff3b7b6a608d19e7cdeed38a5897bbda23bac155923b1267",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.AUTHENTICATE_ACCOUNTS",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.GET_ACCOUNTS",
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_ACCOUNTS",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.READ_PHONE_STATE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "org.wikipedia.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Exposes native bridge via addJavascriptInterface"
+    ],
+    "app_name": "Wikipedia"
+  },
+  {
+    "apk_name": "FDroid.apk",
+    "package_name": "org.fdroid.fdroid",
+    "sha256": "0b6c65becb0712828625976c6baa76fc40153f77871487b5bc231c3433856b50",
+    "category": "OpenSource",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 10,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 7830859,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=43238d512c1e5eb2d6569f4a3afbf5523418b82e0a3ed1552770abb9a9c9ccab",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_LOCAL_NETWORK",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.BLUETOOTH",
+      "android.permission.BLUETOOTH_ADMIN",
+      "android.permission.BLUETOOTH_ADVERTISE",
+      "android.permission.BLUETOOTH_CONNECT",
+      "android.permission.BLUETOOTH_SCAN",
+      "android.permission.CAMERA",
+      "android.permission.CHANGE_NETWORK_STATE",
+      "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+      "android.permission.CHANGE_WIFI_STATE",
+      "android.permission.ENFORCE_UPDATE_OWNERSHIP",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.QUERY_ALL_PACKAGES",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.REQUEST_DELETE_PACKAGES",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.WRITE_SETTINGS",
+      "org.fdroid.fdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "org.fdroid.fdroid.permission.UPDATE_REPOS"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=Ciaran Gultnieks,OU=Unknown,O=Unknown,L=Wetherby,ST=Unknown,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=Ciaran Gultnieks,OU=Unknown,O=Unknown,L=Wetherby,ST=Unknown,C=UK'",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "F-Droid"
+  },
+  {
+    "apk_name": "AuroraStore.apk",
+    "package_name": "com.aurora.store",
+    "sha256": "c4ce0df0bbb0e82be4e4bd7d8a3e000f08e04457187d560fe2ca3ae52941bf49",
+    "category": "OpenSource",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 25,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 5583404,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "FOUND",
+        "matched_string": "Ldalvik/system/PathClassLoader;",
+        "source_file": "classes2.dex",
+        "offset": 4831941,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.95
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=5c83c7672b929955dc0a1db89a5e6ae4389e2eae7ec939956041694e5815f532",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1407",
+        "name": "Dynamic Code Loading",
+        "description": "Loading execution payloads dynamically. Evidence: Ldalvik/system/PathClassLoader;"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ENFORCE_UPDATE_OWNERSHIP",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.QUERY_ALL_PACKAGES",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.REQUEST_DELETE_PACKAGES",
+      "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION",
+      "android.permission.USE_CREDENTIALS",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "com.aurora.store.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "moe.shizuku.manager.permission.API_V23"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "DexClassLoader",
+        "weight": 15,
+        "description": "DEX: Dynamic class loading (DexClassLoader)"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Dynamic class loading (DexClassLoader)"
+    ],
+    "app_name": "Aurora Store"
+  },
+  {
+    "apk_name": "Element.apk",
+    "package_name": "im.vector.app",
+    "sha256": "66f8aecb050eff7d81c992c03e2186f66adb752729344ae3e24a98a6b4ab4613",
+    "category": "OpenSource",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 55,
+    "verdict": "SUSPICIOUS",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "FOUND",
+        "matched_string": "sendTextMessage",
+        "source_file": "classes8.dex",
+        "offset": 4768147,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.9
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 7575035,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=b15d9b673b55b9fe656190794d872e59ec5b85b3bfb8a76b9442f17eae2887c9",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1647",
+        "name": "SMS Collection",
+        "description": "Accessing messages to steal OTPs. Evidence: sendTextMessage"
+      },
+      {
+        "id": "T1418",
+        "name": "Input Capture / Overlay Abuse",
+        "description": "Creating overlays to capture credentials. Evidence: android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.BLUETOOTH",
+      "android.permission.BLUETOOTH_CONNECT",
+      "android.permission.CAMERA",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.FOREGROUND_SERVICE_LOCATION",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION",
+      "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+      "android.permission.FOREGROUND_SERVICE_PHONE_CALL",
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_OWN_CALLS",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_CALENDAR",
+      "android.permission.READ_CONTACTS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "android.permission.USE_FULL_SCREEN_INTENT",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_CALENDAR",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "im.vector.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "DEX_SMS",
+        "weight": 12,
+        "description": "DEX: Contains SMS sending bytecode"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      },
+      {
+        "permission": "SuspiciousUrl",
+        "weight": 5,
+        "description": "DEX: Suspicious URL found: https://api.maptiler.com/maps/basic/static/\u00000https://api.maptiler.com/maps/streets/style.json\u0000\u0016https://app.element.io\u0000\u001ahttps://develop.element.io\u0000Xhttps://docs.element.io/latest/element-support/device-verification/how-to-verify-devices\u0000\u0011https://dummy.org\u0000.https://element.io/acceptable-use-policy-terms\u0000\u001chttps://element.io/copyright\u0000\u0017https://element.io/help\u0000{https://element.io/matrix-services?utm_source=element-android&utm_medium=native&utm_campaign=element-android-authentication\u0000\u001ahttps://element.io/privacy\u0000\u0011https://matrix.to\u0000\u0014https://matrix.to/#/\u0000\u001ahttps://staging.element.io\u0000\u0004huge\u0000\u0001i\u0000\u0003iOS\u0000\u0004iPad\u0000\u0006iPhone\u0000\u0003iat\u0000\u0015ic_action_dont_notify\u0000\u0016ic_action_notify_noisy\u0000\u0017ic_action_notify_silent\u0000\u0019ic_action_send_bug_report\u0000\u000fic_add_reaction\u0000\u0015ic_add_reaction_small\u0000\u001aic_add_to_home_screen_24dp\u0000\u0011ic_alert_triangle\u0000\u000eic_arrow_right\u0000!ic_attachment_live_location_white\u0000\u0012ic_attachment_poll\u0000$ic_baseline_perm_contact_calendar_24\u0000"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "Requests System Alert overlay window",
+      "DEX: Contains SMS sending bytecode",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "Element Classic"
+  },
+  {
+    "apk_name": "Conversations.apk",
+    "package_name": "eu.siacs.conversations",
+    "sha256": "dac24c81ba4ca0bbb73dfa11c42eaa90c34fd8375941a0874b37159e2ac07e4d",
+    "category": "OpenSource",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 30,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 6834946,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=c75abe78593643ae7cac527327cd2193482db067404a88b8c13f7a0701946187",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1418",
+        "name": "Input Capture / Overlay Abuse",
+        "description": "Creating overlays to capture credentials. Evidence: android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.BLUETOOTH",
+      "android.permission.BLUETOOTH_CONNECT",
+      "android.permission.CAMERA",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_CAMERA",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+      "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED",
+      "android.permission.INTERNET",
+      "android.permission.MANAGE_OWN_CALLS",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_APP_BADGE",
+      "android.permission.READ_CONTACTS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.READ_MEDIA_AUDIO",
+      "android.permission.READ_MEDIA_IMAGES",
+      "android.permission.READ_MEDIA_VIDEO",
+      "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+      "android.permission.READ_PROFILE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.USE_FULL_SCREEN_INTENT",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "com.anddoes.launcher.permission.UPDATE_COUNT",
+      "com.htc.launcher.permission.READ_SETTINGS",
+      "com.htc.launcher.permission.UPDATE_SHORTCUT",
+      "com.huawei.android.launcher.permission.CHANGE_BADGE",
+      "com.huawei.android.launcher.permission.READ_SETTINGS",
+      "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+      "com.majeur.launcher.permission.UPDATE_BADGE",
+      "com.oppo.launcher.permission.READ_SETTINGS",
+      "com.oppo.launcher.permission.WRITE_SETTINGS",
+      "com.sec.android.provider.badge.permission.READ",
+      "com.sec.android.provider.badge.permission.WRITE",
+      "com.sonyericsson.home.permission.BROADCAST_BADGE",
+      "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+      "eu.siacs.conversations.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "me.everything.badger.permission.BADGE_COUNT_READ",
+      "me.everything.badger.permission.BADGE_COUNT_WRITE"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "Requests System Alert overlay window",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "Conversations"
+  },
+  {
+    "apk_name": "NewPipe.apk",
+    "package_name": "org.schabi.newpipe",
+    "sha256": "d9fb2540b3a2a0b059c73a296f0cda1c06738426d013c626dbf088aea66629b3",
+    "category": "OpenSource",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 38,
+    "verdict": "SUSPICIOUS",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 7950586,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=cb84069bd68116bafae5ee4ee5b08a567aa6d898404e7cb12f9e756df5cf5cab",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1418",
+        "name": "Input Capture / Overlay Abuse",
+        "description": "Creating overlays to capture credentials. Evidence: android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "android.permission.INTERNET",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "org.schabi.newpipe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=Christian Schabesberger,C=DE'"
+      },
+      {
+        "permission": "SYSTEM_ALERT_WINDOW",
+        "weight": 20,
+        "description": "Requests System Alert overlay window"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=Christian Schabesberger,C=DE'",
+      "Requests System Alert overlay window",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Exposes native bridge via addJavascriptInterface"
+    ],
+    "app_name": "NewPipe"
+  },
+  {
+    "apk_name": "Briar.apk",
+    "package_name": "org.briarproject.briar.android",
+    "sha256": "8cc8f18d0c603f9e3fc982a293db9165f8968359d2bc5f1d81f47b36bd76b719",
+    "category": "OpenSource",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 10,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 7731407,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=501ddf14a6ecf904fb20285c56a565cb987a867f91572ee33c2d43771cca4e37",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.BLUETOOTH",
+      "android.permission.BLUETOOTH_ADMIN",
+      "android.permission.BLUETOOTH_ADVERTISE",
+      "android.permission.BLUETOOTH_CONNECT",
+      "android.permission.BLUETOOTH_SCAN",
+      "android.permission.CAMERA",
+      "android.permission.CHANGE_WIFI_STATE",
+      "android.permission.HIDE_OVERLAY_WINDOWS",
+      "android.permission.INTERNET",
+      "android.permission.NEARBY_WIFI_DEVICES",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.USE_FINGERPRINT",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'O=briarproject.org'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'O=briarproject.org'",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "Briar"
+  },
+  {
+    "apk_name": "Tusky.apk",
+    "package_name": "com.keylesspalace.tusky",
+    "sha256": "3e8fcc49a80d4c30ab6f6037e51402c77e2694d27ec19ae5b8a93cd08b6caffa",
+    "category": "OpenSource",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 10,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 7099960,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=e946901f12bd49c64de702a532114e58c3ab2a6f18d1cd9b78632baad44454e3",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.INTERNET",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.VIBRATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "com.keylesspalace.tusky.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks"
+    ],
+    "app_name": "Tusky"
+  },
+  {
+    "apk_name": "OpenFoodFacts.apk",
+    "package_name": "openfoodfacts.github.scrachx.openfood",
+    "sha256": "6fa3470e519c692987f9fe7a8a82f7b29630416d31467c021278334f1b6f0eba",
+    "category": "OpenSource",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 18,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes.dex",
+        "offset": 3739820,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=19d4f00c33574d09375432c5407241dee267a5d569201aa7207d0fb552efc120",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.CAMERA",
+      "android.permission.INTERNET",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "openfoodfacts.github.scrachx.openfood.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "WebviewBridge",
+        "weight": 8,
+        "description": "DEX: Exposes native bridge via addJavascriptInterface"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Exposes native bridge via addJavascriptInterface"
+    ],
+    "app_name": "OpenFoodFacts"
+  },
+  {
+    "apk_name": "Rboard.apk",
+    "package_name": "de.dertyp7214.rboardthememanager",
+    "sha256": "ae35151ce560138773050cc32a81a326622ee30c3f43e76bb2f4526fd942d2a6",
+    "category": "Accessibility",
+    "ground_truth": "BENIGN",
+    "analysis_status": "OK",
+    "risk_score": 30,
+    "verdict": "SAFE",
+    "certificate_status": "UNKNOWN",
+    "clone_risk": "LOW",
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "FOUND",
+        "matched_string": "performAction",
+        "source_file": "classes3.dex",
+        "offset": 7133245,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.85
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "FOUND",
+        "matched_string": "Ldalvik/system/PathClassLoader;",
+        "source_file": "classes3.dex",
+        "offset": 6267266,
+        "extraction_method": "dex_find_bytes",
+        "confidence": 0.95
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "certificate_validation": {
+        "status": "UNKNOWN",
+        "matched_string": "Unknown certificate: sha256=b01ff556b752eea00c491582a65259db98919c3fa6925149e50f32352a08faf4",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "mitre": [
+      {
+        "id": "T1407",
+        "name": "Dynamic Code Loading",
+        "description": "Loading execution payloads dynamically. Evidence: Ldalvik/system/PathClassLoader;"
+      },
+      {
+        "id": "T1430",
+        "name": "Input Capture / Accessibility Abuse",
+        "description": "Abusing Accessibility APIs to capture keystrokes, read screen contents, and click buttons automatically. Evidence: performAction"
+      }
+    ],
+    "permissions": [
+      "android.permission.ACCESS_ADSERVICES_AD_ID",
+      "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.INTERNET",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.QUERY_ALL_PACKAGES",
+      "android.permission.REQUEST_DELETE_PACKAGES",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.WAKE_LOCK",
+      "com.google.android.c2dm.permission.RECEIVE",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+      "com.google.android.gms.permission.AD_ID",
+      "de.dertyp7214.rboardthememanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "triggered_rules": [
+      {
+        "permission": "UnknownCertificate",
+        "weight": 0,
+        "description": "Unknown certificate: issuer 'CN=Hacker'"
+      },
+      {
+        "permission": "Reflection",
+        "weight": 10,
+        "description": "DEX: Contains Accessibility service callbacks"
+      },
+      {
+        "permission": "DexClassLoader",
+        "weight": 15,
+        "description": "DEX: Dynamic class loading (DexClassLoader)"
+      },
+      {
+        "permission": "SuspiciousUrl",
+        "weight": 5,
+        "description": "DEX: Suspicious URL found: https://bin.utwitch.net\u00005https://github.com/GboardThemes/PackRepoBeta/raw/main\u00003https://github.com/GboardThemes/RepoTemplate#readme\u0000Bhttps://gitlab.com/dertyp7214/RboardMirror/-/raw/main/PackRepoBeta\u0000.https://play.google.com/store/apps/details?id=\u0000"
+      }
+    ],
+    "top_reasons": [
+      "Unknown certificate: issuer 'CN=Hacker'",
+      "DEX: Contains Accessibility service callbacks",
+      "DEX: Dynamic class loading (DexClassLoader)",
+      "DEX: Suspicious URL found: https://bin.utwitch.net\u00005https://github.com/GboardThemes/PackRepoBeta/raw/main\u00003https://github.com/GboardThemes/RepoTemplate#readme\u0000Bhttps://gitlab.com/dertyp7214/RboardMirror/-/raw/main/PackRepoBeta\u0000.https://play.google.com/store/apps/details?id=\u0000"
+    ],
+    "app_name": "Rboard Theme Manager V3"
+  }
+]

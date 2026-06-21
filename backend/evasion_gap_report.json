@@ -1,0 +1,504 @@
+{
+  "evasion_gap_scenarios": [
+    {
+      "scenario_id": "EV_SCENARIO_001",
+      "technique": "Reflection",
+      "description": "Evasion vector implementation variant 1: Obfuscating system calls using Java reflection APIs. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_002",
+      "technique": "Dynamic loading",
+      "description": "Evasion vector implementation variant 2: Loading executable payloads dynamically from remote servers or assets at runtime. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_003",
+      "technique": "Encrypted strings",
+      "description": "Evasion vector implementation variant 3: Encrypting manifest permissions or bytecode indicators to hide signatures from static analyses. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_004",
+      "technique": "Delayed execution",
+      "description": "Evasion vector implementation variant 4: Suspending malicious payload triggers using timers, sleep loops, or runtime constraints to bypass sandboxes. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_005",
+      "technique": "Accessibility abuse",
+      "description": "Evasion vector implementation variant 5: Leveraging structural automation APIs to log keystrokes or click components without user interaction. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 45
+    },
+    {
+      "scenario_id": "EV_SCENARIO_006",
+      "technique": "Overlay abuse",
+      "description": "Evasion vector implementation variant 6: Superimposing mock window layouts on top of target banking interfaces to harvest credentials. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via overlay abuse hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_007",
+      "technique": "SMS theft",
+      "description": "Evasion vector implementation variant 7: Intercepting incoming SMS OTPs and forwarding them to Command & Control nodes. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_008",
+      "technique": "Fake banking clones",
+      "description": "Evasion vector implementation variant 8: Masquerading as legitimate financial applications using cloned layouts and subjects. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_009",
+      "technique": "Reflection",
+      "description": "Evasion vector implementation variant 9: Obfuscating system calls using Java reflection APIs. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_010",
+      "technique": "Dynamic loading",
+      "description": "Evasion vector implementation variant 10: Loading executable payloads dynamically from remote servers or assets at runtime. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_011",
+      "technique": "Encrypted strings",
+      "description": "Evasion vector implementation variant 11: Encrypting manifest permissions or bytecode indicators to hide signatures from static analyses. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_012",
+      "technique": "Delayed execution",
+      "description": "Evasion vector implementation variant 12: Suspending malicious payload triggers using timers, sleep loops, or runtime constraints to bypass sandboxes. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_013",
+      "technique": "Accessibility abuse",
+      "description": "Evasion vector implementation variant 13: Leveraging structural automation APIs to log keystrokes or click components without user interaction. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 45
+    },
+    {
+      "scenario_id": "EV_SCENARIO_014",
+      "technique": "Overlay abuse",
+      "description": "Evasion vector implementation variant 14: Superimposing mock window layouts on top of target banking interfaces to harvest credentials. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 45
+    },
+    {
+      "scenario_id": "EV_SCENARIO_015",
+      "technique": "SMS theft",
+      "description": "Evasion vector implementation variant 15: Intercepting incoming SMS OTPs and forwarding them to Command & Control nodes. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via sms theft hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_016",
+      "technique": "Fake banking clones",
+      "description": "Evasion vector implementation variant 16: Masquerading as legitimate financial applications using cloned layouts and subjects. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_017",
+      "technique": "Reflection",
+      "description": "Evasion vector implementation variant 17: Obfuscating system calls using Java reflection APIs. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_018",
+      "technique": "Dynamic loading",
+      "description": "Evasion vector implementation variant 18: Loading executable payloads dynamically from remote servers or assets at runtime. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via dynamic loading hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_019",
+      "technique": "Encrypted strings",
+      "description": "Evasion vector implementation variant 19: Encrypting manifest permissions or bytecode indicators to hide signatures from static analyses. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_020",
+      "technique": "Delayed execution",
+      "description": "Evasion vector implementation variant 20: Suspending malicious payload triggers using timers, sleep loops, or runtime constraints to bypass sandboxes. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_021",
+      "technique": "Accessibility abuse",
+      "description": "Evasion vector implementation variant 21: Leveraging structural automation APIs to log keystrokes or click components without user interaction. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via accessibility abuse hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_022",
+      "technique": "Overlay abuse",
+      "description": "Evasion vector implementation variant 22: Superimposing mock window layouts on top of target banking interfaces to harvest credentials. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 45
+    },
+    {
+      "scenario_id": "EV_SCENARIO_023",
+      "technique": "SMS theft",
+      "description": "Evasion vector implementation variant 23: Intercepting incoming SMS OTPs and forwarding them to Command & Control nodes. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_024",
+      "technique": "Fake banking clones",
+      "description": "Evasion vector implementation variant 24: Masquerading as legitimate financial applications using cloned layouts and subjects. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via fake banking clones hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_025",
+      "technique": "Reflection",
+      "description": "Evasion vector implementation variant 25: Obfuscating system calls using Java reflection APIs. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_026",
+      "technique": "Dynamic loading",
+      "description": "Evasion vector implementation variant 26: Loading executable payloads dynamically from remote servers or assets at runtime. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_027",
+      "technique": "Encrypted strings",
+      "description": "Evasion vector implementation variant 27: Encrypting manifest permissions or bytecode indicators to hide signatures from static analyses. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_028",
+      "technique": "Delayed execution",
+      "description": "Evasion vector implementation variant 28: Suspending malicious payload triggers using timers, sleep loops, or runtime constraints to bypass sandboxes. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_029",
+      "technique": "Accessibility abuse",
+      "description": "Evasion vector implementation variant 29: Leveraging structural automation APIs to log keystrokes or click components without user interaction. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 45
+    },
+    {
+      "scenario_id": "EV_SCENARIO_030",
+      "technique": "Overlay abuse",
+      "description": "Evasion vector implementation variant 30: Superimposing mock window layouts on top of target banking interfaces to harvest credentials. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via overlay abuse hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_031",
+      "technique": "SMS theft",
+      "description": "Evasion vector implementation variant 31: Intercepting incoming SMS OTPs and forwarding them to Command & Control nodes. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_032",
+      "technique": "Fake banking clones",
+      "description": "Evasion vector implementation variant 32: Masquerading as legitimate financial applications using cloned layouts and subjects. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_033",
+      "technique": "Reflection",
+      "description": "Evasion vector implementation variant 33: Obfuscating system calls using Java reflection APIs. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_034",
+      "technique": "Dynamic loading",
+      "description": "Evasion vector implementation variant 34: Loading executable payloads dynamically from remote servers or assets at runtime. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_035",
+      "technique": "Encrypted strings",
+      "description": "Evasion vector implementation variant 35: Encrypting manifest permissions or bytecode indicators to hide signatures from static analyses. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_036",
+      "technique": "Delayed execution",
+      "description": "Evasion vector implementation variant 36: Suspending malicious payload triggers using timers, sleep loops, or runtime constraints to bypass sandboxes. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_037",
+      "technique": "Accessibility abuse",
+      "description": "Evasion vector implementation variant 37: Leveraging structural automation APIs to log keystrokes or click components without user interaction. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 45
+    },
+    {
+      "scenario_id": "EV_SCENARIO_038",
+      "technique": "Overlay abuse",
+      "description": "Evasion vector implementation variant 38: Superimposing mock window layouts on top of target banking interfaces to harvest credentials. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 45
+    },
+    {
+      "scenario_id": "EV_SCENARIO_039",
+      "technique": "SMS theft",
+      "description": "Evasion vector implementation variant 39: Intercepting incoming SMS OTPs and forwarding them to Command & Control nodes. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via sms theft hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_040",
+      "technique": "Fake banking clones",
+      "description": "Evasion vector implementation variant 40: Masquerading as legitimate financial applications using cloned layouts and subjects. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_041",
+      "technique": "Reflection",
+      "description": "Evasion vector implementation variant 41: Obfuscating system calls using Java reflection APIs. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_042",
+      "technique": "Dynamic loading",
+      "description": "Evasion vector implementation variant 42: Loading executable payloads dynamically from remote servers or assets at runtime. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via dynamic loading hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_043",
+      "technique": "Encrypted strings",
+      "description": "Evasion vector implementation variant 43: Encrypting manifest permissions or bytecode indicators to hide signatures from static analyses. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via encrypted strings hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_044",
+      "technique": "Delayed execution",
+      "description": "Evasion vector implementation variant 44: Suspending malicious payload triggers using timers, sleep loops, or runtime constraints to bypass sandboxes. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via delayed execution hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_045",
+      "technique": "Accessibility abuse",
+      "description": "Evasion vector implementation variant 45: Leveraging structural automation APIs to log keystrokes or click components without user interaction. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via accessibility abuse hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_046",
+      "technique": "Overlay abuse",
+      "description": "Evasion vector implementation variant 46: Superimposing mock window layouts on top of target banking interfaces to harvest credentials. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 45
+    },
+    {
+      "scenario_id": "EV_SCENARIO_047",
+      "technique": "SMS theft",
+      "description": "Evasion vector implementation variant 47: Intercepting incoming SMS OTPs and forwarding them to Command & Control nodes. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    },
+    {
+      "scenario_id": "EV_SCENARIO_048",
+      "technique": "Fake banking clones",
+      "description": "Evasion vector implementation variant 48: Masquerading as legitimate financial applications using cloned layouts and subjects. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via fake banking clones hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_049",
+      "technique": "Reflection",
+      "description": "Evasion vector implementation variant 49: Obfuscating system calls using Java reflection APIs. using custom obfuscation shell.",
+      "detected": false,
+      "rationale": "The static scanner reads only unencrypted DEX code and standard manifest declarations. Obfuscating bytecode signatures via reflection hides indicators from exact-match binary scanning. Since no evidence is found, the engine clamps the score to SAFE.",
+      "detector_fired": "None",
+      "detector_failed": "DEXpreciseSignatureDetector / StaticHeuristicsEngine",
+      "expected_risk_score": 10
+    },
+    {
+      "scenario_id": "EV_SCENARIO_050",
+      "technique": "Dynamic loading",
+      "description": "Evasion vector implementation variant 50: Loading executable payloads dynamically from remote servers or assets at runtime. using custom obfuscation shell.",
+      "detected": true,
+      "rationale": "The manifest declares raw permissions (e.g. Accessibility or overlay Layouts) or the unencrypted DEX payload contains clear bytecode signatures matching standard indicators. The heuristics engine triggers corresponding weight penalties.",
+      "detector_fired": "ManifestPermissionEngine / StaticReputationEngine",
+      "detector_failed": "None",
+      "expected_risk_score": 30
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "run_id": "run_2026_06_17_a480f3",
+  "timestamp": "2026-06-17T03:11:38.776968",
+  "dataset_hash": "260bb0db9d7b38515daef0d481794fc3f1748e9758df233f1e32e34b2c41e44c",
+  "engine_version": "2.0.0",
+  "rules_version": "2.0.0",
+  "classification_mode": "binary",
+  "positive_classes": [
+    "MALICIOUS",
+    "SUSPICIOUS"
+  ],
+  "dataset_composition": {
+    "total": 10,
+    "apk_samples": 0,
+    "metadata_samples": 10
+  },
+  "predictions": [
+    {
+      "apk_name": "gpay_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "TN"
+    },
+    {
+      "apk_name": "hdfc_mobile_banking.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "TN"
+    },
+    {
+      "apk_name": "phonepe_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "TN"
+    },
+    {
+      "apk_name": "sbi_yono_official.apk",
+      "ground_truth": "BENIGN",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "TN"
+    },
+    {
+      "apk_name": "gpay_rewards_clone.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "FN"
+    },
+    {
+      "apk_name": "icici_clone_verify.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "FN"
+    },
+    {
+      "apk_name": "yono_sbi_helper.apk",
+      "ground_truth": "SUSPICIOUS",
+      "predicted_verdict": "SAFE",
+      "confidence": 80,
+      "risk_score": 10,
+      "evaluation_mode": "METADATA",
+      "classification": "FN"
+    },
+    {
+      "apk_name": "anubis_trojan.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "MALICIOUS",
+      "confidence": 80,
+      "risk_score": 85,
+      "evaluation_mode": "METADATA",
+      "classification": "TP"
+    },
+    {
+      "apk_name": "cerberus_overlay.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 80,
+      "risk_score": 50,
+      "evaluation_mode": "METADATA",
+      "classification": "TP"
+    },
+    {
+      "apk_name": "otp_stealer_app.apk",
+      "ground_truth": "MALICIOUS",
+      "predicted_verdict": "SUSPICIOUS",
+      "confidence": 80,
+      "risk_score": 50,
+      "evaluation_mode": "METADATA",
+      "classification": "TP"
+    }
+  ],
+  "metrics": {
+    "accuracy": 0.7,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.67,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 4,
+      "fn": 3
+    }
+  }
+}

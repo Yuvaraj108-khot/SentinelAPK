@@ -1,0 +1,17 @@
+{
+  "total_samples": 30,
+  "train": {
+    "benign": 5,
+    "suspicious": 5,
+    "malicious": 5,
+    "total": 15
+  },
+  "validation": {
+    "benign": 5,
+    "suspicious": 5,
+    "malicious": 5,
+    "total": 15
+  },
+  "quality_score": 100,
+  "issues": []
+}

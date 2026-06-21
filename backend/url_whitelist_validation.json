@@ -1,0 +1,7 @@
+{
+  "test_target": "pothole_app",
+  "checked_url": "https://developer.android.com/guide/topics/permissions/overview",
+  "is_allowlisted": true,
+  "suspicious_urls_result": [],
+  "status": "PASSED"
+}

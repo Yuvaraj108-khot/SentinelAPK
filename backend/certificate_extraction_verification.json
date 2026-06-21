@@ -1,0 +1,62 @@
+[
+  {
+    "apk_name": "AdAway.apk",
+    "certificate_extracted": true,
+    "fingerprint_sha256": "42203f1ac857426d1496e971db96fbe1f88c25c9e1f895a5c98d703891292277",
+    "fingerprint_length": 64
+  },
+  {
+    "apk_name": "Aegis_Authenticator.apk",
+    "certificate_extracted": true,
+    "fingerprint_sha256": "c6db80a8e14e5230c1de8415ef820d13dc901d8fe33cf3acb57b6862d858a823",
+    "fingerprint_length": 64
+  },
+  {
+    "apk_name": "AnkiDroid.apk",
+    "certificate_extracted": true,
+    "fingerprint_sha256": "24a3d4756c62dd69c86df69aa7fa327b2a6bf55f55c4a1749f99bd1da75906bb",
+    "fingerprint_length": 64
+  },
+  {
+    "apk_name": "AuroraStore.apk",
+    "certificate_extracted": true,
+    "fingerprint_sha256": "5c83c7672b929955dc0a1db89a5e6ae4389e2eae7ec939956041694e5815f532",
+    "fingerprint_length": 64
+  },
+  {
+    "apk_name": "Briar.apk",
+    "certificate_extracted": true,
+    "fingerprint_sha256": "501ddf14a6ecf904fb20285c56a565cb987a867f91572ee33c2d43771cca4e37",
+    "fingerprint_length": 64
+  },
+  {
+    "apk_name": "Conversations.apk",
+    "certificate_extracted": true,
+    "fingerprint_sha256": "c75abe78593643ae7cac527327cd2193482db067404a88b8c13f7a0701946187",
+    "fingerprint_length": 64
+  },
+  {
+    "apk_name": "Cryptomator.apk",
+    "certificate_extracted": true,
+    "fingerprint_sha256": "f7c3ec3b0d588d3cb52983e9eb1a7421c93d4339a286398e71d7b651e8d8ecdd",
+    "fingerprint_length": 64
+  },
+  {
+    "apk_name": "Element.apk",
+    "certificate_extracted": true,
+    "fingerprint_sha256": "b15d9b673b55b9fe656190794d872e59ec5b85b3bfb8a76b9442f17eae2887c9",
+    "fingerprint_length": 64
+  },
+  {
+    "apk_name": "FairEmail.apk",
+    "certificate_extracted": true,
+    "fingerprint_sha256": "b9d041582af46ee39bba0f2f1829d948ae21ecf7ffa6ba120385d245ebb788ae",
+    "fingerprint_length": 64
+  },
+  {
+    "apk_name": "FDroid.apk",
+    "certificate_extracted": true,
+    "fingerprint_sha256": "43238d512c1e5eb2d6569f4a3afbf5523418b82e0a3ed1552770abb9a9c9ccab",
+    "fingerprint_length": 64
+  }
+]

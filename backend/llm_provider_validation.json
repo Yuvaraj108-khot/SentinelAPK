@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "provider_resolved": "groq",
+  "healthy": true,
+  "fallbacks_verified": {
+    "timeout_triggers_fallback": true,
+    "rate_limit_triggers_fallback": true,
+    "invalid_key_triggers_fallback": true,
+    "network_error_triggers_fallback": true
+  }
+}

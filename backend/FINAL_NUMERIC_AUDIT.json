@@ -1,0 +1,306 @@
+{
+  "task_1_outputs": {
+    "Bitdefender": {
+      "risk_score": 5,
+      "verdict": "SAFE",
+      "security_vendor_verified": true,
+      "clone_risk": "LOW",
+      "certificate_status": "TRUSTED",
+      "evidence_validation": {
+        "sms": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "accessibility": {
+          "status": "FOUND",
+          "matched_string": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "manifest_permission_tag",
+          "confidence": 1.0
+        },
+        "overlay": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "runtime_exec": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "dynamic_loading": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "clone_detection": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "certificate_validation": {
+          "status": "TRUSTED",
+          "matched_string": "Trusted signature: sha256=bc23de45fg678901",
+          "source_file": "META-INF/CERT.RSA",
+          "offset": 0,
+          "extraction_method": "signature_scan_comparison",
+          "confidence": 1.0
+        }
+      }
+    },
+    "Avast": {
+      "risk_score": 31,
+      "verdict": "SAFE",
+      "security_vendor_verified": true,
+      "clone_risk": "LOW",
+      "certificate_status": "TRUSTED",
+      "evidence_validation": {
+        "sms": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "accessibility": {
+          "status": "FOUND",
+          "matched_string": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "manifest_permission_tag",
+          "confidence": 1.0
+        },
+        "overlay": {
+          "status": "FOUND",
+          "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "manifest_permission_tag",
+          "confidence": 1.0
+        },
+        "runtime_exec": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "dynamic_loading": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "clone_detection": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "certificate_validation": {
+          "status": "TRUSTED",
+          "matched_string": "Trusted signature: sha256=cd34ef56gh789012",
+          "source_file": "META-INF/CERT.RSA",
+          "offset": 0,
+          "extraction_method": "signature_scan_comparison",
+          "confidence": 1.0
+        }
+      }
+    },
+    "Malwarebytes": {
+      "risk_score": 5,
+      "verdict": "SAFE",
+      "security_vendor_verified": true,
+      "clone_risk": "LOW",
+      "certificate_status": "TRUSTED",
+      "evidence_validation": {
+        "sms": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "accessibility": {
+          "status": "FOUND",
+          "matched_string": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "manifest_permission_tag",
+          "confidence": 1.0
+        },
+        "overlay": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "runtime_exec": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "dynamic_loading": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "clone_detection": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "certificate_validation": {
+          "status": "TRUSTED",
+          "matched_string": "Trusted signature: sha256=de45fg67hi890123",
+          "source_file": "META-INF/CERT.RSA",
+          "offset": 0,
+          "extraction_method": "signature_scan_comparison",
+          "confidence": 1.0
+        }
+      }
+    },
+    "SecureBank Official": {
+      "risk_score": 0,
+      "verdict": "SAFE",
+      "security_vendor_verified": false,
+      "clone_risk": "LOW",
+      "certificate_status": "TRUSTED",
+      "evidence_validation": {
+        "sms": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "accessibility": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "overlay": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "runtime_exec": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "dynamic_loading": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "clone_detection": {
+          "status": "UNKNOWN",
+          "matched_string": "Verified Legitimate Official Application",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "is_official_app_check",
+          "confidence": 1.0
+        },
+        "certificate_validation": {
+          "status": "TRUSTED",
+          "matched_string": "Trusted Official Certificate (Verified)",
+          "source_file": "META-INF/CERT.RSA",
+          "offset": 0,
+          "extraction_method": "signature_scan_comparison",
+          "confidence": 1.0
+        }
+      }
+    },
+    "SecureBank Plus": {
+      "risk_score": 82,
+      "verdict": "MALICIOUS",
+      "security_vendor_verified": false,
+      "clone_risk": "HIGH",
+      "certificate_status": "UNTRUSTED",
+      "evidence_validation": {
+        "sms": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "accessibility": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "overlay": {
+          "status": "FOUND",
+          "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "manifest_permission_tag",
+          "confidence": 1.0
+        },
+        "runtime_exec": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "dynamic_loading": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "clone_detection": {
+          "status": "FOUND",
+          "matched_string": "Impersonates SecureBank Official (brand_sim=71%, pkg_sim=76%)",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "manifest_similarity_comparison",
+          "confidence": 0.85
+        },
+        "certificate_validation": {
+          "status": "UNTRUSTED",
+          "matched_string": "Untrusted certificate: sha256=2820ff29ced94f75f091458d778abc63c999b21ffe9daae4ba38ef2ed10affce",
+          "source_file": "META-INF/CERT.RSA",
+          "offset": 0,
+          "extraction_method": "signature_scan_comparison",
+          "confidence": 0.95
+        }
+      }
+    },
+    "SecureBank Clone": {
+      "risk_score": 85,
+      "verdict": "MALICIOUS",
+      "security_vendor_verified": false,
+      "clone_risk": "HIGH",
+      "certificate_status": "UNTRUSTED",
+      "evidence_validation": {
+        "sms": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "accessibility": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "overlay": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "runtime_exec": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "dynamic_loading": {
+          "status": "UNKNOWN",
+          "reason": "NO_EVIDENCE_AVAILABLE"
+        },
+        "clone_detection": {
+          "status": "FOUND",
+          "matched_string": "Impersonates SecureBank Official (brand_sim=74%, pkg_sim=100%)",
+          "source_file": "AndroidManifest.xml",
+          "offset": 0,
+          "extraction_method": "manifest_similarity_comparison",
+          "confidence": 0.85
+        },
+        "certificate_validation": {
+          "status": "UNTRUSTED",
+          "matched_string": "Untrusted certificate: sha256=a36a2de2c6fd4ea62d16bca34bc1793625be70506ad11dfb2c74117c606e2e86",
+          "source_file": "META-INF/CERT.RSA",
+          "offset": 0,
+          "extraction_method": "signature_scan_comparison",
+          "confidence": 0.95
+        }
+      }
+    }
+  },
+  "task_2_breakdown": {
+    "app_name": "Bitdefender",
+    "contributions": {
+      "Accessibility": 5,
+      "Overlay": 0,
+      "Certificate": 0,
+      "Clone": 0
+    },
+    "final_score": 5
+  },
+  "task_3_breakdown": {
+    "app_name": "SecureBank Clone",
+    "contributions": {
+      "SamePkgForgery": 75,
+      "UnknownCertificate": 10,
+      "MemoryInfluence": 0
+    },
+    "final_score": 85
+  },
+  "task_5_whitelist_check": {
+    "fake_sbi_login": 62,
+    "overlay_trojan": 71,
+    "banking_cred_stealer": 55
+  }
+}

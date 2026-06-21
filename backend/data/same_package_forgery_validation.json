@@ -1,0 +1,124 @@
+{
+  "baseline_weight": 60,
+  "candidates": {
+    "60": {
+      "metrics": {
+        "accuracy": 0.8667,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889
+      },
+      "official": {
+        "score": 0,
+        "verdict": "SAFE",
+        "confidence": 50
+      },
+      "plus": {
+        "score": 82,
+        "verdict": "MALICIOUS",
+        "confidence": 98
+      },
+      "clone": {
+        "score": 70,
+        "verdict": "MALICIOUS",
+        "confidence": 98
+      }
+    },
+    "65": {
+      "metrics": {
+        "accuracy": 0.8667,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889
+      },
+      "official": {
+        "score": 0,
+        "verdict": "SAFE",
+        "confidence": 50
+      },
+      "plus": {
+        "score": 82,
+        "verdict": "MALICIOUS",
+        "confidence": 98
+      },
+      "clone": {
+        "score": 75,
+        "verdict": "MALICIOUS",
+        "confidence": 98
+      }
+    },
+    "70": {
+      "metrics": {
+        "accuracy": 0.8667,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889
+      },
+      "official": {
+        "score": 0,
+        "verdict": "SAFE",
+        "confidence": 50
+      },
+      "plus": {
+        "score": 82,
+        "verdict": "MALICIOUS",
+        "confidence": 98
+      },
+      "clone": {
+        "score": 80,
+        "verdict": "MALICIOUS",
+        "confidence": 98
+      }
+    },
+    "75": {
+      "metrics": {
+        "accuracy": 0.8667,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889
+      },
+      "official": {
+        "score": 0,
+        "verdict": "SAFE",
+        "confidence": 50
+      },
+      "plus": {
+        "score": 82,
+        "verdict": "MALICIOUS",
+        "confidence": 98
+      },
+      "clone": {
+        "score": 85,
+        "verdict": "MALICIOUS",
+        "confidence": 98
+      }
+    },
+    "80": {
+      "metrics": {
+        "accuracy": 0.8667,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889
+      },
+      "official": {
+        "score": 0,
+        "verdict": "SAFE",
+        "confidence": 50
+      },
+      "plus": {
+        "score": 82,
+        "verdict": "MALICIOUS",
+        "confidence": 98
+      },
+      "clone": {
+        "score": 90,
+        "verdict": "MALICIOUS",
+        "confidence": 98
+      }
+    }
+  },
+  "smallest_successful_weight": 75,
+  "metrics_impact": "No reduction in benchmark metrics across all candidates",
+  "risk_ordering_target": "Official < Plus < Clone",
+  "risk_ordering_status": "Achieved at weight >= 75"
+}

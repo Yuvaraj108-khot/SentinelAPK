@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2026-06-17T03:30:54.162690",
+    "pattern": "READ_SMS + INTERNET",
+    "lesson": "Statically detects standard SMS triggers and direct web sockets.",
+    "difficulty": 35
+  },
+  {
+    "timestamp": "2026-06-17T03:30:54.162690",
+    "pattern": "Overlay + Banking UI",
+    "lesson": "Intercepts fake Activity bounds overlapping legitimate financial screens.",
+    "difficulty": 85
+  },
+  {
+    "timestamp": "2026-06-17T03:30:54.162690",
+    "pattern": "Accessibility + Network Access",
+    "lesson": "Unveils keystroke logging exfiltration via SSL-pinned obfuscated backchannels.",
+    "difficulty": 91
+  }
+]

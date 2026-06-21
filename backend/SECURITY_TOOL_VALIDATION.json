@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-06-21T06:21:10.104104+00:00",
+  "total_tested": 7,
+  "all_correctly_safe": true,
+  "flagged_incorrectly": [],
+  "results": [
+    {
+      "tool_name": "Aegis Authenticator",
+      "apk_name": "Aegis_Authenticator.apk",
+      "package_name": "com.beemdevelopment.aegis",
+      "verdict": "SAFE",
+      "risk_score": 10,
+      "certificate_status": "UNKNOWN",
+      "correctly_safe": true,
+      "triggered_rules": [
+        {
+          "permission": "UnknownCertificate",
+          "weight": 0,
+          "description": "Unknown certificate: issuer 'CN=Beem Development'"
+        },
+        {
+          "permission": "Reflection",
+          "weight": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        }
+      ]
+    },
+    {
+      "tool_name": "OpenKeychain",
+      "apk_name": "OpenKeychain.apk",
+      "package_name": "org.sufficientlysecure.keychain",
+      "verdict": "SAFE",
+      "risk_score": 15,
+      "certificate_status": "UNKNOWN",
+      "correctly_safe": true,
+      "triggered_rules": [
+        {
+          "permission": "UnknownCertificate",
+          "weight": 0,
+          "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+        },
+        {
+          "permission": "Reflection",
+          "weight": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        },
+        {
+          "permission": "SuspiciousUrl",
+          "weight": 5,
+          "description": "DEX: Suspicious URL found: https://api.fidesmo.com/service/\u00004https://api.fidesmo.com/service/0cdc651e/OKC-install\u0000Bhttps://f-droid.org/repository/browse/?fdid=org.torproject.android\u0000\u0018https://fontawesome.com/\u0000/https://github.com/google/material-design-icons\u0000\u001fhttps://maps.google.com/maps?q=\u0000\u0013https://openpgpkey.\u0000.https://play.google.com/store/apps/details?id=\u0000Dhttps://play.google.com/store/apps/details?id=org.torproject.android\u0000Nhttps://raw.githubusercontent.com/Templarian/MaterialDesign/master/license.txt\u0000.https://www.facebook.com/%s/publickey/download\u0000\u0002hw\u0000"
+        }
+      ]
+    },
+    {
+      "tool_name": "KeePassDX",
+      "apk_name": "KeePassDX.apk",
+      "package_name": "com.kunzisoft.keepass.libre",
+      "verdict": "SAFE",
+      "risk_score": 10,
+      "certificate_status": "UNKNOWN",
+      "correctly_safe": true,
+      "triggered_rules": [
+        {
+          "permission": "UnknownCertificate",
+          "weight": 0,
+          "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+        },
+        {
+          "permission": "Reflection",
+          "weight": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        }
+      ]
+    },
+    {
+      "tool_name": "AdAway",
+      "apk_name": "AdAway.apk",
+      "package_name": "org.adaway",
+      "verdict": "SAFE",
+      "risk_score": 10,
+      "certificate_status": "UNKNOWN",
+      "correctly_safe": true,
+      "triggered_rules": [
+        {
+          "permission": "UnknownCertificate",
+          "weight": 0,
+          "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+        },
+        {
+          "permission": "Reflection",
+          "weight": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        }
+      ]
+    },
+    {
+      "tool_name": "Privacy Browser",
+      "apk_name": "Privacy_Browser.apk",
+      "package_name": "com.stoutner.privacybrowser.standard",
+      "verdict": "SAFE",
+      "risk_score": 18,
+      "certificate_status": "UNKNOWN",
+      "correctly_safe": true,
+      "triggered_rules": [
+        {
+          "permission": "UnknownCertificate",
+          "weight": 0,
+          "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+        },
+        {
+          "permission": "Reflection",
+          "weight": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        },
+        {
+          "permission": "WebviewBridge",
+          "weight": 8,
+          "description": "DEX: Exposes native bridge via addJavascriptInterface"
+        }
+      ]
+    },
+    {
+      "tool_name": "Cryptomator",
+      "apk_name": "Cryptomator.apk",
+      "package_name": "org.cryptomator.lite",
+      "verdict": "SAFE",
+      "risk_score": 10,
+      "certificate_status": "UNKNOWN",
+      "correctly_safe": true,
+      "triggered_rules": [
+        {
+          "permission": "UnknownCertificate",
+          "weight": 0,
+          "description": "Unknown certificate: issuer 'O=Skymatic,L=Bonn,ST=North Rhine-Westphalia,C=DE'"
+        },
+        {
+          "permission": "Reflection",
+          "weight": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        }
+      ]
+    },
+    {
+      "tool_name": "Shelter",
+      "apk_name": "Shelter.apk",
+      "package_name": "net.typeblog.shelter",
+      "verdict": "SAFE",
+      "risk_score": 30,
+      "certificate_status": "UNKNOWN",
+      "correctly_safe": true,
+      "triggered_rules": [
+        {
+          "permission": "UnknownCertificate",
+          "weight": 0,
+          "description": "Unknown certificate: issuer 'CN=FDroid,OU=FDroid,O=fdroid.org,L=ORG,ST=ORG,C=UK'"
+        },
+        {
+          "permission": "SYSTEM_ALERT_WINDOW",
+          "weight": 20,
+          "description": "Requests System Alert overlay window"
+        },
+        {
+          "permission": "Reflection",
+          "weight": 10,
+          "description": "DEX: Contains Accessibility service callbacks"
+        }
+      ]
+    }
+  ],
+  "verdict": "PASS \u2014 All security tools correctly classified as SAFE"
+}

@@ -1,0 +1,24 @@
+{
+  "apk_name": "remote_control.apk",
+  "package_name": "com.opt.system.tool",
+  "app_label": "System Optimization Tool",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.BIND_ACCESSIBILITY_SERVICE",
+    "android.permission.SYSTEM_ALERT_WINDOW"
+  ],
+  "ground_truth": "MALICIOUS",
+  "certificates": [
+    {
+      "issuer": "CN=Android Debug, O=Android, C=US",
+      "subject": "CN=Android Debug, O=Android, C=US",
+      "serial_number": "12345678",
+      "sha256": "106c3edbb21d5bcd5adcea0047c22649c1ff88b9721febc75200fdac5f3cbd38",
+      "sha1": "SHA1:12:34:56"
+    }
+  ],
+  "source": "analyst_review",
+  "reviewed_by": "SecOps Lead",
+  "created_at": "2026-06-17T12:00:00Z",
+  "apk_origin": "generated"
+}

@@ -1,0 +1,231 @@
+{
+  "official": {
+    "risk_score": 0,
+    "verdict": "SAFE",
+    "clone_findings": {
+      "is_clone": false,
+      "official_target": "SecureBank Official",
+      "brand_similarity": 100,
+      "package_similarity": 100,
+      "certificate_match": true,
+      "clone_risk": "LOW"
+    },
+    "certificate_findings": {
+      "is_trusted": true,
+      "reputation_issue": null,
+      "status": "TRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Trusted Official Certificate (Verified)"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "UNKNOWN",
+        "matched_string": "Verified Legitimate Official Application",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "is_official_app_check",
+        "confidence": 1.0
+      },
+      "certificate_validation": {
+        "status": "TRUSTED",
+        "matched_string": "Trusted Official Certificate (Verified)",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 1.0
+      }
+    },
+    "ai": {
+      "suspicious_permissions_rationale": "No suspicious permissions were identified due to lack of evidence.",
+      "otp_theft_capability": "No verified SMS evidence was identified to determine the app's ability to intercept SMS OTPs.",
+      "accessibility_abuse": "No verified accessibility evidence was identified.",
+      "impersonation_risk": "No verified overlay evidence was identified to assess the risk of overlay phishing or app impersonation.",
+      "data_exfiltration": "No verified evidence of internet permission or data exfiltration methods was identified.",
+      "verdict_reasoning": "The application is deemed SAFE due to the presence of a trusted official certificate and the lack of any verified malicious evidence, despite some capabilities being unknown due to insufficient data."
+    }
+  },
+  "plus": {
+    "risk_score": 82,
+    "verdict": "MALICIOUS",
+    "clone_findings": {
+      "is_clone": true,
+      "official_target": "SecureBank Official",
+      "brand_similarity": 71,
+      "package_similarity": 76,
+      "certificate_match": false,
+      "clone_risk": "HIGH"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1418",
+        "name": "Input Capture / Overlay Abuse",
+        "description": "Creating overlays to capture credentials. Evidence: android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "id": "T1474",
+        "name": "Masquerading / Brand Impersonation",
+        "description": "Spoofing legitimate applications to harvest bank logins. Evidence: Impersonates SecureBank Official (brand_sim=71%, pkg_sim=76%)"
+      },
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=2820ff29ced94f75f091458d778abc63c999b21ffe9daae4ba38ef2ed10affce"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "FOUND",
+        "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_permission_tag",
+        "confidence": 1.0
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "FOUND",
+        "matched_string": "Impersonates SecureBank Official (brand_sim=71%, pkg_sim=76%)",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_similarity_comparison",
+        "confidence": 0.85
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=2820ff29ced94f75f091458d778abc63c999b21ffe9daae4ba38ef2ed10affce",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "ai": {
+      "suspicious_permissions_rationale": "The application requests the android.permission.SYSTEM_ALERT_WINDOW permission, which can be used to create overlays on top of other applications, potentially allowing for input capture and credential theft.",
+      "otp_theft_capability": "No verified SMS evidence was identified to determine the app's capability to intercept SMS OTPs.",
+      "accessibility_abuse": "No verified accessibility evidence was identified",
+      "impersonation_risk": "The application has a high risk of overlay phishing or app impersonation due to the presence of the android.permission.SYSTEM_ALERT_WINDOW permission and evidence of brand impersonation (Impersonates SecureBank Official).",
+      "data_exfiltration": "Although no direct evidence of data exfiltration was found, the combination of overlay capabilities and untrusted certificate raises concerns about potential data theft.",
+      "verdict_reasoning": "The overall risk decision is based on the presence of suspicious permissions (SYSTEM_ALERT_WINDOW), evidence of brand impersonation, and an untrusted certificate, which collectively indicate a high risk of malicious activity, particularly input capture, overlay abuse, and masquerading."
+    }
+  },
+  "clone": {
+    "risk_score": 85,
+    "verdict": "MALICIOUS",
+    "clone_findings": {
+      "is_clone": true,
+      "official_target": "SecureBank Official",
+      "brand_similarity": 74,
+      "package_similarity": 100,
+      "certificate_match": false,
+      "clone_risk": "HIGH"
+    },
+    "certificate_findings": {
+      "is_trusted": false,
+      "reputation_issue": "Unknown / Self-signed certificate",
+      "status": "UNTRUSTED"
+    },
+    "mitre": [
+      {
+        "id": "T1474",
+        "name": "Masquerading / Brand Impersonation",
+        "description": "Spoofing legitimate applications to harvest bank logins. Evidence: Impersonates SecureBank Official (brand_sim=74%, pkg_sim=100%)"
+      },
+      {
+        "id": "T1473",
+        "name": "Signature Theft / Untrusted Signing",
+        "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Untrusted certificate: sha256=a36a2de2c6fd4ea62d16bca34bc1793625be70506ad11dfb2c74117c606e2e86"
+      }
+    ],
+    "evidence_validation": {
+      "sms": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "accessibility": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "overlay": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "runtime_exec": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "dynamic_loading": {
+        "status": "UNKNOWN",
+        "reason": "NO_EVIDENCE_AVAILABLE"
+      },
+      "clone_detection": {
+        "status": "FOUND",
+        "matched_string": "Impersonates SecureBank Official (brand_sim=74%, pkg_sim=100%)",
+        "source_file": "AndroidManifest.xml",
+        "offset": 0,
+        "extraction_method": "manifest_similarity_comparison",
+        "confidence": 0.85
+      },
+      "certificate_validation": {
+        "status": "UNTRUSTED",
+        "matched_string": "Untrusted certificate: sha256=a36a2de2c6fd4ea62d16bca34bc1793625be70506ad11dfb2c74117c606e2e86",
+        "source_file": "META-INF/CERT.RSA",
+        "offset": 0,
+        "extraction_method": "signature_scan_comparison",
+        "confidence": 0.95
+      }
+    },
+    "ai": {
+      "suspicious_permissions_rationale": "No verified permission evidence was identified to assess the risk of hazardous permissions.",
+      "otp_theft_capability": "No verified SMS evidence was identified to assess the app's ability to intercept SMS OTPs.",
+      "accessibility_abuse": "No verified accessibility evidence was identified to assess the accessibility abuse potential.",
+      "impersonation_risk": "The application poses a high impersonation risk due to the presence of brand impersonation (74% brand similarity, 100% package similarity) targeting SecureBank Official, indicating potential overlay phishing or app impersonation.",
+      "data_exfiltration": "No verified data exfiltration evidence was identified, but the presence of untrusted certificate and brand impersonation suggests potential data exfiltration risks if combined with internet permission.",
+      "verdict_reasoning": "The overall risk decision is based on the presence of untrusted certificate, brand impersonation, and potential masquerading threats, leading to a MALICIOUS verdict with a risk score of 85."
+    }
+  }
+}

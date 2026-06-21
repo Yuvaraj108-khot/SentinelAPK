@@ -1,0 +1,37 @@
+[
+  {
+    "vendor_name": "Bitdefender",
+    "package_name": "com.bitdefender.security",
+    "certificate_sha256": "bc23de45fg678901"
+  },
+  {
+    "vendor_name": "Avast",
+    "package_name": "com.avast.android.mobilesecurity",
+    "certificate_sha256": "cd34ef56gh789012"
+  },
+  {
+    "vendor_name": "Malwarebytes",
+    "package_name": "org.malwarebytes.antimalware",
+    "certificate_sha256": "de45fg67hi890123"
+  },
+  {
+    "vendor_name": "Microsoft Defender",
+    "package_name": "com.microsoft.scmx",
+    "certificate_sha256": "ef67gh89ij012345"
+  },
+  {
+    "vendor_name": "Kaspersky",
+    "package_name": "com.kms.free",
+    "certificate_sha256": "fg78hi90jk123456"
+  },
+  {
+    "vendor_name": "Norton",
+    "package_name": "com.symantec.mobilesecurity",
+    "certificate_sha256": "gh89ij01kl234567"
+  },
+  {
+    "vendor_name": "ESET",
+    "package_name": "com.eset.ems2.gp",
+    "certificate_sha256": "hi90jk12lm345678"
+  }
+]

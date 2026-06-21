@@ -1,0 +1,42 @@
+[
+  {
+    "apk_name": "SBI_YONO.apk",
+    "package_name": "com.sbi.lotusintouch",
+    "label": "YONO SBI",
+    "package_similarity": 100,
+    "brand_similarity": 22,
+    "certificate_status": "TRUSTED",
+    "clone_risk": "LOW",
+    "is_clone": false
+  },
+  {
+    "apk_name": "HDFC_MobileBanking.apk",
+    "package_name": "com.hdfc.mobilebanking",
+    "label": "HDFC Bank MobileBanking",
+    "package_similarity": 100,
+    "brand_similarity": 56,
+    "certificate_status": "TRUSTED",
+    "clone_risk": "LOW",
+    "is_clone": false
+  },
+  {
+    "apk_name": "ICICI_iMobile.apk",
+    "package_name": "com.icici.imobile",
+    "label": "iMobile Pay",
+    "package_similarity": 100,
+    "brand_similarity": 24,
+    "certificate_status": "TRUSTED",
+    "clone_risk": "LOW",
+    "is_clone": false
+  },
+  {
+    "apk_name": "Axis_MobileBanking.apk",
+    "package_name": "com.axis.mobile",
+    "label": "Axis Mobile",
+    "package_similarity": 0,
+    "brand_similarity": 0,
+    "certificate_status": "UNTRUSTED",
+    "clone_risk": "LOW",
+    "is_clone": false
+  }
+]

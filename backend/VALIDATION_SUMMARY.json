@@ -1,0 +1,8 @@
+{
+    "total_analyzed": 29,
+    "malicious_count": 0,
+    "suspicious_count": 4,
+    "safe_count": 25,
+    "failed_count": 0,
+    "failures": []
+}

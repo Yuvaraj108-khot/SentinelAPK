@@ -1,0 +1,1268 @@
+[
+    {
+        "filename": "AdAway.apk",
+        "sha256": "0de00a58a0dbb4c4b6befc9fe1f5e53800993484baab955824798f46fbf3338e",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 5233721,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=42203f1ac857426d1496e971db96fbe1f88c25c9e1f895a5c98d703891292277",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Aegis_Authenticator.apk",
+        "sha256": "5b9d496d21c5938bdd733b01583516d27cd556db0749357f58baa648ef8ef804",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 3945751,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=c6db80a8e14e5230c1de8415ef820d13dc901d8fe33cf3acb57b6862d858a823",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "AnkiDroid.apk",
+        "sha256": "3a641d4a269aefd06104e89f57880f0b9723fa380d87885d909c76249e6f081b",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 8407631,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=24a3d4756c62dd69c86df69aa7fa327b2a6bf55f55c4a1749f99bd1da75906bb",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "AuroraStore.apk",
+        "sha256": "c4ce0df0bbb0e82be4e4bd7d8a3e000f08e04457187d560fe2ca3ae52941bf49",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 5583404,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "FOUND",
+                "matched_string": "Ldalvik/system/PathClassLoader;",
+                "source_file": "classes2.dex",
+                "offset": 4831941,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.95
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=5c83c7672b929955dc0a1db89a5e6ae4389e2eae7ec939956041694e5815f532",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Briar.apk",
+        "sha256": "8cc8f18d0c603f9e3fc982a293db9165f8968359d2bc5f1d81f47b36bd76b719",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 7731407,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=501ddf14a6ecf904fb20285c56a565cb987a867f91572ee33c2d43771cca4e37",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Conversations.apk",
+        "sha256": "dac24c81ba4ca0bbb73dfa11c42eaa90c34fd8375941a0874b37159e2ac07e4d",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 6834946,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "FOUND",
+                "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+                "source_file": "AndroidManifest.xml",
+                "offset": 0,
+                "extraction_method": "manifest_permission_tag",
+                "confidence": 1.0
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=c75abe78593643ae7cac527327cd2193482db067404a88b8c13f7a0701946187",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Cryptomator.apk",
+        "sha256": "d5cb6c0bb40b5a82fe4ea5689599aa871bb725c25f0d6d1bde44120b696073b9",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 7917135,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=f7c3ec3b0d588d3cb52983e9eb1a7421c93d4339a286398e71d7b651e8d8ecdd",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Element.apk",
+        "sha256": "66f8aecb050eff7d81c992c03e2186f66adb752729344ae3e24a98a6b4ab4613",
+        "evidence": {
+            "sms": {
+                "status": "FOUND",
+                "matched_string": "sendTextMessage",
+                "source_file": "classes8.dex",
+                "offset": 4768147,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.9
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 7575035,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "FOUND",
+                "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+                "source_file": "AndroidManifest.xml",
+                "offset": 0,
+                "extraction_method": "manifest_permission_tag",
+                "confidence": 1.0
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=b15d9b673b55b9fe656190794d872e59ec5b85b3bfb8a76b9442f17eae2887c9",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "FairEmail.apk",
+        "sha256": "c63d25b6c5f82fa1339308d8244f014bb0ac322dcfa61265f10053fc21a56b6b",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 9567747,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=b9d041582af46ee39bba0f2f1829d948ae21ecf7ffa6ba120385d245ebb788ae",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "FDroid.apk",
+        "sha256": "0b6c65becb0712828625976c6baa76fc40153f77871487b5bc231c3433856b50",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 7830859,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=43238d512c1e5eb2d6569f4a3afbf5523418b82e0a3ed1552770abb9a9c9ccab",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Firefly_III.apk",
+        "sha256": "739fae2c6facab68c3e4706995d232bbb278216f0a214a3d04b34cf0d67d6bc5",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 5645690,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=e765baae47b7691d055b408c197d5a8ae90eb76442667e286e4f01cf6f6aac9f",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "K9Mail.apk",
+        "sha256": "10a81c2a360868d1c26ab37c6225365b1ee02757ab8f90facb377560becfba55",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 9418757,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=c430665e3662253b2078dcda350c2c6ce44d915a3d8a147b63ced619bb9e8576",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "KeePassDX.apk",
+        "sha256": "23d6917bf11fcde7f4a2b8072faa893df857955d6201244e370357bd7d65c598",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 7812783,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=c810aab7efa4d5ad3fc2941fdf5f99b88a3b73f86219715627edb4dabac541a4",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Markor.apk",
+        "sha256": "3f9f260dc3e32a1281cb8803eea6f926eef897579f68a5d35f922523974b84b9",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 7802921,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=9c70033237dc46fe5052e420c665708de8b3105b89842843818981826b7eec9c",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "MoneyWallet.apk",
+        "sha256": "815e57ae6881e4f73e0ea73f2c2f494cc23df380c5f264a6b1b796ca91119263",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes2.dex",
+                "offset": 3849694,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "FOUND",
+                "matched_string": "Ldalvik/system/DexClassLoader;",
+                "source_file": "classes.dex",
+                "offset": 5798640,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.95
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=573a3866355abe6dc90c36981191de3cb720acb11b3da8a9f17d7d138fc042e5",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "My_Expenses.apk",
+        "sha256": "d12a6cfc27ff2dc70d3241455a6ac7f5b27bbd4371bff626ac5672ff3d2b5eaa",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 8420593,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=cc73d1af732cd02b84a9c7d56b7b64b9d69d47a265ec34b088d6857d9fbf97ce",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "NewPipe.apk",
+        "sha256": "d9fb2540b3a2a0b059c73a296f0cda1c06738426d013c626dbf088aea66629b3",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 7950586,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "FOUND",
+                "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+                "source_file": "AndroidManifest.xml",
+                "offset": 0,
+                "extraction_method": "manifest_permission_tag",
+                "confidence": 1.0
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=cb84069bd68116bafae5ee4ee5b08a567aa6d898404e7cb12f9e756df5cf5cab",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Nextcloud.apk",
+        "sha256": "ac2ac97c3c5c73fa821d59a7b583ca9fdc78df70049110023209128f6d3f639b",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes3.dex",
+                "offset": 7339476,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=5709576f9d6c6a7687dd5d56b269d1fa5e379702b91bc83f39fd7b7c597c1b83",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "OpenFoodFacts.apk",
+        "sha256": "6fa3470e519c692987f9fe7a8a82f7b29630416d31467c021278334f1b6f0eba",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 3739820,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=19d4f00c33574d09375432c5407241dee267a5d569201aa7207d0fb552efc120",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "OpenKeychain.apk",
+        "sha256": "f88374b9113aa9ddba865258bd989eb3ac2ca1577d92e59d6e84228e080674ce",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 8288843,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=2805a6f465acb923103a2ab3a145e1a97a74c44acf751250b588ebc3f88a0cc9",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Privacy_Browser.apk",
+        "sha256": "209e0670cb44a959dd628737eaa5b8df05bfb605e4706de49ea2b72684cf72e3",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 1739820,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=f97614dc96964bea2e4fa66b24608a510a87b3b1e01ba68e0753c099133a8768",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Rboard.apk",
+        "sha256": "ae35151ce560138773050cc32a81a326622ee30c3f43e76bb2f4526fd942d2a6",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes3.dex",
+                "offset": 7133245,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "FOUND",
+                "matched_string": "Ldalvik/system/PathClassLoader;",
+                "source_file": "classes3.dex",
+                "offset": 6267266,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.95
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=b01ff556b752eea00c491582a65259db98919c3fa6925149e50f32352a08faf4",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Shelter.apk",
+        "sha256": "d6d67b22f066d40f8771d8d7c0e0efe9315b37224d5b7e724f4c0e9b0eecca07",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 1449341,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "FOUND",
+                "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+                "source_file": "AndroidManifest.xml",
+                "offset": 0,
+                "extraction_method": "manifest_permission_tag",
+                "confidence": 1.0
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=2d4837134f3519a11d104630ed42a4a795f4ab2327e1c9899cbebfbf89aba483",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Tasks.apk",
+        "sha256": "ae19d8719932692b10236a4ef6e1e74f7e1a70328eca13a905156cfd2f08ecb8",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 13820881,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=a038a055bf43b2659cbaf862808afd5e447d4d0e2749a10391910009cbd8dcfa",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Termux.apk",
+        "sha256": "fdd476982cd74f2f00aac12d3683b1fa260a0b2d146411b94e09d773be3a7b56",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 2779821,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "FOUND",
+                "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+                "source_file": "AndroidManifest.xml",
+                "offset": 0,
+                "extraction_method": "manifest_permission_tag",
+                "confidence": 1.0
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "FOUND",
+                "matched_string": "Ldalvik/system/PathClassLoader;",
+                "source_file": "classes.dex",
+                "offset": 2396076,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.95
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=228fb2cfe90831c1499ec3ccaf61e96e8e1ce70766b9474672ce427334d41c42",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Tusky.apk",
+        "sha256": "3e8fcc49a80d4c30ab6f6037e51402c77e2694d27ec19ae5b8a93cd08b6caffa",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 7099960,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=e946901f12bd49c64de702a532114e58c3ab2a6f18d1cd9b78632baad44454e3",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Vespucci_Wallet.apk",
+        "sha256": "d99fc6da2a35b6fcb57c872f12093ba77125dfda3b043f3c4a79b3cdd7ce0ac6",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 6663803,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "FOUND",
+                "matched_string": "Ldalvik/system/PathClassLoader;",
+                "source_file": "classes.dex",
+                "offset": 6085488,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.95
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=ac5d0c287a060c1fd051f1d203c4ce33ff7008735f2d38d1951a900cbd673969",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "VLC.apk",
+        "sha256": "4a9144fadfd8606cc5c0e9db892fd24846b7b2efeb1630db5377955d1612b119",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 8286670,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "FOUND",
+                "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+                "source_file": "AndroidManifest.xml",
+                "offset": 0,
+                "extraction_method": "manifest_permission_tag",
+                "confidence": 1.0
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=80535be61eedb9a03b0476a6f493d496c3498770404339ea7a8000f5e61d22c0",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "filename": "Wikipedia.apk",
+        "sha256": "ce97a4b75f84002ac3338a69446a198d622ac76dd94d05ab0ecc43c7f4fc88d7",
+        "evidence": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "FOUND",
+                "matched_string": "performAction",
+                "source_file": "classes.dex",
+                "offset": 10908508,
+                "extraction_method": "dex_find_bytes",
+                "confidence": 0.85
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=1c3ddb0e8f3258b0ff3b7b6a608d19e7cdeed38a5897bbda23bac155923b1267",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        }
+    }
+]

@@ -1,0 +1,30 @@
+{
+    "apks/Termux.apk": {
+        "Old Detector": "INTERNET Permission",
+        "New Detector": "Actual WebView API Invocation",
+        "Findings": {
+            "error": "[Errno 2] No such file or directory: 'apks/Termux.apk'"
+        }
+    },
+    "apks/VLC.apk": {
+        "Old Detector": "INTERNET Permission",
+        "New Detector": "Actual WebView API Invocation",
+        "Findings": {
+            "error": "[Errno 2] No such file or directory: 'apks/VLC.apk'"
+        }
+    },
+    "apks/NewPipe.apk": {
+        "Old Detector": "INTERNET Permission",
+        "New Detector": "Actual WebView API Invocation",
+        "Findings": {
+            "error": "[Errno 2] No such file or directory: 'apks/NewPipe.apk'"
+        }
+    },
+    "apks/Element.apk": {
+        "Old Detector": "INTERNET Permission",
+        "New Detector": "Actual WebView API Invocation",
+        "Findings": {
+            "error": "[Errno 2] No such file or directory: 'apks/Element.apk'"
+        }
+    }
+}

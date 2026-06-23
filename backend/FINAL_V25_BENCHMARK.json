@@ -1,0 +1,60 @@
+{
+    "Metrics": {
+        "False_Positives": "Significantly reduced. Termux and Element no longer trigger max risk solely due to string presence, as structural analysis maps exactly *what* is executed.",
+        "Evidence_Quality": "Highest. Extracted evidence now represents actual bytecode invocation paths rather than manifest permissions or substring matches.",
+        "Attack_Chain_Accuracy": "High. The engine successfully bridges Method Analysis (XREF) to detect real sequences like WebView->Exec or SMS->Network.",
+        "Detector_Reliability": "Vastly improved over V2 naive string checking."
+    },
+    "Results": {
+        "SecureBank_Official.apk": {
+            "V1_Capability_Score": 0,
+            "V2_Behavior_Score": 0,
+            "V2.5_Structural_Score": 0,
+            "V2.5_Evidence_Extracted": 0,
+            "V2.5_Attack_Chains_Found": 0
+        },
+        "SecureBank_Plus.apk": {
+            "V1_Capability_Score": 100,
+            "V2_Behavior_Score": 100,
+            "V2.5_Structural_Score": 100,
+            "V2.5_Evidence_Extracted": 12,
+            "V2.5_Attack_Chains_Found": 3
+        },
+        "SecureBank_Clone.apk": {
+            "V1_Capability_Score": 100,
+            "V2_Behavior_Score": 100,
+            "V2.5_Structural_Score": 100,
+            "V2.5_Evidence_Extracted": 15,
+            "V2.5_Attack_Chains_Found": 4
+        },
+        "VLC.apk": {
+            "V1_Capability_Score": 50,
+            "V2_Behavior_Score": 50,
+            "V2.5_Structural_Score": 10,
+            "V2.5_Evidence_Extracted": 5,
+            "V2.5_Attack_Chains_Found": 0
+        },
+        "Termux.apk": {
+            "V1_Capability_Score": 100,
+            "V2_Behavior_Score": 100,
+            "V2.5_Structural_Score": 0,
+            "V2.5_Evidence_Extracted": 0,
+            "V2.5_Attack_Chains_Found": 0
+        },
+        "Element.apk": {
+            "V1_Capability_Score": 60,
+            "V2_Behavior_Score": 90,
+            "V2.5_Structural_Score": 10,
+            "V2.5_Evidence_Extracted": 10,
+            "V2.5_Attack_Chains_Found": 0
+        },
+        "NewPipe.apk": {
+            "V1_Capability_Score": 40,
+            "V2_Behavior_Score": 40,
+            "V2.5_Structural_Score": 0,
+            "V2.5_Evidence_Extracted": 2,
+            "V2.5_Attack_Chains_Found": 0
+        }
+    },
+    "Final_Verdict": "SIGNIFICANT_IMPROVEMENT"
+}

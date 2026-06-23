@@ -1,0 +1,8 @@
+{
+    "Runtime.exec": "byte match",
+    "DexClassLoader": "byte match",
+    "Accessibility": "substring match",
+    "Reflection": "substring match / regex",
+    "SMS": "substring match / manifest presence",
+    "WebView": "substring match"
+}

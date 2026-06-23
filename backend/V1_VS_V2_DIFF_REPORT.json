@@ -1,0 +1,23 @@
+{
+    "SecureBank_Official.apk": {
+        "risk_score_match": true,
+        "verdict_match": true,
+        "clone_risk_match": true,
+        "certificate_status_match": true,
+        "evidence_validation_match": true
+    },
+    "SecureBank_Plus.apk": {
+        "risk_score_match": true,
+        "verdict_match": true,
+        "clone_risk_match": true,
+        "certificate_status_match": true,
+        "evidence_validation_match": true
+    },
+    "SecureBank_Clone.apk": {
+        "risk_score_match": true,
+        "verdict_match": true,
+        "clone_risk_match": true,
+        "certificate_status_match": true,
+        "evidence_validation_match": true
+    }
+}

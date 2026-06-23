@@ -482,6 +482,14 @@ class APKAnalyzer:
         # Scan bytecode
         try:
             dex_indicators = self._scan_dex_zip()
+            
+            # --- V2 Integration ---
+            from dex_behavior_analyzer import DexBehaviorAnalyzer
+            v2_dex_results = DexBehaviorAnalyzer(self.apk_path).analyze()
+            if "evidence" in v2_dex_results and "evidence" in dex_indicators:
+                dex_indicators["evidence"].update(v2_dex_results["evidence"])
+            # ----------------------
+            
         except Exception as e:
             raise Exception("DEX_SCAN_FAILED") from e
 
@@ -697,6 +705,14 @@ class APKAnalyzer:
         # Scan dex bytecodes inside zip
         try:
             dex_indicators = self._scan_dex_zip()
+            
+            # --- V2 Integration ---
+            from dex_behavior_analyzer import DexBehaviorAnalyzer
+            v2_dex_results = DexBehaviorAnalyzer(self.apk_path).analyze()
+            if "evidence" in v2_dex_results and "evidence" in dex_indicators:
+                dex_indicators["evidence"].update(v2_dex_results["evidence"])
+            # ----------------------
+            
         except Exception as e:
             raise Exception("DEX_SCAN_FAILED") from e
 

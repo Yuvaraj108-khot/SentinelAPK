@@ -1,0 +1,31 @@
+{
+    "dex_behavior_analyzer.py": {
+        "detectors": [
+            {
+                "name": "runtime_exec",
+                "matching_strategy": "byte_matching",
+                "target": "b\"Ljava/lang/Runtime;->exec\"",
+                "flaws": [
+                    "Vulnerable to basic string obfuscation.",
+                    "Fails to capture the caller context (who is executing the command?).",
+                    "Flags benign debugging strings if present in the APK."
+                ]
+            },
+            {
+                "name": "dynamic_loading",
+                "matching_strategy": "byte_matching",
+                "target": "b\"Ldalvik/system/DexClassLoader;-><init>\"",
+                "flaws": [
+                    "Prone to false positives if the library merely exists but is never instantiated.",
+                    "Does not provide the caller context (is the main app loading the dex, or a 3rd party ad SDK?)."
+                ]
+            }
+        ],
+        "missing_detectors": [
+            "Accessibility APIs",
+            "SMS APIs",
+            "Reflection APIs",
+            "WebView APIs"
+        ]
+    }
+}

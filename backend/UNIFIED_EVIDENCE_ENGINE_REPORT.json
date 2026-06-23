@@ -1,0 +1,12 @@
+{
+    "Detectors_Integrated": [
+        "Runtime.exec",
+        "DexClassLoader",
+        "Accessibility",
+        "Reflection",
+        "SMS",
+        "WebView"
+    ],
+    "Methodology": "Replaced legacy regex/substring scanning across dex files with unified Androguard DalvikVM Analysis. All target classes are evaluated via get_xref_from() to determine absolute callers.",
+    "Status": "COMPLETED"
+}

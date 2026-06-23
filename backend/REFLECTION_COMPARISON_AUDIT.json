@@ -1,0 +1,3286 @@
+{
+    "Old_Detector_Reflection": "String match for Class.forName or Method.invoke.",
+    "New_Detector_Call_Chain": "Extracts the exact caller. Identifies HIGH_RISK by correlating reflection calls with subsequent dangerous API invocations (like Runtime.exec or DexClassLoader) within the same execution path.",
+    "Findings": {
+        "Termux.apk": {
+            "reflection_level": "HIGH_RISK",
+            "evidence": [
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/DrawableCompat;",
+                    "caller_method": "setLayoutDirection",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 126,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/app/ActivityRecreator;",
+                    "caller_method": "recreate",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 234,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/lifecycle/ClassesInfoCache$MethodReference;",
+                    "caller_method": "invokeCallback",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 76,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/DrawableCompat;",
+                    "caller_method": "getLayoutDirection",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 106,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/widget/PopupWindowCompat;",
+                    "caller_method": "setWindowLayoutType",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 98,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "setAttributes",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 472,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/versionedparcelable/VersionedParcel;",
+                    "caller_method": "readFromParcel",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 22,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/MenuPopupWindow;",
+                    "caller_method": "setTouchModal",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 44,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/SupportMenuInflater$InflatedOnMenuItemClickListener;",
+                    "caller_method": "onMenuItemClick",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 40,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/lsposed/hiddenapibypass/HiddenApiBypass;",
+                    "caller_method": "invoke",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 190,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/lifecycle/ClassesInfoCache$MethodReference;",
+                    "caller_method": "invokeCallback",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 60,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "createFromFamiliesWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 66,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/WindowMetricsCalculatorCompat;",
+                    "caller_method": "getCutoutForDisplay",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 96,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/WindowMetricsCalculatorCompat;",
+                    "caller_method": "computeWindowBoundsP$window_release",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 118,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/WindowMetricsCalculatorCompat;",
+                    "caller_method": "computeWindowBoundsP$window_release",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 182,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/WrappedDrawableApi21;",
+                    "caller_method": "isProjected",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 22,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/material/chip/Chip;",
+                    "caller_method": "handleAccessibilityExit",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 132,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/IconCompat;",
+                    "caller_method": "getResId",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 60,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "setAttributes",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 266,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlinx/coroutines/android/HandlerDispatcherKt;",
+                    "caller_method": "asHandler",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 68,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/apache/commons/io/Java7Support;",
+                    "caller_method": "isSymLink",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 34,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "setAttributes",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 314,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/text/ICUCompat;",
+                    "caller_method": "addLikelySubtags",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 34,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/tracing/Trace;",
+                    "caller_method": "isEnabledFallback",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 110,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/SidecarAdapter$Companion;",
+                    "caller_method": "getRawSidecarDevicePosture",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 42,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/SidecarAdapter$Companion;",
+                    "caller_method": "setSidecarDisplayFeatures",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 66,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/ViewUtils;",
+                    "caller_method": "computeFitSystemWindows",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 26,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "abortCreation",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 10,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/coroutines/jvm/internal/ModuleNameRetriever;",
+                    "caller_method": "getModuleName",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 62,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/transition/ViewUtilsBase;",
+                    "caller_method": "setLeftTopRightBottom",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 76,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/ViewUtils;",
+                    "caller_method": "makeOptionalFitsSystemWindows",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 70,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/coroutines/jvm/internal/ModuleNameRetriever;",
+                    "caller_method": "getModuleName",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 110,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/WindowMetricsCalculatorCompat;",
+                    "caller_method": "computeWindowBoundsQ$window_release",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 92,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "setAttributes",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 364,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/SidecarCompat;",
+                    "caller_method": "validateExtensionInterface",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 600,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/view/KeyEventDispatcher;",
+                    "caller_method": "actionBarOnMenuKeyEventPre28",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 68,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/widget/TextViewCompat$OreoCallback;",
+                    "caller_method": "recomputeProcessTextMenuItems",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 240,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/SupportMenuInflater$InflatedOnMenuItemClickListener;",
+                    "caller_method": "onMenuItemClick",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 78,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;",
+                    "caller_method": "ensureImeVisible",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 30,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/SidecarCompat;",
+                    "caller_method": "validateExtensionInterface",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 630,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/SidecarCompat;",
+                    "caller_method": "validateExtensionInterface",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 456,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "freeze",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 10,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "extractAttributes",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 184,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/menu/MenuItemWrapperICS;",
+                    "caller_method": "setExclusiveCheckable",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 76,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi28Impl;",
+                    "caller_method": "createFromFamiliesWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 76,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/view/WindowInsetsCompat$Impl20;",
+                    "caller_method": "getVisibleInsets",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 64,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi21Impl;",
+                    "caller_method": "createFromFamiliesWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 42,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/termux/view/support/PopupWindowCompatGingerbread;",
+                    "caller_method": "setWindowLayoutType",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 78,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "addFontFromAssetManager",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 104,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlinx/coroutines/android/AndroidExceptionPreHandler;",
+                    "caller_method": "handleException",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 60,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "setAttributes",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 178,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/transition/ViewGroupUtilsApi14;",
+                    "caller_method": "cancelLayoutTransition",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 74,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/ListPopupWindow;",
+                    "caller_method": "show",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 470,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/content/res/ResourcesCompat$ThemeCompat$ImplApi23;",
+                    "caller_method": "rebase",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 82,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/internal/PlatformImplementations;",
+                    "caller_method": "addSuppressed",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 40,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/SidecarCompat;",
+                    "caller_method": "validateExtensionInterface",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 426,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "addFontFromBuffer",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 66,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/apache/commons/io/Java7Support;",
+                    "caller_method": "isSymLink",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 10,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/DrawableUtils;",
+                    "caller_method": "getOpticalBounds",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 110,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/lifecycle/ClassesInfoCache$MethodReference;",
+                    "caller_method": "invokeCallback",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 40,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "setAttributes",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 226,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi24Impl;",
+                    "caller_method": "createFromFamiliesWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 36,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/WindowMetricsCalculatorCompat;",
+                    "caller_method": "getRealSizeForDisplay$window_release",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 90,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;",
+                    "caller_method": "invokeAndReturnWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 14,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi24Impl;",
+                    "caller_method": "addFontWeightStyle",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 66,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/SidecarAdapter$Companion;",
+                    "caller_method": "setSidecarDevicePosture",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 64,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/app/AppCompatViewInflater$DeclaredOnClickListener;",
+                    "caller_method": "onClick",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 46,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi21Impl;",
+                    "caller_method": "addFontWeightStyle",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 50,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;",
+                    "caller_method": "doAfterTextChanged",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 20,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/app/ActivityRecreator$3;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 48,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/coroutines/jvm/internal/ModuleNameRetriever;",
+                    "caller_method": "getModuleName",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 86,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;",
+                    "caller_method": "doBeforeTextChanged",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 20,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/view/ViewConfigurationCompat;",
+                    "caller_method": "getLegacyScrollFactor",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 26,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlinx/coroutines/CommonPool;",
+                    "caller_method": "isGoodCommonPool$kotlinx_coroutines_core",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 34,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/ListPopupWindow;",
+                    "caller_method": "setPopupClipToScreenEnabled",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 44,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/app/ActivityRecreator$3;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 84,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/versionedparcelable/VersionedParcel;",
+                    "caller_method": "writeToParcel",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 36,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/lsposed/hiddenapibypass/HiddenApiBypass;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 32,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/SidecarAdapter$Companion;",
+                    "caller_method": "getSidecarDisplayFeatures",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 54,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "setAttributes",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 422,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/termux/shared/reflection/ReflectionUtils;",
+                    "caller_method": "invokeMethod",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 12,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/text/ICUCompat;",
+                    "caller_method": "maximizeAndGetScript",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 68,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/text/ICUCompat;",
+                    "caller_method": "getScript",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 26,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/ListPopupWindow;",
+                    "caller_method": "getMaxAvailableHeight",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 64,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;",
+                    "caller_method": "setRawTextSize",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 120,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlinx/coroutines/CommonPool;",
+                    "caller_method": "createPool",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 92,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/preference/PreferenceInflater;",
+                    "caller_method": "createItem",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 182,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/savedstate/Recreator;",
+                    "caller_method": "reflectiveNew",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 14,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/coordinatorlayout/widget/CoordinatorLayout;",
+                    "caller_method": "parseBehavior",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 206,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlinx/coroutines/internal/FastServiceLoader;",
+                    "caller_method": "loadMainDispatcherFactory$kotlinx_coroutines_core",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 64,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/preference/PreferenceInflater;",
+                    "caller_method": "createItem",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 98,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/versionedparcelable/VersionedParcel;",
+                    "caller_method": "findParcelClass",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 90,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/SupportMenuInflater$MenuState;",
+                    "caller_method": "newInstance",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 18,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/fragment/app/FragmentFactory;",
+                    "caller_method": "loadClass",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 54,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlinx/coroutines/internal/FastServiceLoader;",
+                    "caller_method": "getProviderInstance",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 2,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/versionedparcelable/VersionedParcel;",
+                    "caller_method": "getReadMethod",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 40,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/recyclerview/widget/RecyclerView;",
+                    "caller_method": "createLayoutManager",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 76,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/app/AppCompatViewInflater;",
+                    "caller_method": "createViewByPrefix",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 68,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlinx/coroutines/internal/FastServiceLoader;",
+                    "caller_method": "loadMainDispatcherFactory$kotlinx_coroutines_core",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 136,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/internal/PlatformImplementationsKt;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/Class;->forName",
+                    "offset": 348,
+                    "confidence": 1.0
+                }
+            ],
+            "total_reflection_calls": 142,
+            "chains": [
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/window/WindowMetricsCalculatorCompat;->getCutoutForDisplay",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/widget/TextViewCompat$OreoCallback;->recomputeProcessTextMenuItems",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/reflect/Method;->invoke",
+                        "Ljava/lang/ClassLoader;->loadClass"
+                    ],
+                    "caller": "Lorg/lsposed/hiddenapibypass/HiddenApiBypass;-><clinit>",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lkotlinx/coroutines/CommonPool;->createPool",
+                    "confidence": 0.8
+                }
+            ]
+        },
+        "VLC.apk": {
+            "reflection_level": "HIGH_RISK",
+            "evidence": [
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi21Impl;",
+                    "caller_method": "createFromFamiliesWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 42,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/DropDownListView$Api30Impl;",
+                    "caller_method": "positionSelectorForHoveredItem",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 100,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/util/internal/CleanerJava6;",
+                    "caller_method": "freeDirectBuffer0",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 48,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/BouncyCastleAlpnSslUtils;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 252,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/location/LocationRequestCompat$Api19Impl;",
+                    "caller_method": "toLocationRequest",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 182,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/calls/ValueClassAwareCaller$MultiFieldValueClassPrimaryConstructorCaller;",
+                    "caller_method": "call",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 262,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/util/internal/ThrowableUtil$$ExternalSyntheticBackport0;",
+                    "caller_method": "m",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 18,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/bouncycastle/jcajce/provider/symmetric/util/GcmSpecUtil$4;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 42,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokhttp3/internal/platform/android/CloseGuard;",
+                    "caller_method": "createAndOpen",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 50,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform;",
+                    "caller_method": "configureTlsExtensions",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 114,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/channel/DefaultChannelId;",
+                    "caller_method": "jmxPid",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 48,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/util/internal/NativeLibraryLoader$1;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 78,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/JdkAlpnSslUtils;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 146,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/util/OpenJdkSelfSignedCertGenerator;",
+                    "caller_method": "generate",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 574,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lj$/util/stream/Collectors$$ExternalSyntheticBackport0;",
+                    "caller_method": "m",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 40,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/JdkAlpnSslUtils;",
+                    "caller_method": "getHandshakeApplicationProtocol",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 6,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/coroutines/jvm/internal/ModuleNameRetriever;",
+                    "caller_method": "getModuleName",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 98,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/impl/descriptors/runtime/structure/Java8ParameterNamesLoader;",
+                    "caller_method": "loadParameterNames",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 138,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/util/internal/PlatformDependent0$6;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 254,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/core/ConsumerAdapter$createSubscriptionNoActivity$1;",
+                    "caller_method": "dispose",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 24,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/common/base/Throwables;",
+                    "caller_method": "invokeAccessibleNonThrowingMethod",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 0,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/location/LocationManagerCompat;",
+                    "caller_method": "registerGnssMeasurementsCallbackOnR",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 184,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/material/drawable/DrawableUtils;",
+                    "caller_method": "setRippleDrawableRadius",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 72,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/core/ConsumerAdapter;",
+                    "caller_method": "createSubscription",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 126,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/bouncycastle/jcajce/provider/symmetric/util/GcmSpecUtil$3;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 54,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/lifecycle/ClassesInfoCache$MethodReference;",
+                    "caller_method": "invokeCallback",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 40,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/calls/InternalUnderlyingValOfInlineClass;",
+                    "caller_method": "callMethod",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 24,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;",
+                    "caller_method": "doAfterTextChanged",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 16,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/widget/TextViewCompat$OreoCallback;",
+                    "caller_method": "recomputeProcessTextMenuItems",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 242,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/BouncyCastleAlpnSslUtils;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 224,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/app/ActivityRecreator$3;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 56,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "setAttributes",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 530,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/BouncyCastleAlpnSslUtils;",
+                    "caller_method": "getHandshakeApplicationProtocolSelector",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 6,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/IconCompat$Api23Impl;",
+                    "caller_method": "getResPackage",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 52,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/BouncyCastleAlpnSslUtils$10;",
+                    "caller_method": "apply",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 30,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/tracing/Trace;",
+                    "caller_method": "setCounterFallback",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 124,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/WeightTypefaceApi26;",
+                    "caller_method": "nativeCreateFromTypefaceWithExactStyle",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 54,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/view/ViewConfigurationCompat;",
+                    "caller_method": "getLegacyScrollFactor",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 22,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/app/ActionBarDrawerToggleHoneycomb;",
+                    "caller_method": "setActionBarUpIndicator",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 46,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/calls/ValueClassAwareCallerKt;",
+                    "caller_method": "coerceToExpectedReceiverType",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 78,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/SupportMenuInflater$InflatedOnMenuItemClickListener;",
+                    "caller_method": "onMenuItemClick",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 78,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/os/TraceCompat;",
+                    "caller_method": "setCounter",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 84,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/transition/ViewGroupUtils;",
+                    "caller_method": "getChildDrawingOrder",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 126,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/typesafe/config/impl/ConfigBeanImpl;",
+                    "caller_method": "createInternal",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 592,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/Conscrypt;",
+                    "caller_method": "isEngineSupported",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 22,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;",
+                    "caller_method": "doBeforeTextChanged",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 16,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/ktor/network/sockets/SocketOptionsPlatformCapabilities;",
+                    "caller_method": "setReusePort",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 58,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/full/KAnnotatedElements;",
+                    "caller_method": "findAnnotations",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 200,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/IconCompat$Api23Impl;",
+                    "caller_method": "getResId",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 54,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/WeightTypefaceApi21;",
+                    "caller_method": "nativeCreateWeightAlias",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 40,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/channel/socket/nio/SelectorProviderUtil;",
+                    "caller_method": "newChannel",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 28,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/UtilKt;",
+                    "caller_method": "unwrapRepeatableAnnotations",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 218,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/KPropertyImpl;",
+                    "caller_method": "getDelegateImpl",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 396,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/util/internal/PlatformDependent;",
+                    "caller_method": "estimateMaxDirectMemory",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 190,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplApi21;",
+                    "caller_method": "getCallingPackage",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 44,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/impl/protobuf/GeneratedMessageLite;",
+                    "caller_method": "invokeOrDie",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 0,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/BouncyCastleAlpnSslUtils;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 196,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/DrawableCompat;",
+                    "caller_method": "getLayoutDirection",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 90,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/calls/ValueClassAwareCaller$MultiFieldValueClassPrimaryConstructorCaller;",
+                    "caller_method": "call",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 242,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/squareup/moshi/ClassFactory$2;",
+                    "caller_method": "newInstance",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 24,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "createFromFamiliesWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 66,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/tracing/Trace;",
+                    "caller_method": "beginAsyncSectionFallback",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 122,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/common/eventbus/Subscriber;",
+                    "caller_method": "invokeSubscriberMethod",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 28,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/KPropertyImpl;",
+                    "caller_method": "getDelegateImpl",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 382,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/JdkAlpnSslUtils;",
+                    "caller_method": "getApplicationProtocol",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 6,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/motion/utils/CustomSupport;",
+                    "caller_method": "setInterpolatedValue",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 160,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "applyCustom",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 332,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/util/internal/CleanerJava6;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 122,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/util/OpenJdkSelfSignedCertGenerator;",
+                    "caller_method": "generate",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 392,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/channel/socket/nio/NioDatagramChannelConfig;",
+                    "caller_method": "setOption0",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 30,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/KPropertyImpl;",
+                    "caller_method": "getDelegateImpl",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 274,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/JdkAlpnSslUtils;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 220,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/text/ICUCompat;",
+                    "caller_method": "maximizeAndGetScript",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 72,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/transition/GhostViewPlatform;",
+                    "caller_method": "removeGhost",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 28,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "applyCustom",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 188,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/BouncyCastleAlpnSslUtils;",
+                    "caller_method": "setHandshakeApplicationProtocolSelector",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 58,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/JdkAlpnSslUtils;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 94,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/channel/socket/nio/NioDatagramChannelConfig;",
+                    "caller_method": "getOption0",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 24,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/util/internal/NativeLibraryLoader$2;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 126,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;",
+                    "caller_method": "invokeAndReturnWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 14,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/BouncyCastleAlpnSslUtils;",
+                    "caller_method": "setApplicationProtocols",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 46,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/material/color/DynamicColors$2;",
+                    "caller_method": "isSupported",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 60,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/text/ICUCompat;",
+                    "caller_method": "getScriptBelowApi21",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 26,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/BouncyCastleAlpnSslUtils;",
+                    "caller_method": "setApplicationProtocols",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 64,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/location/LocationRequestCompat$Api19Impl;",
+                    "caller_method": "toLocationRequest",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 354,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/util/OpenJdkSelfSignedCertGenerator;",
+                    "caller_method": "generate",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 652,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi24Impl;",
+                    "caller_method": "createFromFamiliesWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 36,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/reflect/jvm/internal/impl/descriptors/runtime/structure/Java16RecordComponentsLoader;",
+                    "caller_method": "loadGetType",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 34,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokhttp3/internal/platform/android/CloseGuard;",
+                    "caller_method": "createAndOpen",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 20,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "setAttributes",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 186,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/SupportMenuInflater$InflatedOnMenuItemClickListener;",
+                    "caller_method": "onMenuItemClick",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 40,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/os/UserHandleCompat;",
+                    "caller_method": "getUserHandleForUid",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 52,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokhttp3/internal/platform/android/AndroidSocketAdapter;",
+                    "caller_method": "configureTlsExtensions",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 108,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/transition/CanvasUtils;",
+                    "caller_method": "enableZ",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 138,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/internal/PlatformImplementations;",
+                    "caller_method": "getSuppressed",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 20,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/JdkAlpnSslUtils;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 192,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/motion/utils/ViewOscillator$ProgressSet;",
+                    "caller_method": "setProperty",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 122,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/util/OpenJdkSelfSignedCertGenerator;",
+                    "caller_method": "generate",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 476,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/JdkAlpnSslUtils;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 66,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/netty/handler/ssl/BouncyCastleAlpnSslUtils;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 302,
+                    "confidence": 1.0
+                }
+            ],
+            "total_reflection_calls": 518,
+            "chains": [
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lio/netty/handler/ssl/BouncyCastleAlpnSslUtils;-><clinit>",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/location/LocationRequestCompat$Api19Impl;->toLocationRequest",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lio/netty/channel/DefaultChannelId;->jmxPid",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lio/netty/util/internal/PlatformDependent0$6;->run",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/location/LocationManagerCompat;->registerGnssMeasurementsCallbackOnR",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/widget/TextViewCompat$OreoCallback;->recomputeProcessTextMenuItems",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lio/netty/util/internal/PlatformDependent;->estimateMaxDirectMemory",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/location/LocationManagerCompat$Api19Impl;->tryRequestLocationUpdates",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/reflect/Method;->invoke",
+                        "Ljava/lang/ClassLoader;->loadClass"
+                    ],
+                    "caller": "Lorg/videolan/libvlc/util/HWDecoderUtil;->getSystemProperty",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/car/app/serialization/Bundler;->deserializeEnum",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lorg/videolan/vlc/util/FileUtils;->getStorageTag",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/window/layout/WindowMetricsCalculatorCompat;->getCutoutForDisplay",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/google/common/util/concurrent/MoreExecutors;->isAppEngineWithApiClasses",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lio/netty/channel/DefaultChannelId;->processHandlePid",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/google/common/base/Throwables;->getJLA",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lorg/videolan/resources/AppContextProvider;->getAppContext",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/view/DisplayCompat;->getSystemProperty",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/squareup/moshi/ClassFactory;->get",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/google/common/util/concurrent/MoreExecutors;->platformThreadFactory",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/content/pm/ShortcutManagerCompat;->getShortcutInfoListeners",
+                    "confidence": 0.8
+                }
+            ]
+        },
+        "NewPipe.apk": {
+            "reflection_level": "HIGH_RISK",
+            "evidence": [
+                {
+                    "caller_class": "Lorg/mozilla/javascript/ScriptableObject;",
+                    "caller_method": "buildClassCtor",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 176,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokhttp3/internal/platform/android/AndroidSocketAdapter;",
+                    "caller_method": "getSelectedProtocol",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 24,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/work/impl/WorkerWrapper;",
+                    "caller_method": "access$runWorker",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 396,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/app/AppCompatActivity;",
+                    "caller_method": "attachBaseContext",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 876,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/ExceptionsKt;",
+                    "caller_method": "addSuppressed",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 70,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/app/ActivityRecreator$1;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 1238,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/extractor/DefaultExtractorsFactory;",
+                    "caller_method": "getFlacExtractorConstructor",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 30,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/mozilla/javascript/Context;",
+                    "caller_method": "addContextListener",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 92,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/widget/TextViewCompat;",
+                    "caller_method": "toIcon",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 576,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/jsoup/helper/Regex;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 154,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "createFromFontInfo",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 324,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;",
+                    "caller_method": "setTextSizeInternal",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 128,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/protobuf/GeneratedMessageLite;",
+                    "caller_method": "invokeOrDie",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 0,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/app/AppCompatDelegateImpl;",
+                    "caller_method": "ensureSubDecor",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 598,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/video/MediaCodecVideoRenderer$VideoFrameProcessorManager$VideoFrameProcessorAccessor;",
+                    "caller_method": "createRotationEffect",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 54,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintSet;",
+                    "caller_method": "applyToInternal",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 790,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi24Impl;",
+                    "caller_method": "addFontWeightStyle",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 66,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/protobuf/ManifestSchemaFactory;",
+                    "caller_method": "<init>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 34,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokhttp3/internal/platform/android/AndroidSocketAdapter;",
+                    "caller_method": "configureTlsExtensions",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 80,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokio/-SegmentedByteString;",
+                    "caller_method": "getLayoutDirection",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 90,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "addFontFromAssetManager",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 104,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/ui/TrackSelectionDialogBuilder;",
+                    "caller_method": "buildForAndroidX",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 168,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/work/impl/WorkerWrapper$runWorker$2;",
+                    "caller_method": "invoke",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 236,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;",
+                    "caller_method": "getStackTraceElement",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 330,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/protobuf/ExtensionRegistryLite;",
+                    "caller_method": "getEmptyRegistry",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 50,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/jsoup/helper/Regex;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 58,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/versionedparcelable/VersionedParcel;",
+                    "caller_method": "writeVersionedParcelable$1",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 106,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/IconCompat;",
+                    "caller_method": "getUri",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 74,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/versionedparcelable/VersionedParcel;",
+                    "caller_method": "readVersionedParcelable",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 54,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/DropDownListView;",
+                    "caller_method": "onHoverEvent",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 258,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/video/MediaCodecVideoRenderer$VideoFrameProcessorManager$VideoFrameProcessorAccessor;",
+                    "caller_method": "getFrameProcessorFactory",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 24,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/app/ActivityCompat$Api23Impl;",
+                    "caller_method": "shouldShowRequestPermissionRationale$1",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 56,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintSet;",
+                    "caller_method": "applyToInternal",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 602,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/math/MathKt;",
+                    "caller_method": "getExclusions",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 26,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;",
+                    "caller_method": "invokeAndReturnWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 10,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/ui/TrackSelectionDialogBuilder;",
+                    "caller_method": "buildForAndroidX",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 316,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/ListPopupWindow;",
+                    "caller_method": "show",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 824,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/mozilla/javascript/ScriptableObject;",
+                    "caller_method": "buildClassCtor",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 230,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokio/Okio;",
+                    "caller_method": "setLeftTopRightBottom",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 150,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/mozilla/javascript/JavaToJSONConverters;",
+                    "caller_method": "lambda$static$4",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 74,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/app/ActivityRecreator$1;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 1274,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/mozilla/javascript/ScriptableObject;",
+                    "caller_method": "buildClassCtor",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 1444,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi28Impl;",
+                    "caller_method": "createFromFamiliesWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 68,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi24Impl;",
+                    "caller_method": "createFromFamiliesWithDefault$1",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 36,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/app/NotificationManagerCompat;",
+                    "caller_method": "areNotificationsEnabled",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 196,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/app/AppCompatDelegateImpl$3;",
+                    "caller_method": "onApplyWindowInsets",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 328,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintSet;",
+                    "caller_method": "applyToInternal",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 860,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/acra/util/ProcessFinisher$$ExternalSyntheticLambda0;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 274,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/sqlite/db/framework/FrameworkSQLiteDatabase;",
+                    "caller_method": "beginTransactionReadOnly",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 92,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/ui/TrackSelectionDialogBuilder;",
+                    "caller_method": "buildForAndroidX",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 92,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/video/MediaCodecVideoRenderer$VideoFrameProcessorManager$VideoFrameProcessorAccessor;",
+                    "caller_method": "createRotationEffect",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 44,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;",
+                    "caller_method": "findByIssuerAndSignature",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 20,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroid/support/v4/media/session/MediaSessionCompat$Callback$MediaSessionCallbackApi21;",
+                    "caller_method": "setCurrentControllerInfo",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 50,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintSet;",
+                    "caller_method": "applyToInternal",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 972,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "createFromFamiliesWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 58,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/schabi/newpipe/fragments/detail/VideoDetailFragment;",
+                    "caller_method": "initViews",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 618,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlinx/coroutines/android/HandlerDispatcherKt;",
+                    "caller_method": "asHandler",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 54,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/DrawableUtils;",
+                    "caller_method": "getOpticalBounds",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 102,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/DropDownListView;",
+                    "caller_method": "onHoverEvent",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 310,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/mozilla/javascript/JavaMembers_jdk11;",
+                    "caller_method": "isExportedClass",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 138,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/util/Util;",
+                    "caller_method": "getSystemProperty",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 48,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/mozilla/javascript/NativeJavaObject;",
+                    "caller_method": "readObject",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 50,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi21Impl;",
+                    "caller_method": "addFontWeightStyle",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 50,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "createFromFontInfo",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 346,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/jsoup/helper/Regex;",
+                    "caller_method": "<clinit>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 66,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/lifecycle/ClassesInfoCache$CallbackInfo;",
+                    "caller_method": "invokeMethodsForEvent",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 96,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;",
+                    "caller_method": "getStackTraceElement",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 304,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/ui/TrackSelectionDialogBuilder;",
+                    "caller_method": "buildForAndroidX",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 206,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;",
+                    "caller_method": "<init>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 62,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/ui/TrackSelectionDialogBuilder;",
+                    "caller_method": "buildForAndroidX",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 334,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/mozilla/javascript/MemberBox;",
+                    "caller_method": "invoke",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 134,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokhttp3/internal/platform/android/AndroidSocketAdapter;",
+                    "caller_method": "configureTlsExtensions",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 120,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokio/-SegmentedByteString;",
+                    "caller_method": "setLayoutDirection",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 118,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/acra/collector/SettingsCollector;",
+                    "caller_method": "collectSettings",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 166,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/IconCompat;",
+                    "caller_method": "getResId",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 74,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/util/BundleUtil;",
+                    "caller_method": "putBinderByReflection",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 96,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/view/WindowInsetsCompat$Impl20;",
+                    "caller_method": "getVisibleInsets",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 58,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "createFromResourcesFontFile",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 86,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/mozilla/javascript/JavaMembers_jdk11;",
+                    "caller_method": "isExportedClass",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 90,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lkotlinx/coroutines/android/AndroidExceptionPreHandler;",
+                    "caller_method": "handleException",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 104,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/menu/CascadingMenuPopup;",
+                    "caller_method": "showMenu",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 552,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "createFromFontInfo",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 286,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/util/BundleUtil;",
+                    "caller_method": "getBinderByReflection",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 84,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource;",
+                    "caller_method": "maybeTerminateInputStream",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 174,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/WrappedDrawableApi21;",
+                    "caller_method": "isProjected",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 18,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/app/NotificationCompat$Action;",
+                    "caller_method": "<init>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 124,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/schabi/newpipe/player/datasource/YoutubeHttpDataSource;",
+                    "caller_method": "maybeTerminateInputStream",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 174,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "createFromFontFamilyFilesResourceEntry",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 122,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/SupportMenuInflater$MenuState;",
+                    "caller_method": "setItem",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 390,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/widget/TextViewCompat$OreoCallback;",
+                    "caller_method": "onPrepareActionMode",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 236,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/schabi/newpipe/fragments/detail/VideoDetailFragment;",
+                    "caller_method": "initViews",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 590,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/os/TraceCompat;",
+                    "caller_method": "isEnabled",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 52,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/mozilla/javascript/MemberBox;",
+                    "caller_method": "invoke",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 74,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/exoplayer2/audio/AudioTrackPositionTracker;",
+                    "caller_method": "maybeUpdateLatency",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 52,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/SupportMenuInflater$InflatedOnMenuItemClickListener;",
+                    "caller_method": "onMenuItemClick",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 70,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintSet;",
+                    "caller_method": "applyToInternal",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 1026,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/ListPopupWindow;",
+                    "caller_method": "show",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 300,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintSet;",
+                    "caller_method": "applyToInternal",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 916,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/mozilla/javascript/NativeJavaObject;",
+                    "caller_method": "writeObject",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 56,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/SupportMenuInflater$InflatedOnMenuItemClickListener;",
+                    "caller_method": "onMenuItemClick",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 36,
+                    "confidence": 1.0
+                }
+            ],
+            "total_reflection_calls": 214,
+            "chains": [
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/work/impl/WorkerWrapper;->access$runWorker",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/google/android/exoplayer2/extractor/DefaultExtractorsFactory;->getFlacExtractorConstructor",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lorg/jsoup/helper/Regex;-><clinit>",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/google/protobuf/ManifestSchemaFactory;-><init>",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/reflect/Method;->invoke",
+                        "Ljava/lang/ClassLoader;->loadClass"
+                    ],
+                    "caller": "Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;->getStackTraceElement",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lkotlin/math/MathKt;->getExclusions",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/app/NotificationManagerCompat;->areNotificationsEnabled",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/google/android/exoplayer2/util/Util;->getSystemProperty",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lorg/mozilla/javascript/NativeJavaObject;->readObject",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/widget/TextViewCompat$OreoCallback;->onPrepareActionMode",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/work/impl/utils/ProcessUtils;->isDefaultProcess",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/ClassLoader;->loadClass"
+                    ],
+                    "caller": "Lorg/mozilla/javascript/Kit;->classOrNull",
+                    "confidence": 0.8
+                }
+            ]
+        },
+        "Element.apk": {
+            "reflection_level": "HIGH_RISK",
+            "evidence": [
+                {
+                    "caller_class": "Landroidx/media3/ui/PlayerView;",
+                    "caller_method": "setImageOutput",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 60,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lim/vector/app/features/rageshake/ProcessInfo;",
+                    "caller_method": "getProcessName",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 58,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/javacutil/TreeUtils;",
+                    "caller_method": "bindingPatternTreeGetVariable",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 14,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/org/apache/commons/lang3/ObjectUtils;",
+                    "caller_method": "clone",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 136,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/react/uimanager/ViewManagersPropertyCache$PropSetter;",
+                    "caller_method": "updateShadowNodeProp",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 102,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/os/TraceCompat;",
+                    "caller_method": "isEnabled",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 52,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/classpath/CallStackReader$1;",
+                    "caller_method": "invoke",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 12,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/learnium/RNDeviceInfo/RNInstallReferrerClient$InstallReferrerStateListenerProxy;",
+                    "caller_method": "lambda$onInstallReferrerSetupFinished$0",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 64,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/versionedparcelable/VersionedParcel;",
+                    "caller_method": "readFromParcel",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 22,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/scilab/forge/jlatexmath/TeXFormulaParser$MethodInvocationParser;",
+                    "caller_method": "parse",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 92,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/drawable/WrappedDrawableApi21;",
+                    "caller_method": "isProjected",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 18,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/org/apache/commons/lang3/reflect/MethodUtils;",
+                    "caller_method": "invokeMethod",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 98,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/material/internal/ViewOverlayApi14$OverlayViewGroup;",
+                    "caller_method": "invalidateChildInParentFast",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 74,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/location/LocationRequestCompat$Api19Impl;",
+                    "caller_method": "toLocationRequest",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 158,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/widget/PopupWindowCompat;",
+                    "caller_method": "setWindowLayoutType",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 98,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/DropDownListView$Api30Impl;",
+                    "caller_method": "positionSelectorForHoveredItem",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 62,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/reflection/JVMDriverReflectionDriver$3;",
+                    "caller_method": "findClass",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 50,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/sun/jna/internal/ReflectionUtils;",
+                    "caller_method": "mhViaFindSpecial",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 60,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/versionedparcelable/VersionedParcel;",
+                    "caller_method": "writeToParcel",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 36,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/learnium/RNDeviceInfo/RNDeviceModule;",
+                    "caller_method": "hasGmsSync",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 28,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/common/util/concurrent/SimpleTimeLimiter$1;",
+                    "caller_method": "$r8$lambda$z5V9Yr3cJm146twyiRHwnRz-g5M",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 0,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/tracing/Trace;",
+                    "caller_method": "beginAsyncSectionFallback",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 112,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/TypefaceCompatApi26Impl;",
+                    "caller_method": "addFontFromBuffer",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 66,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/stetho/inspector/elements/android/MethodInvoker$TypedMethodInvoker;",
+                    "caller_method": "invoke",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 48,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/com/google/common/reflect/Types$TypeVariableInvocationHandler;",
+                    "caller_method": "invoke",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 32,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/react/common/network/OkHttpCallUtil;",
+                    "caller_method": "cancelTag",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 46,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/org/apache/commons/lang3/reflect/MethodUtils;",
+                    "caller_method": "invokeExactStaticMethod",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 30,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/webkit/internal/WebViewGlueCommunicator;",
+                    "caller_method": "getWebViewProviderFactory",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 26,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/SupportMenuInflater$InflatedOnMenuItemClickListener;",
+                    "caller_method": "onMenuItemClick",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 82,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/webkit/internal/WebViewGlueCommunicator;",
+                    "caller_method": "fetchGlueProviderFactoryImpl",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 36,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/media3/ui/TrackSelectionDialogBuilder;",
+                    "caller_method": "buildForAndroidX",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 92,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/stetho/inspector/elements/android/ViewDescriptor$MethodBackedCSSProperty;",
+                    "caller_method": "getValue",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 6,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/reflection/NarcissusReflectionDriver;",
+                    "caller_method": "setField",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 30,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/datastore/preferences/protobuf/ManifestSchemaFactory;",
+                    "caller_method": "getDescriptorMessageInfoFactory",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 26,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/scilab/forge/jlatexmath/MacroInfo;",
+                    "caller_method": "invoke",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 42,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/common/base/internal/Finalizer;",
+                    "caller_method": "finalizeReference",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 20,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/react/views/view/CanvasUtil;",
+                    "caller_method": "fetchOrderMethods",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 94,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/javacutil/TreeUtils;",
+                    "caller_method": "yieldTreeGetValue",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 14,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/org/apache/commons/lang3/AnnotationUtils;",
+                    "caller_method": "toString",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 68,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/material/color/DynamicColors$2;",
+                    "caller_method": "isSupported",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 60,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/airbnb/mvrx/MavericksStateFactoryKt;",
+                    "caller_method": "createStateFromCompanionFactory",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 78,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/react/bridge/ReactCxxErrorHandler;",
+                    "caller_method": "handleError",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 38,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/reflection/JVMDriverReflectionDriver$1;",
+                    "caller_method": "findClass",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 50,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/work/impl/utils/ProcessUtils;",
+                    "caller_method": "getProcessName",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 74,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/utils/ProxyingInputStream;",
+                    "caller_method": "transferTo",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 24,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform;",
+                    "caller_method": "afterHandshake",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 32,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/app/ActivityRecreator$3;",
+                    "caller_method": "run",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 92,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/location/LocationRequestCompat$Api19Impl;",
+                    "caller_method": "toLocationRequest",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 404,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/com/google/common/reflect/Invokable$MethodInvokable;",
+                    "caller_method": "invokeInternal",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 4,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/media3/ui/TrackSelectionDialogBuilder;",
+                    "caller_method": "buildForAndroidX",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 316,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/location/LocationRequestCompat$Api19Impl;",
+                    "caller_method": "toLocationRequest",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 242,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/stetho/inspector/elements/android/window/WindowRootViewCompactV19Impl;",
+                    "caller_method": "<init>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 32,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/media3/ui/TrackSelectionDialogBuilder;",
+                    "caller_method": "buildForAndroidX",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 334,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/location/LocationRequestCompat$Api19Impl;",
+                    "caller_method": "toLocationRequest",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 498,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/imagepipeline/platform/GingerbreadPurgeableDecoder;",
+                    "caller_method": "getMemoryFileDescriptor",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 10,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/protobuf/ExtensionRegistryLite;",
+                    "caller_method": "add",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 100,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/constraintlayout/widget/ConstraintAttribute;",
+                    "caller_method": "applyCustom",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 376,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/emoji2/text/EmojiExclusions$EmojiExclusions_Reflections;",
+                    "caller_method": "getExclusions",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 26,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/location/LocationManagerCompat$Api19Impl;",
+                    "caller_method": "tryRequestLocationUpdates",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 140,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/react/views/view/CanvasUtil;",
+                    "caller_method": "enableZ",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 74,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/afu/scenelib/Annotation;",
+                    "caller_method": "<init>",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 164,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/learnium/RNDeviceInfo/RNInstallReferrerClient;",
+                    "caller_method": "lambda$new$0",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 70,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/imagepipeline/request/BasePostprocessor;",
+                    "caller_method": "internalCopyBitmap",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 126,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/graphics/WeightTypefaceApi26;",
+                    "caller_method": "nativeCreateFromTypefaceWithExactStyle",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 54,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/utils/FileUtils;",
+                    "caller_method": "closeDirectByteBufferPrivileged",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 78,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/android/material/drawable/DrawableUtils;",
+                    "caller_method": "setRippleDrawableRadius",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 68,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/protobuf/ExtensionRegistryFactory;",
+                    "caller_method": "invokeSubclassFactory",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 20,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;",
+                    "caller_method": "setRawTextSize",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 102,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/learnium/RNDeviceInfo/resolver/DeviceIdResolver;",
+                    "caller_method": "getGmsInstanceId",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 90,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/soloader/SysUtil;",
+                    "caller_method": "getClassLoaderLdLoadLibrary",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 114,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/reflection/NarcissusReflectionDriver;",
+                    "caller_method": "findClass",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 18,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/reflection/StandardReflectionDriver;",
+                    "caller_method": "invokeMethod",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 6,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/squareup/moshi/ClassFactory$2;",
+                    "caller_method": "newInstance",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 24,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/org/plumelib/util/DumpHeap;",
+                    "caller_method": "dumpHeap",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 68,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/view/SupportMenuInflater$InflatedOnMenuItemClickListener;",
+                    "caller_method": "onMenuItemClick",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 40,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/facebook/react/bridge/JavaMethodWrapper;",
+                    "caller_method": "invoke",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 302,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/common/base/Throwables;",
+                    "caller_method": "getJLA",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 28,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/realm/Realm;",
+                    "caller_method": "isInstantApp",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 112,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/reflection/NarcissusReflectionDriver;",
+                    "caller_method": "getField",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 24,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/telephony/SubscriptionManagerCompat;",
+                    "caller_method": "getSlotIndex",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 152,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/window/layout/SidecarAdapter$Companion;",
+                    "caller_method": "getRawSidecarDevicePosture",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 34,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/common/io/Closer$SuppressingSuppressor;",
+                    "caller_method": "suppress",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 22,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/os/TraceCompat;",
+                    "caller_method": "beginAsyncSection",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 70,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/squareup/moshi/AdapterMethodsFactory$AdapterMethod;",
+                    "caller_method": "invoke",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 36,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/concurrency/SimpleThreadFactory;",
+                    "caller_method": "newThread",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 50,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/airbnb/mvrx/MavericksFactoryKt;",
+                    "caller_method": "createViewModel",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 160,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/google/common/io/TempFileCreator$JavaNioCreator;",
+                    "caller_method": "getUsername",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 152,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lokhttp3/internal/platform/android/CloseGuard;",
+                    "caller_method": "createAndOpen",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 50,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/os/TraceCompat;",
+                    "caller_method": "endAsyncSection",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 70,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/text/ICUCompat;",
+                    "caller_method": "maximizeAndGetScript",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 60,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/nonapi/io/github/classgraph/reflection/JVMDriverReflectionDriver;",
+                    "caller_method": "getStaticField",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 28,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;",
+                    "caller_method": "ensureImeVisible",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 30,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/os/TraceCompat;",
+                    "caller_method": "setCounter",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 72,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lorg/checkerframework/javacutil/TreeUtils;",
+                    "caller_method": "caseTreeGetBody",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 10,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lio/realm/Realm;",
+                    "caller_method": "isInstantApp",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 80,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/media3/extractor/DefaultExtractorsFactory;",
+                    "caller_method": "getFlacExtractorConstructor",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 30,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Lcom/learnium/RNDeviceInfo/RNInstallReferrerClient;",
+                    "caller_method": "lambda$new$0",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 42,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/view/DisplayCompat;",
+                    "caller_method": "getSystemProperty",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 48,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/core/location/LocationManagerCompat$Api30Impl;",
+                    "caller_method": "tryRequestLocationUpdates",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 138,
+                    "confidence": 1.0
+                },
+                {
+                    "caller_class": "Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;",
+                    "caller_method": "invokeAndReturnWithDefault",
+                    "reflection_api": "Ljava/lang/reflect/Method;->invoke",
+                    "offset": 10,
+                    "confidence": 1.0
+                }
+            ],
+            "total_reflection_calls": 742,
+            "chains": [
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lim/vector/app/features/rageshake/ProcessInfo;->getProcessName",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/location/LocationRequestCompat$Api19Impl;->toLocationRequest",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/learnium/RNDeviceInfo/RNDeviceModule;->hasGmsSync",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/webkit/internal/WebViewGlueCommunicator;->fetchGlueProviderFactoryImpl",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/datastore/preferences/protobuf/ManifestSchemaFactory;->getDescriptorMessageInfoFactory",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/work/impl/utils/ProcessUtils;->getProcessName",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/facebook/stetho/inspector/elements/android/window/WindowRootViewCompactV19Impl;-><init>",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/emoji2/text/EmojiExclusions$EmojiExclusions_Reflections;->getExclusions",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/location/LocationManagerCompat$Api19Impl;->tryRequestLocationUpdates",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/facebook/imagepipeline/request/BasePostprocessor;->internalCopyBitmap",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/learnium/RNDeviceInfo/resolver/DeviceIdResolver;->getGmsInstanceId",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/google/common/base/Throwables;->getJLA",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lio/realm/Realm;->isInstantApp",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/google/common/io/TempFileCreator$JavaNioCreator;->getUsername",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/media3/extractor/DefaultExtractorsFactory;->getFlacExtractorConstructor",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/view/DisplayCompat;->getSystemProperty",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/core/location/LocationManagerCompat$Api30Impl;->tryRequestLocationUpdates",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lorg/checkerframework/com/google/common/base/Throwables;->getJLA",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Landroidx/window/layout/WindowMetricsCalculatorCompat;->getCutoutForDisplay",
+                    "confidence": 0.8
+                },
+                {
+                    "reflection_chain": [
+                        "Ljava/lang/Class;->forName",
+                        "Ljava/lang/reflect/Method;->invoke"
+                    ],
+                    "caller": "Lcom/facebook/drawee/backends/pipeline/Fresco;->initialize",
+                    "confidence": 0.8
+                }
+            ]
+        }
+    }
+}

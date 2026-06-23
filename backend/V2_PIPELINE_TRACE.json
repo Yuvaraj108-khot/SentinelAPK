@@ -1,0 +1,53 @@
+{
+  "pipeline_trace": [
+    {
+      "step": "Frontend",
+      "status": "Unknown (External)"
+    },
+    {
+      "step": "Backend API",
+      "file": "main.py",
+      "function": "analyze_apk",
+      "line_number": 302,
+      "status": "ACTIVE"
+    },
+    {
+      "step": "Analyzer",
+      "file": "main.py -> analyzer.py",
+      "function": "APKAnalyzer.analyze",
+      "line_number": 322,
+      "status": "ACTIVE"
+    },
+    {
+      "step": "Risk Engine",
+      "file": "main.py -> risk_engine.py",
+      "function": "RiskEngine.calculate_risk",
+      "line_number": 327,
+      "status": "ACTIVE"
+    },
+    {
+      "step": "Correlation Engine",
+      "file": "behavior_correlation_engine.py",
+      "function": "BehaviorCorrelationEngine.evaluate",
+      "line_number": null,
+      "status": "UNREACHABLE",
+      "reason": "Not imported or called in main.py or risk_engine.py"
+    },
+    {
+      "step": "Attack Chain Engine",
+      "file": "attack_chain_engine.py",
+      "function": "AttackChainEngine.build_chains",
+      "line_number": null,
+      "status": "UNREACHABLE",
+      "reason": "Not imported or called in main.py or risk_engine.py"
+    },
+    {
+      "step": "Report Generation",
+      "file": "main.py -> report_generator.py",
+      "function": "ReportGenerator.generate_pdf",
+      "line_number": 343,
+      "status": "ACTIVE"
+    }
+  ],
+  "verdict": "PRESENT_BUT_UNUSED"
+}

@@ -1,0 +1,18 @@
+{
+    "Old_Detector_SMS_Permission": "Flags the APK based on READ_SMS, RECEIVE_SMS, or SEND_SMS permission tags in the Manifest.",
+    "New_Detector_Invocation": "Extracts Dalvik bytecode invocations of SmsManager, SmsMessage, TelephonyManager, and content://sms URIs.",
+    "Findings": {
+        "Termux.apk": {
+            "error": "'dict_values' object has no attribute 'items'"
+        },
+        "VLC.apk": {
+            "error": "'dict_values' object has no attribute 'items'"
+        },
+        "NewPipe.apk": {
+            "error": "'dict_values' object has no attribute 'items'"
+        },
+        "Element.apk": {
+            "error": "'dict_values' object has no attribute 'items'"
+        }
+    }
+}

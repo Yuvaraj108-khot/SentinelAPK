@@ -1,0 +1,22 @@
+{
+    "VLC.apk": {
+        "weak_extraction_cause": "V1/V2 flagged VLC strictly because 'android.permission.SYSTEM_ALERT_WINDOW' exists in the Manifest. This is weak capability detection, not evidence.",
+        "v25_evidence_impact": "By parsing the DEX call graph, V2.5 determines that the overlay API is only invoked by the PiP (Picture-in-Picture) MediaController classes, and never by a background service listening for banking app launches.",
+        "false_positive_reduction": "High. The overlay capability is contextually proven to be benign UI rendering, eliminating the threat flag."
+    },
+    "Termux.apk": {
+        "weak_extraction_cause": "V1/V2 flagged Termux because a raw byte search for 'Ljava/lang/Runtime;->exec' triggered a Dropper/Execution warning.",
+        "v25_evidence_impact": "V2.5 cross-references the caller. It finds that 'Runtime.exec' is invoked strictly by the core Terminal Emulator UI classes executing user-provided shell inputs, rather than an obfuscated background thread loading a hidden DEX.",
+        "false_positive_reduction": "High. Execution is proven to be the primary app functionality driven by user interaction."
+    },
+    "Element.apk": {
+        "weak_extraction_cause": "V1/V2 flagged Element because of the mere presence of SMS and Accessibility permissions in the Manifest.",
+        "v25_evidence_impact": "V2.5's call graph analysis proves that while 'SmsManager' is present, its call chain is isolated to the verification UI. There is no call chain linking the SMS Receiver directly to an 'HttpURLConnection' or background data exfiltration method.",
+        "false_positive_reduction": "High. The lack of a data exfiltration call chain from the SMS receiver invalidates the 'OTP Interception' threat."
+    },
+    "NewPipe.apk": {
+        "weak_extraction_cause": "V1/V2 flagged NewPipe due to 'android.permission.SYSTEM_ALERT_WINDOW' in the Manifest.",
+        "v25_evidence_impact": "Similar to VLC, cross-referencing proves the WindowManager is invoked by video rendering classes rather than generic transparent phishing overlays.",
+        "false_positive_reduction": "High. Overlay evidence is proven benign."
+    }
+}

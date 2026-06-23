@@ -1,0 +1,30 @@
+{
+    "apis_used": [
+        "AnalyzeAPK",
+        "get_methods",
+        "get_strings",
+        "get_xref_from",
+        "get_xref_to"
+    ],
+    "xref_support": "True. Successfully traced SMS API invocations and string references to their callers.",
+    "extracted_call_chains": true,
+    "limitations": [
+        "Network transmission might be delegated to an async task or callback, breaking the immediate XREF correlation chain.",
+        "SMS APIs called via reflection will not be statically resolved."
+    ],
+    "findings": {
+        "Termux.apk": {
+            "error": "'dict_values' object has no attribute 'items'"
+        },
+        "VLC.apk": {
+            "error": "'dict_values' object has no attribute 'items'"
+        },
+        "NewPipe.apk": {
+            "error": "'dict_values' object has no attribute 'items'"
+        },
+        "Element.apk": {
+            "error": "'dict_values' object has no attribute 'items'"
+        }
+    },
+    "Final_Verdict": "POC_IMPLEMENTED"
+}

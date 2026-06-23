@@ -1,0 +1,18 @@
+{
+    "Old_Detector_Permission": "Flags the APK immediately if android.permission.BIND_ACCESSIBILITY_SERVICE is found in the Manifest.",
+    "New_Detector_Invocation": "Parses Dalvik bytecode to verify if the app actually invokes accessibility automation APIs, differentiating passive screen reading from active injection.",
+    "Findings": {
+        "Termux.apk": {
+            "error": "a bytes-like object is required, not 'str'"
+        },
+        "VLC.apk": {
+            "error": "a bytes-like object is required, not 'str'"
+        },
+        "NewPipe.apk": {
+            "error": "a bytes-like object is required, not 'str'"
+        },
+        "Element.apk": {
+            "error": "a bytes-like object is required, not 'str'"
+        }
+    }
+}

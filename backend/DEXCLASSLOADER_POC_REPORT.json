@@ -1,0 +1,41 @@
+{
+    "apis_used": [
+        "AnalyzeAPK",
+        "get_methods",
+        "get_xref_from"
+    ],
+    "classes_used": [
+        "androguard.misc.AnalyzeAPK",
+        "androguard.core.analysis.analysis.Analysis",
+        "androguard.core.analysis.analysis.MethodAnalysis"
+    ],
+    "cross_reference_support": "True. Successfully traced the instantiation of Dalvik/system/DexClassLoader back to its caller.",
+    "limitations": [
+        "Time complexity: AnalyzeAPK takes several minutes on massive real-world applications.",
+        "Reflection: Dynamic code loading is frequently invoked via Reflection, masking the static DexClassLoader XREF.",
+        "JNI: Loading DEX files via C/C++ native libraries bypasses Dalvik structural analysis."
+    ],
+    "sample_findings": {
+        "Termux.apk": {
+            "dexclassloader_calls": [
+                {
+                    "caller_class": "Lorg/lsposed/hiddenapibypass/CoreOjClassLoader;",
+                    "caller_method": "<init>",
+                    "callee_method": "DexClassLoader",
+                    "offset": 10,
+                    "confidence": 1.0
+                }
+            ]
+        },
+        "VLC.apk": {
+            "dexclassloader_calls": []
+        },
+        "NewPipe.apk": {
+            "dexclassloader_calls": []
+        },
+        "Element.apk": {
+            "dexclassloader_calls": []
+        }
+    },
+    "Final_Verdict": "POC_IMPLEMENTED"
+}

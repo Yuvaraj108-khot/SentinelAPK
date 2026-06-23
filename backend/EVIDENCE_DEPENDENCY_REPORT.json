@@ -1,0 +1,6 @@
+{
+    "raw_strings": "100%",
+    "raw_bytes": "100% for DEX evidence",
+    "simple_capability_presence": "100% for Manifest evidence",
+    "conclusion": "SentinelAPK relies entirely on presence-based and signature-based indicators. Concrete data-flow analysis is 0% implemented."
+}

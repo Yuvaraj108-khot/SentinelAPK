@@ -1,0 +1,164 @@
+{
+    "SecureBank_Official.apk": {
+        "risk_score": 0,
+        "verdict": "SAFE",
+        "certificate_status": "TRUSTED",
+        "clone_risk": "LOW",
+        "evidence_validation": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "UNKNOWN",
+                "matched_string": "Verified Legitimate Official Application",
+                "source_file": "AndroidManifest.xml",
+                "offset": 0,
+                "extraction_method": "is_official_app_check",
+                "confidence": 1.0
+            },
+            "certificate_validation": {
+                "status": "TRUSTED",
+                "matched_string": "Trusted Official Certificate (Verified)",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 1.0
+            }
+        },
+        "mitre": [
+            {
+                "id": "T1473",
+                "name": "Signature Theft / Untrusted Signing",
+                "description": "Using invalid or unknown signatures to bypass device verification. Evidence: Trusted Official Certificate (Verified)"
+            }
+        ]
+    },
+    "SecureBank_Plus.apk": {
+        "risk_score": 74,
+        "verdict": "MALICIOUS",
+        "certificate_status": "UNKNOWN",
+        "clone_risk": "HIGH",
+        "evidence_validation": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "overlay": {
+                "status": "FOUND",
+                "matched_string": "android.permission.SYSTEM_ALERT_WINDOW",
+                "source_file": "AndroidManifest.xml",
+                "offset": 0,
+                "extraction_method": "manifest_permission_tag",
+                "confidence": 1.0
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "FOUND",
+                "matched_string": "Impersonates SecureBank Official (brand_sim=71%, pkg_sim=76%)",
+                "source_file": "AndroidManifest.xml",
+                "offset": 0,
+                "extraction_method": "manifest_similarity_comparison",
+                "confidence": 0.85
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=2820ff29ced94f75f091458d778abc63c999b21ffe9daae4ba38ef2ed10affce",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        },
+        "mitre": [
+            {
+                "id": "T1418",
+                "name": "Input Capture / Overlay Capability",
+                "description": "Overlay capability detected which could be used to capture credentials. Evidence: android.permission.SYSTEM_ALERT_WINDOW"
+            },
+            {
+                "id": "T1474",
+                "name": "Masquerading / Brand Impersonation",
+                "description": "Spoofing legitimate applications to harvest bank logins. Evidence: Impersonates SecureBank Official (brand_sim=71%, pkg_sim=76%)"
+            }
+        ]
+    },
+    "SecureBank_Clone.apk": {
+        "risk_score": 75,
+        "verdict": "MALICIOUS",
+        "certificate_status": "UNKNOWN",
+        "clone_risk": "HIGH",
+        "evidence_validation": {
+            "sms": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "accessibility": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "overlay": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "runtime_exec": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "dynamic_loading": {
+                "status": "UNKNOWN",
+                "reason": "NO_EVIDENCE_AVAILABLE"
+            },
+            "clone_detection": {
+                "status": "FOUND",
+                "matched_string": "Impersonates SecureBank Official (brand_sim=74%, pkg_sim=100%)",
+                "source_file": "AndroidManifest.xml",
+                "offset": 0,
+                "extraction_method": "manifest_similarity_comparison",
+                "confidence": 0.85
+            },
+            "certificate_validation": {
+                "status": "UNKNOWN",
+                "matched_string": "Unknown certificate: sha256=a36a2de2c6fd4ea62d16bca34bc1793625be70506ad11dfb2c74117c606e2e86",
+                "source_file": "META-INF/CERT.RSA",
+                "offset": 0,
+                "extraction_method": "signature_scan_comparison",
+                "confidence": 0.95
+            }
+        },
+        "mitre": [
+            {
+                "id": "T1474",
+                "name": "Masquerading / Brand Impersonation",
+                "description": "Spoofing legitimate applications to harvest bank logins. Evidence: Impersonates SecureBank Official (brand_sim=74%, pkg_sim=100%)"
+            }
+        ]
+    }
+}

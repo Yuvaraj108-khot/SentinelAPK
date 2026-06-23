@@ -771,6 +771,29 @@ class RiskEngine:
                 "description": f"Using invalid or unknown signatures to bypass device verification. Evidence: {evidence_validation['certificate_validation']['matched_string']}"
             })
 
+        # --- V2 Integration ---
+        try:
+            from behavior_correlation_engine import BehaviorCorrelationEngine
+            from attack_chain_engine import AttackChainEngine
+    
+            metadata = {"permissions": permissions}
+            behavioral_threats = BehaviorCorrelationEngine.evaluate(
+                metadata=metadata, 
+                evidence_validation=evidence_validation, 
+                clone_findings=clone_findings, 
+                cert_findings=cert_findings
+            )
+            
+            attack_chain_result = AttackChainEngine.build_chains(
+                correlated_threats=behavioral_threats, 
+                evidence_validation=evidence_validation
+            )
+            attack_chains = attack_chain_result.get("attack_chains", [])
+        except Exception:
+            behavioral_threats = []
+            attack_chains = []
+        # ----------------------
+
         return {
             "score":            score,
             "verdict":          verdict,
@@ -784,7 +807,10 @@ class RiskEngine:
             "cert_findings":    cert_findings,
             "initial_verdict":  initial_verdict,
             "retrieved_lessons": retrieved_lessons,
-            "evidence_validation": evidence_validation
+            "evidence_validation": evidence_validation,
+            "behavioral_threats": behavioral_threats,
+            "attack_chains": attack_chains,
+            "analysis_version": "V2"
         }
 
     def evaluate(self, features: Dict[str, Any]) -> Dict[str, Any]:

@@ -1,0 +1,26 @@
+{
+    "Old_Method_String_Match": "Simply searches raw bytecode for b\"Ldalvik/system/DexClassLoader;\". Returns true if the app or any third-party library has the string.",
+    "New_Method_Structural_XREF": "Parses Dalvik bytecode and extracts the exact class and method instantiating the DexClassLoader. Proves reachability.",
+    "Findings": {
+        "Termux.apk": {
+            "dexclassloader_calls": [
+                {
+                    "caller_class": "Lorg/lsposed/hiddenapibypass/CoreOjClassLoader;",
+                    "caller_method": "<init>",
+                    "callee_method": "DexClassLoader",
+                    "offset": 10,
+                    "confidence": 1.0
+                }
+            ]
+        },
+        "VLC.apk": {
+            "dexclassloader_calls": []
+        },
+        "NewPipe.apk": {
+            "dexclassloader_calls": []
+        },
+        "Element.apk": {
+            "dexclassloader_calls": []
+        }
+    }
+}

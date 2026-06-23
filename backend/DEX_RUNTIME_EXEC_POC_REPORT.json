@@ -1,0 +1,31 @@
+{
+    "implemented_apis": [
+        "Ljava/lang/Runtime;->exec"
+    ],
+    "androguard_classes_used": [
+        "androguard.misc.AnalyzeAPK",
+        "androguard.core.bytecodes.apk.APK",
+        "androguard.core.bytecodes.dvm.DalvikVMFormat",
+        "androguard.core.analysis.analysis.Analysis",
+        "androguard.core.analysis.analysis.MethodAnalysis",
+        "androguard.core.analysis.analysis.ClassAnalysis"
+    ],
+    "limitations": [
+        "Building the full Analysis object and cross-reference (XREF) graph is highly memory and CPU intensive, especially on massive APKs like Termux (114MB).",
+        "Reflection: If malware invokes Runtime.exec via reflection (java.lang.reflect.Method.invoke), static XREF analysis will fail to link the call graph.",
+        "Native Code: If execution is triggered via JNI (C/C++), Dalvik bytecode analysis will not detect the caller.",
+        "Obfuscation: Advanced control-flow flattening or dynamic class loading can disrupt the static call chain generation."
+    ],
+    "sample_output_structure": {
+        "runtime_exec_calls": [
+            {
+                "caller_class": "Lcom/termux/app/TermuxService;",
+                "caller_method": "executeCommand",
+                "callee_method": "Runtime.exec",
+                "offset": 1042,
+                "confidence": 1.0
+            }
+        ]
+    },
+    "Final_Verdict": "POC_IMPLEMENTED"
+}

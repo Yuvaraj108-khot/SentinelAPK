@@ -1,0 +1,26 @@
+{
+    "Element.apk": {
+        "capability_evidence": ["sms", "accessibility", "overlay"],
+        "behavioral_correlations": ["OTP Interception & Exfiltration"],
+        "attack_chains": ["SMS to OTP Interception"],
+        "false_positive_cause": "Element is a legitimate messaging platform. It inherently requires SMS access for communication features, accessibility for UI enhancements, and internet access. V2's Behavior Correlation Engine flagged this combination as an OTP Stealer because it relies purely on the presence of capabilities (Capability Correlation) without validating the application's true intent or overall trust context."
+    },
+    "VLC.apk": {
+        "capability_evidence": ["accessibility", "overlay"],
+        "behavioral_correlations": [],
+        "attack_chains": [],
+        "false_positive_cause": "VLC uses SYSTEM_ALERT_WINDOW (overlay) for background play and picture-in-picture mode, and accessibility for subtitle rendering and UI controls. Capability scanners flag these as high-risk input capture techniques, even though they serve legitimate media consumption intents."
+    },
+    "Termux.apk": {
+        "capability_evidence": ["accessibility", "overlay", "dynamic_loading", "runtime_exec"],
+        "behavioral_correlations": ["Hidden Payload Dropper"],
+        "attack_chains": [],
+        "false_positive_cause": "As a terminal emulator, Termux inherently executes runtime shell commands and dynamically loads binaries. V1 and V2 engines flag this as a potential dropper or command execution threat, failing to understand that execution is the legitimate primary function of a terminal emulator."
+    },
+    "NewPipe.apk": {
+        "capability_evidence": ["accessibility", "overlay"],
+        "behavioral_correlations": [],
+        "attack_chains": [],
+        "false_positive_cause": "NewPipe relies heavily on overlay capabilities to provide floating video playback (Picture-in-Picture). V1 flags this as an input capture/overlay threat, lacking the context that NewPipe is a recognized open-source media player."
+    }
+}

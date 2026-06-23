@@ -346,7 +346,10 @@ async def analyze_apk(file: UploadFile = File(...)):
             "session_id": session_id,
             "metadata": metadata,
             "risk": risk_data,
-            "ai": ai_data
+            "ai": ai_data,
+            "analysis_version": risk_data.get("analysis_version", "V2"),
+            "behavioral_threats": risk_data.get("behavioral_threats", []),
+            "attack_chains": risk_data.get("attack_chains", [])
         }
         
         # Store report details in memory for session
@@ -355,7 +358,10 @@ async def analyze_apk(file: UploadFile = File(...)):
             "risk": risk_data,
             "ai": ai_data,
             "pdf_path": pdf_path,
-            "original_filename": file.filename
+            "original_filename": file.filename,
+            "analysis_version": risk_data.get("analysis_version", "V2"),
+            "behavioral_threats": risk_data.get("behavioral_threats", []),
+            "attack_chains": risk_data.get("attack_chains", [])
         }
         
         return response_data

@@ -81,6 +81,8 @@ interface Sample {
   score: string;
 }
 
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"overview" | "permissions" | "ai" | "impersonation" | "runtime" | "adversarial" | "learning">("overview");
   const [samples, setSamples] = useState<Sample[]>([]);
@@ -126,7 +128,7 @@ export default function Home() {
 
   const fetchWeights = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/learning/status");
+      const res = await fetch(`${API_BASE}/api/learning/status`);
       if (res.ok) {
         const data = await res.json();
         setActiveWeights(data);
@@ -138,7 +140,7 @@ export default function Home() {
 
   const fetchLearningHistory = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/learning/history");
+      const res = await fetch(`${API_BASE}/api/learning/history`);
       if (res.ok) {
         const data = await res.json();
         setLearningHistory(data);
@@ -150,7 +152,7 @@ export default function Home() {
 
   const fetchLearningExplanations = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/learning/explanations");
+      const res = await fetch(`${API_BASE}/api/learning/explanations`);
       if (res.ok) {
         const data = await res.json();
         setLearningExplanations(data);
@@ -162,7 +164,7 @@ export default function Home() {
 
   const fetchEffectiveness = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/learning/effectiveness");
+      const res = await fetch(`${API_BASE}/api/learning/effectiveness`);
       if (res.ok) {
         const data = await res.json();
         setEffectivenessReport(data);
@@ -174,7 +176,7 @@ export default function Home() {
 
   const fetchBenchmarkRuns = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/benchmark/history");
+      const res = await fetch(`${API_BASE}/api/benchmark/history`);
       if (res.ok) {
         const data = await res.json();
         setBenchmarkRuns(data);
@@ -187,7 +189,7 @@ export default function Home() {
   const triggerBenchmarkRun = async () => {
     setRunningBenchmark(true);
     try {
-      const res = await fetch("http://localhost:8000/api/benchmark/run", { method: "POST" });
+      const res = await fetch(`${API_BASE}/api/benchmark/run`, { method: "POST" });
       if (res.ok) {
         await fetchWeights();
         await fetchLearningHistory();
@@ -204,7 +206,7 @@ export default function Home() {
 
   const fetchLessons = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/redteam/lessons");
+      const res = await fetch(`${API_BASE}/api/redteam/lessons`);
       if (res.ok) {
         const data = await res.json();
         const formatted = data.map((item: any) => ({
@@ -221,7 +223,7 @@ export default function Home() {
 
   const fetchSamples = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/samples");
+      const res = await fetch(`${API_BASE}/api/samples`);
       if (res.ok) {
         const data = await res.json();
         setSamples(data);
@@ -236,7 +238,7 @@ export default function Home() {
     setRedteamLoading(true);
     setRedteamData(null);
     try {
-      const res = await fetch("http://localhost:8000/api/redteam/mutate", {
+      const res = await fetch(`${API_BASE}/api/redteam/mutate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -288,7 +290,7 @@ export default function Home() {
     await new Promise((r) => setTimeout(r, 150));
     
     try {
-      const res = await fetch(`http://localhost:8000/api/samples/${id}`);
+      const res = await fetch(`${API_BASE}/api/samples/${id}`);
       if (res.ok) {
         const data = await res.json();
         setAppMetadata(data.metadata);
@@ -355,7 +357,7 @@ export default function Home() {
         setConsoleLogs((prev) => [...prev, "[SYS] [Stage 5/5] Compiling Signal Fusion & Investigation Report: Running AI rationale generator and compiling final PDF audit..."]);
       }, 2000);
 
-      const res = await fetch("http://localhost:8000/api/analyze", {
+      const res = await fetch(`${API_BASE}/api/analyze`, {
         method: "POST",
         body: formData,
       });
@@ -381,7 +383,7 @@ export default function Home() {
 
   const triggerDownload = () => {
     if (!sessionId) return;
-    window.open(`http://localhost:8000/api/report/download/${sessionId}`);
+    window.open(`${API_BASE}/api/report/download/${sessionId}`);
   };
 
   // Helper colors based on risk severity

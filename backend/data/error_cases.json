@@ -1270,5 +1270,21 @@
     "confidence": 76,
     "error_type": "FALSE_NEGATIVE",
     "timestamp": "2026-06-21T15:17:27.225972"
+  },
+  {
+    "apk_name": "rat_accessibility.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-10-12T16:51:34.487868"
+  },
+  {
+    "apk_name": "spy_trojan.apk",
+    "ground_truth": "MALICIOUS",
+    "prediction": "SAFE",
+    "confidence": 73,
+    "error_type": "FALSE_NEGATIVE",
+    "timestamp": "2026-10-12T16:51:34.487868"
   }
 ]

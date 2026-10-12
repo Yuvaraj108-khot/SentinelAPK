@@ -4,10 +4,18 @@ import uuid
 import logging
 from typing import Dict, Any, List
 from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.concurrency import run_in_threadpool
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, HTMLResponse
 from pydantic import BaseModel
 from dotenv import load_dotenv
+
+# Silence loguru debug output from androguard
+try:
+    from loguru import logger as loguru_logger
+    loguru_logger.remove()
+except Exception:
+    pass
 
 # Load env variables
 load_dotenv()
@@ -317,30 +325,31 @@ async def analyze_apk(file: UploadFile = File(...)):
             content = await file.read()
             buffer.write(content)
             
-        # Parse APK
-        analyzer = APKAnalyzer(temp_path)
-        metadata = analyzer.analyze()
-        
-        # Calculate Risk
-        has_services = len(metadata.get("services", [])) > 0
-        has_certs = len(metadata.get("certificates", [])) > 0
-        risk_data = RiskEngine.calculate_risk(
-            metadata["permissions"], 
-            has_services, 
-            has_certs, 
-            metadata.get("dex_indicators"),
-            metadata.get("package_name", "Unknown"),
-            metadata.get("certificates", []),
-            metadata.get("app_name", "Unknown"),
-            metadata.get("activities", [])
-        )
-        
-        # Explainable AI Analysis
-        ai_data = llm_client.analyze_apk(metadata, risk_data)
-        
-        # Generate HTML report and path for PDF
-        pdf_path = os.path.join(REPORT_DIR, f"{session_id}.pdf")
-        ReportGenerator.generate_pdf(metadata, risk_data, ai_data, pdf_path)
+        # Process APK in worker threadpool to avoid blocking event loop
+        def _process_apk():
+            analyzer = APKAnalyzer(temp_path)
+            meta = analyzer.analyze()
+            
+            has_services = len(meta.get("services", [])) > 0
+            has_certs = len(meta.get("certificates", [])) > 0
+            risk = RiskEngine.calculate_risk(
+                meta["permissions"], 
+                has_services, 
+                has_certs, 
+                meta.get("dex_indicators"),
+                meta.get("package_name", "Unknown"),
+                meta.get("certificates", []),
+                meta.get("app_name", "Unknown"),
+                meta.get("activities", [])
+            )
+            
+            ai = llm_client.analyze_apk(meta, risk)
+            
+            pdf = os.path.join(REPORT_DIR, f"{session_id}.pdf")
+            ReportGenerator.generate_pdf(meta, risk, ai, pdf)
+            return meta, risk, ai, pdf
+
+        metadata, risk_data, ai_data, pdf_path = await run_in_threadpool(_process_apk)
         
         response_data = {
             "session_id": session_id,

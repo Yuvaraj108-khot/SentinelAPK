@@ -1,27 +1,27 @@
 {
-  "run_id": "run_2026_06_21_dee73a",
-  "timestamp": "2026-06-21T15:17:27.001909",
-  "success": true,
+  "run_id": "run_2026_10_12_8dd390",
+  "timestamp": "2026-10-12T16:51:34.616287",
+  "success": false,
   "before": {
-    "accuracy": 0.73,
-    "recall": 0.6,
-    "f1_score": 0.75,
+    "accuracy": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
     "confusion_matrix": {
-      "tp": 6,
+      "tp": 10,
       "fp": 0,
       "tn": 5,
-      "fn": 4
+      "fn": 0
     }
   },
   "after": {
-    "accuracy": 0.8,
-    "recall": 0.7,
-    "f1_score": 0.82,
+    "accuracy": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
     "confusion_matrix": {
-      "tp": 7,
+      "tp": 10,
       "fp": 0,
       "tn": 5,
-      "fn": 3
+      "fn": 0
     }
   }
 }

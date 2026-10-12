@@ -1,15 +1,3 @@
-import logging
-from typing import Dict, Any, List
-try:
-    from androguard.core.apk import APK  # type: ignore
-except ImportError:
-    try:
-        from androguard.core.bytecodes.apk import APK  # type: ignore
-    except ImportError:
-        from androguard.apk import APK  # type: ignore
-
-logger = logging.getLogger("sentinel.analyzer")
-
 import os
 import re
 import logging
@@ -17,6 +5,12 @@ import zipfile
 import xml.etree.ElementTree as ET
 import json
 from typing import Dict, Any, List
+
+try:
+    from loguru import logger as loguru_logger
+    loguru_logger.remove()
+except Exception:
+    pass
 
 try:
     from androguard.core.apk import APK  # type: ignore

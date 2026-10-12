@@ -126,5 +126,38 @@
     "confidence": 76,
     "error_type": "FALSE_NEGATIVE",
     "lesson": "Missed: predicted SAFE but actual label is MALICIOUS. Increase suspicion for similar apps in future. Key permissions: REQUEST_INSTALL_PACKAGES. Certificate: Unknown / Self-signed certificate."
+  },
+  {
+    "timestamp": "2026-10-12T16:51:34.490493+00:00",
+    "package_name": "com.autoclicker.expert",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.BIND_ACCESSIBILITY_SERVICE"
+    ],
+    "dex_indicators": [],
+    "certificate_status": "Unknown / Self-signed certificate",
+    "clone_risk": "LOW",
+    "ground_truth": "MALICIOUS",
+    "predicted_verdict": "SAFE",
+    "confidence": 75,
+    "error_type": "FALSE_NEGATIVE",
+    "lesson": "Missed: predicted SAFE but actual label is MALICIOUS. Increase suspicion for similar apps in future. Key permissions: BIND_ACCESSIBILITY_SERVICE. Certificate: Unknown / Self-signed certificate."
+  },
+  {
+    "timestamp": "2026-10-12T16:51:34.490493+00:00",
+    "package_name": "com.device.care.manager",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.READ_SMS",
+      "android.permission.RECEIVE_SMS"
+    ],
+    "dex_indicators": [],
+    "certificate_status": "Unknown / Self-signed certificate",
+    "clone_risk": "LOW",
+    "ground_truth": "MALICIOUS",
+    "predicted_verdict": "SAFE",
+    "confidence": 73,
+    "error_type": "FALSE_NEGATIVE",
+    "lesson": "Missed: predicted SAFE but actual label is MALICIOUS. Increase suspicion for similar apps in future. Key permissions: READ_SMS, RECEIVE_SMS. Certificate: Unknown / Self-signed certificate."
   }
 ]

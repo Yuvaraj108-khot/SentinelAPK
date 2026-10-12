@@ -424,34 +424,34 @@ export default function Home() {
       <div className="h-1.5 w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" />
 
       {/* Header */}
-      <header className="border-b border-[#e5e7eb] bg-white/95 border-b border-[#e5e7eb] backdrop-blur-md sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
+      <header className="border-b border-[#e5e7eb] bg-white/95 backdrop-blur-md sticky top-0 z-40">
+        <div className="max-w-7xl mx-auto px-4 py-2.5 sm:py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-4">
+          <div className="flex items-center gap-2.5 sm:gap-3">
             {/* Cyber Shield Logo */}
-            <div className="p-2 rounded-lg bg-indigo-500/10 border border-[#4f46e5]/40">
-              <svg className="w-8 h-8 text-[#4f46e5]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="p-1.5 sm:p-2 rounded-lg bg-indigo-500/10 border border-[#4f46e5]/40 flex-shrink-0">
+              <svg className="w-6 h-6 sm:w-8 sm:h-8 text-[#4f46e5]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
             <div>
-              <h1 className="text-2xl font-bold tracking-tight text-[#111827] flex items-center gap-2">
+              <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-[#111827] flex items-center gap-2">
                 Sentinel<span className="text-[#4f46e5]">APK</span>
               </h1>
-              <p className="text-xs text-gray-500 uppercase tracking-widest font-mono">
+              <p className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-widest font-mono line-clamp-1 sm:line-clamp-none">
                 Explainable AI Threat Intelligence for Android Banking Applications
               </p>
             </div>
           </div>
 
           {/* Quick Metrics */}
-          <div className="flex items-center gap-6 text-xs font-mono text-gray-500">
-            <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4 sm:gap-6 text-[10px] sm:text-xs font-mono text-gray-500 w-full sm:w-auto justify-between sm:justify-start pt-1 sm:pt-0 border-t sm:border-t-0 border-gray-100">
+            <div className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>Sandbox C2 Server: ONLINE</span>
+              <span>Sandbox C2: ONLINE</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-indigo-500" />
-              <span>Pipeline latency: 1.2s</span>
+              <span>Latency: 1.2s</span>
             </div>
           </div>
         </div>
